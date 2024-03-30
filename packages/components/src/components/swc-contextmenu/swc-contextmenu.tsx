@@ -28,15 +28,15 @@ export class SwcContextmenu {
   }
 
   @Event({
-    eventName: 'command',
+    eventName: 'swcCommand',
   })
-  command: EventEmitter<string>;
+  swcCommand: EventEmitter<string>;
 
   commandHandler(ev: any) {
     const target = ev.target;
     if (target.nodeName.toLowerCase() === 'ivy-contextmenu-item') {
       const command = target.getAttribute('command');
-      this.command.emit(command);
+      this.swcCommand.emit(command);
       this.close();
     }
   }

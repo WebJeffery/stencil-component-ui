@@ -24,11 +24,11 @@ export class SwcCheckboxGroup {
   value: Array<string> = [];
 
   @Event({
-    eventName: 'change',
+    eventName: 'swcChange',
   })
-  change: EventEmitter<Array<string>>;
+  swcChange: EventEmitter<Array<string>>;
   customChangeHandler(val: Array<string>) {
-    this.change.emit(val);
+    this.swcChange.emit(val);
   }
 
   render() {
@@ -67,6 +67,6 @@ export class SwcCheckboxGroup {
   }
 
   dispatchEventChange(val: Array<string>) {
-    this.change.emit(val);
+    this.swcChange.emit(val);
   }
 }

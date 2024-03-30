@@ -160,6 +160,8 @@ export namespace Components {
         "show": boolean;
         "type": string;
     }
+    interface SwcModal {
+    }
     interface SwcNotification {
         "content": string;
         "header": string;
@@ -390,7 +392,7 @@ declare global {
         new (): HTMLSwcCheckboxElement;
     };
     interface HTMLSwcCheckboxGroupElementEventMap {
-        "change": Array<string>;
+        "swcChange": Array<string>;
     }
     interface HTMLSwcCheckboxGroupElement extends Components.SwcCheckboxGroup, HTMLStencilElement {
         addEventListener<K extends keyof HTMLSwcCheckboxGroupElementEventMap>(type: K, listener: (this: HTMLSwcCheckboxGroupElement, ev: SwcCheckboxGroupCustomEvent<HTMLSwcCheckboxGroupElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -425,7 +427,7 @@ declare global {
         new (): HTMLSwcCollapseItemElement;
     };
     interface HTMLSwcContextmenuElementEventMap {
-        "command": string;
+        "swcCommand": string;
     }
     interface HTMLSwcContextmenuElement extends Components.SwcContextmenu, HTMLStencilElement {
         addEventListener<K extends keyof HTMLSwcContextmenuElementEventMap>(type: K, listener: (this: HTMLSwcContextmenuElement, ev: SwcContextmenuCustomEvent<HTMLSwcContextmenuElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -507,7 +509,7 @@ declare global {
         new (): HTMLSwcDrawerElement;
     };
     interface HTMLSwcDropdownElementEventMap {
-        "command": string;
+        "swcChange": string;
     }
     interface HTMLSwcDropdownElement extends Components.SwcDropdown, HTMLStencilElement {
         addEventListener<K extends keyof HTMLSwcDropdownElementEventMap>(type: K, listener: (this: HTMLSwcDropdownElement, ev: SwcDropdownCustomEvent<HTMLSwcDropdownElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -560,9 +562,9 @@ declare global {
         new (): HTMLSwcImageElement;
     };
     interface HTMLSwcInputElementEventMap {
-        "changed": string | number | boolean;
-        "focus": any;
-        "blur": any;
+        "swcChange": string | number | boolean;
+        "swcFocus": any;
+        "swcBlur": any;
     }
     interface HTMLSwcInputElement extends Components.SwcInput, HTMLStencilElement {
         addEventListener<K extends keyof HTMLSwcInputElementEventMap>(type: K, listener: (this: HTMLSwcInputElement, ev: SwcInputCustomEvent<HTMLSwcInputElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -595,6 +597,12 @@ declare global {
     var HTMLSwcMessageElement: {
         prototype: HTMLSwcMessageElement;
         new (): HTMLSwcMessageElement;
+    };
+    interface HTMLSwcModalElement extends Components.SwcModal, HTMLStencilElement {
+    }
+    var HTMLSwcModalElement: {
+        prototype: HTMLSwcModalElement;
+        new (): HTMLSwcModalElement;
     };
     interface HTMLSwcNotificationElement extends Components.SwcNotification, HTMLStencilElement {
     }
@@ -833,6 +841,7 @@ declare global {
         "swc-link": HTMLSwcLinkElement;
         "swc-loading": HTMLSwcLoadingElement;
         "swc-message": HTMLSwcMessageElement;
+        "swc-modal": HTMLSwcModalElement;
         "swc-notification": HTMLSwcNotificationElement;
         "swc-option": HTMLSwcOptionElement;
         "swc-pager": HTMLSwcPagerElement;
@@ -907,7 +916,7 @@ declare namespace LocalJSX {
     }
     interface SwcCheckboxGroup {
         "disabled"?: boolean;
-        "onChange"?: (event: SwcCheckboxGroupCustomEvent<Array<string>>) => void;
+        "onSwcChange"?: (event: SwcCheckboxGroupCustomEvent<Array<string>>) => void;
         "value"?: Array<string>;
     }
     interface SwcCol {
@@ -922,7 +931,7 @@ declare namespace LocalJSX {
         "index"?: string;
     }
     interface SwcContextmenu {
-        "onCommand"?: (event: SwcContextmenuCustomEvent<string>) => void;
+        "onSwcCommand"?: (event: SwcContextmenuCustomEvent<string>) => void;
         "visible"?: boolean;
     }
     interface SwcContextmenuItem {
@@ -963,7 +972,7 @@ declare namespace LocalJSX {
     }
     interface SwcDropdown {
         "disabled"?: boolean;
-        "onCommand"?: (event: SwcDropdownCustomEvent<string>) => void;
+        "onSwcChange"?: (event: SwcDropdownCustomEvent<string>) => void;
     }
     interface SwcDropdownItem {
     }
@@ -989,9 +998,9 @@ declare namespace LocalJSX {
     interface SwcInput {
         "autoFocus"?: boolean;
         "disabled"?: boolean;
-        "onBlur"?: (event: SwcInputCustomEvent<any>) => void;
-        "onChanged"?: (event: SwcInputCustomEvent<string | number | boolean>) => void;
-        "onFocus"?: (event: SwcInputCustomEvent<any>) => void;
+        "onSwcBlur"?: (event: SwcInputCustomEvent<any>) => void;
+        "onSwcChange"?: (event: SwcInputCustomEvent<string | number | boolean>) => void;
+        "onSwcFocus"?: (event: SwcInputCustomEvent<any>) => void;
         "placeholder"?: string;
         "readonly"?: boolean;
         "type"?: string;
@@ -1011,6 +1020,8 @@ declare namespace LocalJSX {
         "content"?: string;
         "show"?: boolean;
         "type"?: string;
+    }
+    interface SwcModal {
     }
     interface SwcNotification {
         "content"?: string;
@@ -1155,6 +1166,7 @@ declare namespace LocalJSX {
         "swc-link": SwcLink;
         "swc-loading": SwcLoading;
         "swc-message": SwcMessage;
+        "swc-modal": SwcModal;
         "swc-notification": SwcNotification;
         "swc-option": SwcOption;
         "swc-pager": SwcPager;
@@ -1216,6 +1228,7 @@ declare module "@stencil/core" {
             "swc-link": LocalJSX.SwcLink & JSXBase.HTMLAttributes<HTMLSwcLinkElement>;
             "swc-loading": LocalJSX.SwcLoading & JSXBase.HTMLAttributes<HTMLSwcLoadingElement>;
             "swc-message": LocalJSX.SwcMessage & JSXBase.HTMLAttributes<HTMLSwcMessageElement>;
+            "swc-modal": LocalJSX.SwcModal & JSXBase.HTMLAttributes<HTMLSwcModalElement>;
             "swc-notification": LocalJSX.SwcNotification & JSXBase.HTMLAttributes<HTMLSwcNotificationElement>;
             "swc-option": LocalJSX.SwcOption & JSXBase.HTMLAttributes<HTMLSwcOptionElement>;
             "swc-pager": LocalJSX.SwcPager & JSXBase.HTMLAttributes<HTMLSwcPagerElement>;

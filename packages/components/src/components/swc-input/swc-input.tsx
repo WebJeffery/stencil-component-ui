@@ -1,17 +1,16 @@
-import { Component, Host, h, Prop, Event, EventEmitter, State } from '@stencil/core';
+import { Component, Host, h, Prop, Event, EventEmitter, State, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'swc-input',
-  styleUrl: 'swc-input.css',
-  shadow: true,
+  styleUrl: 'swc-input.css'
 })
-export class SwcInput {
+export class SwcInput implements ComponentInterface {
   @State() isComposition = false;
 
   @Prop() disabled = false;
   @Prop() readonly = false;
   @Prop({
-    attribute: 'auto-focus',
+    attribute: 'auto-swcFocus',
   })
   autoFocus = false;
   @Prop({
@@ -25,14 +24,14 @@ export class SwcInput {
   value: string = '';
 
   @Event({
-    eventName: 'changed',
+    eventName: 'swcChange',
   })
-  changed: EventEmitter<string | number | boolean>;
+  swcChange: EventEmitter<string | number | boolean>;
 
   changeHandler(ev: any) {
     if (!this.isComposition) {
       this.value = ev.target.value;
-      this.changed.emit(ev.target.value);
+      this.swcChange.emit(ev.target.value);
     }
   }
   compositionStartHandler() {
@@ -41,23 +40,23 @@ export class SwcInput {
   compositionEndHandler(ev: any) {
     this.isComposition = false;
     this.value = ev.target.value;
-    this.changed.emit(ev.target.value);
+    this.swcChange.emit(ev.target.value);
   }
 
   @Event({
-    eventName: 'focus',
+    eventName: 'swcFocus',
   })
-  focus: EventEmitter<any>;
+  swcFocus: EventEmitter<any>;
   focusHandler() {
-    this.focus.emit();
+    this.swcFocus.emit();
   }
 
   @Event({
-    eventName: 'blur',
+    eventName: 'swcBlur',
   })
-  blur: EventEmitter<any>;
+  swcBlur: EventEmitter<any>;
   blurHandler() {
-    this.blur.emit();
+    this.swcBlur.emit();
   }
 
   render() {

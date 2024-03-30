@@ -27,16 +27,16 @@ export class SwcDropdown {
   }
 
   @Event({
-    eventName: 'command',
+    eventName: 'swcChange',
   })
-  command: EventEmitter<string>;
+  swcChange: EventEmitter<string>;
 
   eventClickHandler(ev: any) {
     const target = ev.target;
     const tagName = target.nodeName.toLowerCase();
     if (tagName === 'ivy-dropdown-item') {
       const optionValue = target.getAttribute('command');
-      this.command.emit(optionValue);
+      this.swcChange.emit(optionValue);
       this.visible = false;
     }
   }
