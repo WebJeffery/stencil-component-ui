@@ -30,9 +30,15 @@ export namespace Components {
         "setSeparator": (val: string) => Promise<void>;
     }
     interface SwcButton {
+        "bg": boolean;
+        "circle": boolean;
+        "disabled": boolean;
+        "link": boolean;
         "loading": boolean;
         "plain": boolean;
         "round": boolean;
+        "size": string;
+        "text": boolean;
         "type": string;
     }
     interface SwcCard {
@@ -872,9 +878,15 @@ declare namespace LocalJSX {
         "separator"?: string;
     }
     interface SwcButton {
+        "bg"?: boolean;
+        "circle"?: boolean;
+        "disabled"?: boolean;
+        "link"?: boolean;
         "loading"?: boolean;
         "plain"?: boolean;
         "round"?: boolean;
+        "size"?: string;
+        "text"?: boolean;
         "type"?: string;
     }
     interface SwcCard {

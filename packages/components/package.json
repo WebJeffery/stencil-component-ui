@@ -33,10 +33,14 @@
     "@stencil/core": "^4.7.2",
     "@types/jest": "^29.5.10",
     "@types/node": "^16.18.64",
+    "classnames": "^2.5.1",
     "jest": "^29.7.0",
     "jest-cli": "^29.7.0",
     "puppeteer": "^21.5.2"
   },
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@swc-ui/style": "workspace:^"
+  }
 }

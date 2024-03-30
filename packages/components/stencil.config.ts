@@ -2,7 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'swc',
-  globalStyle: 'src/index.css',
+  globalStyle: 'style/index.css',
   globalScript: 'src/global.ts',
   outputTargets: [
     {
@@ -11,7 +11,7 @@ export const config: Config = {
       customElementsExportBehavior: 'bundle',
       copy: [
         { src: 'components/swc-icon/assets/iconfont.svg', dest: 'dist/components/assets/iconfont.svg', warn: true },
-        { src: 'index.css', dest: 'dist/index.css', warn: true },
+        { src: 'style/index.css', dest: 'dist/index.css', warn: true },
       ],
     },
     // {

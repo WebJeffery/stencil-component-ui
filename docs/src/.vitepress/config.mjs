@@ -1,6 +1,8 @@
 import { defineConfig } from "vitepress";
+import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
 import sidebar from "./config/sidebar";
 import nav from './config/nav'
+
 
 export default defineConfig({
     lang: "zh-CN",
@@ -8,6 +10,13 @@ export default defineConfig({
     description: "一个名为 swc-ui 的 web component 组件库",
     lastUpdated: true,
     outDir: "../dist",
+    markdown: {
+        config: (md) => {
+            md.use(demoblockPlugin, {
+                customClass: 'demoblock-custom'
+            })
+        }
+    },
     themeConfig: {
         editLink: {
             pattern:
@@ -43,5 +52,6 @@ export default defineConfig({
         build: {
             target: "es2015",
         },
+        plugins: [demoblockVitePlugin()]
     },
 });

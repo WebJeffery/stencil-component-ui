@@ -1,3 +1,4 @@
+@import url(./component.css);
 /*重置默认主题的字体大小*/
 .theme-default-content {
   font-size: 15px;
