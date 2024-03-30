@@ -36,10 +36,6 @@ importers:
         version: 3.0.5(@algolia/client-search@4.23.2)(search-insights@2.13.0)
 
   packages/components:
-    dependencies:
-      '@swc-ui/style':
-        specifier: workspace:^
-        version: link:../styles
     devDependencies:
       '@stencil/core':
         specifier: ^4.7.2

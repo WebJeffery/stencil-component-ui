@@ -1,11 +1,10 @@
 # Notification 通知
 
-<swc-button @click="test">点击打开Notification</swc-button>
-
-```html
-<swc-button>点击打开Notification</swc-button>
-```
-
+:::demo
+```vue
+<template>
+    <swc-button>点击打开Notification</swc-button>
+</template>
 <script>
 export default {
     setup(){
@@ -17,3 +16,6 @@ export default {
 }
 
 </script>
+```
+:::
+

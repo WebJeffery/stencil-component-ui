@@ -4,80 +4,61 @@
 
 常规用法
 
-<swc-grid class="grid-row">
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-</swc-grid>
-
-
-```html
-<swc-grid class="grid-row">
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="background-color: #67C23A;height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="background-color: #67C23A;height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="background-color: #67C23A;height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-</swc-grid>
+:::demo
+```vue
+<template>
+    <swc-grid class="grid-row">
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="background-color: #67C23A;height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="background-color: #67C23A;height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="background-color: #67C23A;height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+    </swc-grid>
+</template>
 ```
+:::
 
 ## 边框
 
 通过`border`设置 grid 组件的边框
 
-<swc-grid class="grid-row" border>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-</swc-grid>
-
-```html
-<swc-grid class="grid-row" border>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
-</swc-grid>
+:::demo
+```vue
+<template>
+    <swc-grid class="grid-row" border>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item" style="height: 100px">12</swc-grid-item>
+    </swc-grid>
+</template>
 ```
+:::
 
 ## 宽高一致
 
 通过 `square` 设置宽高一样
 
-<swc-grid class="grid-row" border square>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-</swc-grid>
-
-```html
-<swc-grid class="grid-row" border square>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-    <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
-</swc-grid>
+:::demo
+```vue
+<template>
+    <swc-grid class="grid-row" border square>
+        <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
+        <swc-grid-item span="12" class="grid-item">12</swc-grid-item>
+    </swc-grid>
+</template>
 ```
+:::
 
 # Props 
 

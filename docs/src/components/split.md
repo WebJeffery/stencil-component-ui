@@ -6,39 +6,28 @@
 
 左右分割用法。
 
-<swc-split style="height: 100px;">
-    <div slot="left">
-        <p>左侧面板</p>
-    </div>
-    <div slot="right">右侧面板</div>
-</swc-split>
-
-
-```html
-<swc-split>
-    <div slot="left">左侧面板</div>
-    <div slot="right">右侧面板</div>
-</swc-split>
+:::demo
+```vue
+<template>
+    <swc-split>
+        <div slot="left">左侧面板</div>
+        <div slot="right">右侧面板</div>
+    </swc-split>
+</template>
 ```
+:::
 
 ## 上下分割
 
 上下分割用法。
 
-<swc-split vertical="vertical">
-    <div slot="top">左侧面板</div>
-    <div slot="bottom">右侧面板</div>
-</swc-split>
-
-```html
-<swc-split>
-    <div slot="left">左侧面板</div>
-    <div slot="right">右侧面板</div>
-</swc-split>
+:::demo
+```vue
+<template>
+    <swc-split>
+        <div slot="left">左侧面板</div>
+        <div slot="right">右侧面板</div>
+    </swc-split>
+</template>
 ```
-
-<style>
-.ml-40{
-    margin-left: 40px;
-}
-</style>
+:::

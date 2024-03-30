@@ -2,75 +2,68 @@
 
 ## 基础用法
 
-<swc-description>
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
-
-```html
-<swc-description>
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
+:::demo
+```vue
+<template>
+    <swc-description>
+        <swc-description-item label="姓名">Tom</swc-description-item>
+        <swc-description-item label="性别"> 男 </swc-description-item>
+        <swc-description-item label="年龄"> 28 </swc-description-item>
+        <swc-description-item label="地址"> 上海市青浦区华新镇 </swc-description-item>
+    </swc-description>
+</template>
 ```
+:::
 
 ## 增加 border
 
-<swc-description border>
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
 
-```html
-<swc-description border>
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
+
+:::demo
+```vue
+<template>
+    <swc-description border>
+        <swc-description-item label="姓名">Tom</swc-description-item>
+        <swc-description-item label="性别"> 男 </swc-description-item>
+        <swc-description-item label="年龄"> 28 </swc-description-item>
+        <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
+    </swc-description>
+</template>
 ```
+:::
 
 ## 增加 header
 
-<swc-description border header="个人信息">
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
 
-```html
-<swc-description border header="个人信息">
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
+:::demo
+```vue
+<template>
+    <swc-description border header="个人信息">
+        <swc-description-item label="姓名">Tom</swc-description-item>
+        <swc-description-item label="性别"> 男 </swc-description-item>
+        <swc-description-item label="年龄"> 28 </swc-description-item>
+        <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
+    </swc-description>
+</template>
 ```
+:::
 
 ## 设置 label-width
 
-<swc-description border label-width="80px">
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
 
-```html
-<swc-description border>
-    <swc-description-item label="姓名">Tom</swc-description-item>
-    <swc-description-item label="性别"> 男 </swc-description-item>
-    <swc-description-item label="年龄"> 28 </swc-description-item>
-    <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
-</swc-description>
+
+:::demo
+```vue
+<template>
+    <swc-description border>
+        <swc-description-item label="姓名">Tom</swc-description-item>
+        <swc-description-item label="性别"> 男 </swc-description-item>
+        <swc-description-item label="年龄"> 28 </swc-description-item>
+        <swc-description-item label="地址" span="3"> 上海市青浦区华新镇 </swc-description-item>
+    </swc-description>
+</template>
 ```
+:::
 
 ## Description Prop
 

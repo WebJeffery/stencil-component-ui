@@ -4,56 +4,55 @@
 
 没有任何参数
 
-<swc-tip>默认消息提示的文案</swc-tip>
-
-
-```html
-<swc-tip>默认消息提示的文案</swc-tip>
+:::demo
+```vue
+<template>
+  <swc-tip>默认消息提示的文案</swc-tip>
+</template>
 ```
+:::
 
 ## Title
 
 通过 设置 `title` 属性来设置标题
 
-<swc-tip type="info" title="提示">主要消息提示的文案</swc-tip>
-
-```html
-<swc-tip type="info" title="提示">主要消息提示的文案</swc-tip>
+:::demo
+```vue
+<template>
+  <swc-tip type="info" title="提示">主要消息提示的文案</swc-tip>
+</template>
 ```
+:::
 
 ## Line
 
 通过 设置 `line` 属性在左侧添加一条竖线
 
-<swc-tip line>默认消息提示的文案</swc-tip>
-<swc-tip line type="info" class="margin-top">主要消息提示的文案</swc-tip>
-<swc-tip line type="success" class="margin-top">成功消息提示的文案</swc-tip>
-<swc-tip line type="warning" class="margin-top">警告消息提示的文案</swc-tip>
-<swc-tip line type="error" class="margin-top">错误消息提示的文案</swc-tip>
-
-```html
-<swc-tip line>默认消息提示的文案</swc-tip>
-<swc-tip line type="info">主要消息提示的文案</swc-tip>
-<swc-tip line type="success">成功消息提示的文案</swc-tip>
-<swc-tip line type="warning">警告消息提示的文案</swc-tip>
-<swc-tip line type="error">错误消息提示的文案</swc-tip>
+:::demo
+```vue
+<template>
+  <swc-tip line>默认消息提示的文案</swc-tip>
+  <swc-tip line type="info">主要消息提示的文案</swc-tip>
+  <swc-tip line type="success">成功消息提示的文案</swc-tip>
+  <swc-tip line type="warning">警告消息提示的文案</swc-tip>
+  <swc-tip line type="error">错误消息提示的文案</swc-tip>
+</template>
 ```
+:::
 
 ## Type
 
 通过 设置 `type` 属性来改变颜色
-
-<swc-tip type="info">主要消息提示的文案</swc-tip>
-<swc-tip type="success" class="margin-top">成功消息提示的文案</swc-tip>
-<swc-tip type="warning" class="margin-top">警告消息提示的文案</swc-tip>
-<swc-tip type="error" class="margin-top">错误消息提示的文案</swc-tip>
-
-```html
-<swc-tip type="info">主要消息提示的文案</swc-tip>
-<swc-tip type="success">成功消息提示的文案</swc-tip>
-<swc-tip type="warning">警告消息提示的文案</swc-tip>
-<swc-tip type="error">错误消息提示的文案</swc-tip>
+:::demo
+```vue
+<template>
+  <swc-tip type="info">主要消息提示的文案</swc-tip>
+  <swc-tip type="success">成功消息提示的文案</swc-tip>
+  <swc-tip type="warning">警告消息提示的文案</swc-tip>
+  <swc-tip type="error">错误消息提示的文案</swc-tip>
+</template>
 ```
+:::
 
 ## 支持的`CSS`变量
 

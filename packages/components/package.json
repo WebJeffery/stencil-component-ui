@@ -39,8 +39,5 @@
     "puppeteer": "^21.5.2"
   },
   "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "@swc-ui/style": "workspace:^"
-  }
+  "private": false
 }

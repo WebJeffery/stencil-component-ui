@@ -6,58 +6,53 @@
 
 由 `type` 属性来选择 Text 的类型。
 
-<swc-text>default</swc-text>
-<swc-text type="primary" class="margin-left">primary</swc-text>
-<swc-text type="success" class="margin-left">success</swc-text>
-<swc-text type="warning" class="margin-left">warning</swc-text>
-<swc-text type="danger" class="margin-left">danger</swc-text>
-<swc-text type="info" class="margin-left">info</swc-text>
-
-```html
-<swc-text>default</swc-text>
-<swc-text type="primary">primary</swc-text>
-<swc-text type="success">success</swc-text>
-<swc-text type="warning">warning</swc-text>
-<swc-text type="danger">danger</swc-text>
-<swc-text type="info">info</swc-text>
+:::demo
+```vue
+<template>
+    <swc-text>default</swc-text>
+    <swc-text type="primary">primary</swc-text>
+    <swc-text type="success">success</swc-text>
+    <swc-text type="warning">warning</swc-text>
+    <swc-text type="danger">danger</swc-text>
+    <swc-text type="info">info</swc-text>
+</template>
 ```
+:::
 
 ## 省略
 
 通过 `truncated` 属性，在文本超过视图或最大宽度设置时展示省略符。 通过 `line-clamp` 属性控制多行的样式
 
-<swc-text truncated style="width: 200px"> 这里是测试超出宽度显示省略号功能的 </swc-text>
-<br />
-<swc-text truncated line-clamp="2">
-这个功能是使用 CSS 属性 -webkit-line-clamp<br> 来设置显示行数的，超出<br> 的内容将不显示。
-</swc-text>
-
-```html
-<swc-text truncated style="width: 200px">
-    这里是测试超出宽度显示省略号功能的
-</swc-text>
-<swc-text truncated line-clamp="2">
-    这个功能是使用 CSS 属性 -webkit-line-clamp<br />
-    来设置显示行数的，超出<br />
-    的内容将不显示。
-</swc-text>
+:::demo
+```vue
+<template>
+    <swc-text truncated style="width: 200px">
+        这里是测试超出宽度显示省略号功能的
+    </swc-text>
+    <swc-text truncated line-clamp="2">
+        这个功能是使用 CSS 属性 -webkit-line-clamp<br />
+        来设置显示行数的，超出<br />
+        的内容将不显示。
+    </swc-text>
+</template>
 ```
+:::
 
 ## 自定义颜色和字体大小
 
 通过自定义 css 属性 来更改 Text 组件的字体颜色和大小
 
-<swc-text>默认</swc-text>
-<swc-text style="--swc-text-color: darkblue;" class="margin-left">自定义颜色</swc-text>
-<swc-text style="--swc-text-color: darkblue; --swc-text-font-size: 20px;" class="margin-left">自定义颜色和字体大小</swc-text>
-
-```html
-<swc-text>默认</swc-text>
-<swc-text style="--swc-text-color: darkblue;">自定义颜色</swc-text>
-<swc-text style="--swc-text-color: darkblue; --swc-text-font-size: 20px;">
-    自定义颜色和字体大小
-</swc-text>
+:::demo
+```vue
+<template>
+    <swc-text>默认</swc-text>
+    <swc-text style="--swc-text-color: darkblue;">自定义颜色</swc-text>
+    <swc-text style="--swc-text-color: darkblue; --swc-text-font-size: 20px;">
+        自定义颜色和字体大小
+    </swc-text>
+</template>
 ```
+:::
 
 ## 可用的 CSS 变量
 

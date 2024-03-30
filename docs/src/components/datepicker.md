@@ -2,11 +2,14 @@
 
 ## 常规用法
 
-<swc-date-picker></swc-date-picker>
 
-```html
-<swc-date-picker></swc-date-picker>
+:::demo
+```vue
+<template>
+  <swc-date-picker></swc-date-picker>
+</template>
 ```
+:::
 
 ## 禁用选项
 

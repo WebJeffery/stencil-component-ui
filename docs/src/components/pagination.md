@@ -2,4 +2,9 @@
 
 ## 基础用法
 
-<swc-pagination></swc-pagination>
+:::demo
+```vue
+<template>
+  <swc-pagination></swc-pagination>
+</template>
+:::

@@ -2,12 +2,6 @@
 
 ## 通过 script 引入
 
-```html
-<!--最新版-->
-<script type="module" src="//cdn.jsdelivr.net/npm/swc-ui"></script>
-<!--指定版本号-->
-<script type="module" src="//cdn.jsdelivr.net/npm/swc-ui@0.4.0"></script>
-```
 
 ## 通过包管理器使用
 
