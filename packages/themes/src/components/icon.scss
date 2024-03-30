@@ -1,0 +1,22 @@
+@import '../common/mixins/mixins';
+@import '../common/variable';
+
+@include b(icon) {
+  display: inline-block;
+  transition: 0.15s;
+  border-radius: $--sten-border-radius-base;
+  cursor: pointer;
+}
+
+@include b(icon-spin) {
+  animation: rotating 1.6s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

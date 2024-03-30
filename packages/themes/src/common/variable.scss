@@ -1,0 +1,257 @@
+$--sten-color-primary-100: #e8f4ff !default;
+$--sten-color-primary-200: #c2e0ff !default;
+$--sten-color-primary-300: #9bcaff !default;
+$--sten-color-primary-500: #4e95ff !default;
+$--sten-color-primary-600: #2878ff !default; //主色
+$--sten-color-primary-700: #1957d2 !default;
+$--sten-color-primary-800: #0d3ba6 !default;
+
+$--sten-color-danger-100: #ffeee8 !default;
+$--sten-color-danger-200: #fbd1c4 !default;
+$--sten-color-danger-300: #f7b2a0 !default;
+$--sten-color-danger-500: #ee705d !default;
+$--sten-color-danger-600: #ea4f3d !default;
+$--sten-color-danger-700: #c33026 !default;
+$--sten-color-danger-800: #9b1914 !default;
+
+$--sten-color-warning-100: #fffae8 !default;
+$--sten-color-warning-200: #fceec1 !default;
+$--sten-color-warning-300: #f9e09b !default;
+$--sten-color-warning-500: #f4be52 !default;
+$--sten-color-warning-600: #f1aa2e !default;
+$--sten-color-warning-700: #c8831d !default;
+$--sten-color-warning-800: #9f610f !default;
+
+$--sten-color-success-100: #e8fff0 !default;
+$--sten-color-success-200: #b7eecc !default;
+$--sten-color-success-300: #8addad !default;
+$--sten-color-success-400: #63cd92 !default;
+$--sten-color-success-500: #40bc7c !default;
+$--sten-color-success-600: #22ab68 !default;
+$--sten-color-success-700: #16935b !default;
+$--sten-color-success-800: #0c7c4d !default;
+
+$--sten-color-white: #ffffff !default;
+
+$--sten-color-text-100: rgb(45, 46, 47) !default;
+$--sten-color-text-200: rgba(45, 46, 47, 0.7) !default;
+$--sten-color-text-300: rgba(45, 46, 47, 0.5) !default;
+$--sten-color-text-400: rgba(45, 46, 47, 0.3) !default;
+
+$--sten-color-text-white: rgba(255, 255, 255, 1) !default;
+$--sten-color-text-link: $--sten-color-primary-600 !default;
+$--sten-color-text-selected: rgba(40, 120, 255, 0.3) !default;
+$--sten-color-text-error: $--sten-color-danger-600 !default;
+
+$--sten-font-size-xxs: 12px !default;
+$--sten-font-size-xs: 14px !default;
+$--sten-font-size-sm: 16px !default;
+$--sten-font-size-md: 18px !default;
+$--sten-font-size-lg: 20px !default;
+$--sten-font-size-xl: 22px !default;
+$--sten-font-size-xxl: 24px !default;
+
+$--sten-font-weight-normal: 400 !default;
+$--sten-font-weight-bold: 700 !default;
+
+$--sten-border-dark: rgba(31, 33, 38, 0.12) !default;
+$--sten-border-light: rgba(31, 33, 38, 0.08) !default;
+
+$--sten-mask: rgba(43, 47, 54, 0.6) !default;
+
+$--sten-inter-light-active: #bdc4d0 !default;
+$--sten-inter-light-hover: #d0d5dd !default;
+$--sten-inter-light-bg: #f2f4f7 !default;
+$--sten-inter-light-bg-hover: #e4e7ec !default;
+
+$--sten-inter-dark-active: #b1bac9 !default;
+$--sten-inter-dark-hover: #bdc4d0 !default;
+$--sten-inter-dark-bg: #e4e7ec !default;
+$--sten-inter-dark-bg-hover: #d0d5dd !default;
+
+$--sten-icon-dark: rgba(29, 41, 57, 1) !default;
+$--sten-icon-light: rgba(152, 162, 179, 1) !default;
+
+$--sten-bg-light: $--sten-color-white !default;
+$--sten-bg-medium: rgba(249, 250, 251, 1) !default;
+$--sten-bg-dark: rgba(242, 244, 247, 1) !default;
+
+$--sten-placeholder-color: #f5f7fa !default;
+$--sten-placeholder-text-color: #c0c4cc !default;
+
+$--sten-color-lightblue-200: #0bc3ec !default;
+$--sten-color-lightblue-500: #8ceef7 !default;
+
+$--sten-color-blue-200: #2e90fa !default;
+$--sten-color-blue-500: #b2ddff !default;
+
+$--sten-color-darkblue-200: #717bbc !default;
+$--sten-color-darkblue-500: #eaecf5 !default;
+
+$--sten-color-lightpurple-200: #7a5af8 !default;
+$--sten-color-lightpurple-500: #d9d6fe !default;
+
+$--sten-color-purple-200: #9531c7 !default;
+$--sten-color-purple-500: #d596e9 !default;
+
+$--sten-color-pink-200: #ee46bc !default;
+$--sten-color-pink-500: #fcceee !default;
+
+$--sten-color-darkpink-200: #f63d68 !default;
+$--sten-color-darkpink-500: #feccd6 !default;
+
+$--sten-color-red-200: #fa6b69 !default;
+$--sten-color-red-500: #fdbdb5 !default;
+
+$--sten-color-lightorange-200: #f2930c !default;
+$--sten-color-lightorange-500: #fad78d !default;
+
+$--sten-color-orange-200: #fb6514 !default;
+$--sten-color-orange-500: #fddcab !default;
+
+$--sten-color-darkorange-200: #e78c6e !default;
+$--sten-color-darkorange-500: #f5cbb5 !default;
+
+$--sten-color-coffee-200: #bb8a69 !default;
+$--sten-color-coffee-500: #e4cab0 !default;
+
+$--sten-color-lightgreen-200: #a2cd2f !default;
+$--sten-color-lightgreen-500: #ddeb96 !default;
+
+$--sten-color-green-200: #71bc78 !default;
+$--sten-color-green-500: #b3e4b3 !default;
+
+$--sten-color-darkgreen-200: #22aeae !default;
+$--sten-color-darkgreen-500: #99ece1 !default;
+
+$--sten-color-gray-100: #f2f4f7 !default;
+$--sten-color-gray-150: #e5e7eb !default;
+$--sten-color-gray-200: #e4e7ec !default;
+$--sten-color-gray-300: #cfd4dc !default;
+$--sten-color-gray-500: #667085 !default;
+$--sten-color-gray-700: #374151 !default;
+
+$--sten-box-shadow-lighter: 4px 0 8px rgba(29, 41, 57, 0.1) !default; // 文本修改弹框
+$--sten-box-shadow-light: 6px 0 18px rgba(29, 41, 57, 0.14) !default; // 卡片、下拉菜单投影
+$--sten-box-shadow-dark: 10px 0 32px rgba(29, 41, 57, 0.18) !default; // 信息提示投影
+$--sten-box-shadow-darker: 12px 0 42px rgba(29, 41, 57, 0.24) !default; // 模态框投影
+
+$--sten-border-width: 1px;
+$--sten-border-radius-small: 4px;
+$--sten-border-radius-medium: 6px;
+
+$--sten-avatar-large: 40px !default;
+$--sten-avatar-medium: 32px !default;
+$--sten-avatar-small: 24px !default;
+
+$--sten-tooltip-color-background: #1f2126 !default;
+$--sten-tooltip-color-text: $--sten-color-white !default;
+$--sten-tooltip-font-size: $--sten-font-size-xs !default;
+
+$--sten-border-radius-circle: 100% !default;
+$--sten-border-radius-none: 0 !default;
+$--sten-border-radius-base: 4px !default;
+$--sten-border-radius-base-lg: #{$--sten-border-radius-base + 2} !default;
+$--sten-border-radius-2base: 8px !default;
+$--sten-border-radius-3base: 12px !default;
+
+$--sten-alert-padding: 9px 16px !default;
+$--sten-alert-border-radius: $--sten-border-radius-base !default;
+$--sten-alert-border-width: 1px !default;
+$--sten-alert-title-font-size: 14px !default;
+$--sten-alert-description-font-size: 13px !default;
+$--sten-alert-close-font-size: 20px !default;
+$--sten-alert-close-customed-font-size: 13px !default;
+$--sten-alert-success-color: $--sten-color-success-100 !default;
+$--sten-alert-info-color: $--sten-color-primary-100 !default;
+$--sten-alert-warning-color: $--sten-color-warning-100 !default;
+$--sten-alert-danger-color: $--sten-color-danger-100 !default;
+$--sten-alert-success-color-goth: $--sten-color-success-600 !default;
+$--sten-alert-info-color-goth: $--sten-color-primary-600 !default;
+$--sten-alert-warning-color-goth: $--sten-color-warning-600 !default;
+$--sten-alert-danger-color-goth: $--sten-color-danger-600 !default;
+$--sten-alert-icon-size: 16px !default;
+$--sten-alert-title-font-weight: 500 !default;
+
+$--sten-alert-icon-large-size: 28px !default;
+$--sten-alert-title-line-height: 22px !default;
+
+$--sten-checkbox-font-size: $--sten-font-size-xs !default;
+$--sten-checkbox-border-color-hover: $--sten-color-primary-600 !default;
+$--sten-checkbox-bg-color-checked: $--sten-color-primary-600 !default;
+$--sten-checkbox-color-disabled: rgba(45, 46, 47, 0.3) !default;
+$--sten-checkbox-border-color-disabled: #e4e7ed !default;
+$--sten-checkbox-bg-color-disabled: rgba(228, 231, 237, 0.4) !default;
+$--sten-checkbox-disabled-checked-color: #e1e3e6 !default;
+$--sten-checkbox-size: 16px !default;
+$--sten-checkbox-border-raidus: 4px !default;
+$--sten-checkbox-border-width: 1px !default;
+$--sten-checkbox-border-color: rgba(31, 33, 38, 0.3) !default;
+$--sten-checkbox-label-padding: 8px !default;
+
+$--sten-zindex-tooltip: 2 !default;
+
+$--sten-input-placeholder-color: #9da1a6 !default;
+$--sten-input-font-color: #1c2433 !default;
+$--sten-input-font-size: $--sten-font-size-xs !default;
+$--sten-input-error-font-size: $--sten-font-size-xxs !default;
+$--sten-input-border-color: rgba(31, 33, 38, 0.2) !default;
+$--sten-input-background-color: $--sten-color-white !default;
+$--sten-input-focus-border-color: $--sten-color-primary-600 !default;
+$--sten-input-focus-background-color: #f5fbff !default;
+$--sten-input-error-border-color: #eb483d !default;
+$--sten-input-error-background-color: #fff5f5 !default;
+$--sten-input-font-weight: 400 !default;
+
+$--sten-toggle-width: 40px !default;
+$--sten-toggle-height: 24px !default;
+
+$--sten-toggle-small-width: 26px !default;
+$--sten-toggle-small-height: 16px !default;
+
+$--sten-toggle-large-width: 54px !default;
+$--sten-toggle-large-height: 32px !default;
+
+$--sten--switch-padding-l: 4px !default;
+$--sten--switch-padding-m: 3px !default;
+$--sten--switch-padding-s: 2px !default;
+
+$--sten-spinner-transition-type-1: cubic-bezier(0.5, 0, 0.5, 1);
+$--sten-spinner-transition-normal: 1.2s;
+$--sten-spinner-ring-width: 64px;
+$--sten-spinner-ring-height: 64px;
+
+$--sten-spinner-size: 4em;
+$--sten-spinner-size-m: 3em;
+$--sten-spinner-size-s: 1.5em;
+$--sten-spinner-size-xs: 1em;
+$--sten-spinner-size-xxs: 0.75em;
+
+$--sten-spinner-mg: 6px;
+$--sten-spinner-mg-m: 4px;
+$--sten-spinner-mg-s: 2px;
+
+$--sten-spinner-progress-size: 6px;
+$--sten-spinner-progress-size-m: 4px;
+$--sten-spinner-progress-size-s: 2px;
+
+$--sten-spinner-ring-color: $--sten-color-primary-600;
+$--sten-spinner-ring-inline-color: $--sten-color-primary-300;
+
+$--sten-message-z-index: 950;
+$--sten-message-shadow: 0px 4px 8px rgba(29, 41, 57, 0.2);
+$--sten-message-shadow-width: 10px;
+$--sten-message-top: 8px;
+
+$--sten-font-size-small: 14px;
+$--sten-font-size-large: 20px;
+$--sten-font-weight-normal: 400;
+
+$--sten-spacing-3xs: 2px;
+$--sten-spacing-xxs: 4px;
+$--sten-spacing-xs: 6px;
+$--sten-spacing-small: 8px;
+$--sten-spacing-medium: 16px;
+$--sten-spacing-large: 20px;
+
+$--sten-transition-medium: 250ms;

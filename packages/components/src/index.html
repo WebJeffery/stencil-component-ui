@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Stencil Component Starter</title>
+  <link rel="stylesheet" href="/build/ivy.css" />
+  <style>
+    html {
+      font-size: 10px;
+      margin: 0;
+    }
+
+    body {
+      font-size: 1.4rem;
+      line-height: 1.6em;
+      width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      height: 100vh;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .margin-top {
+      margin-top: 12px;
+    }
+
+    .-margin-left {
+      margin-left: 12px;
+    }
+
+    .margin-left-large {
+      margin-left: 12px;
+    }
+
+    .test::part(separator) {
+      color: red;
+    }
+  </style>
+  <script type="module" src="/build/ivy.esm.js"></script>
+  <script nomodule src="/build/ivy.js"></script>
+</head>
+
+<body>
+  <div style="min-height: 200px"></div>
+  <div class="margin-top">
+    <ivy-button type="primary" id="btn">设置表格数据</ivy-button>
+    <ivy-table id="table" border></ivy-table>
+  </div>
+
+  <div style="height: 200px;">
+
+  </div>
+
+
+
+</body>
+
+<script type="module">
+  const columns = [
+    { title: '日期', prop: 'date' },
+    { title: '姓名', prop: 'name' },
+    { title: '状态', prop: 'state' },
+    { title: '城市', prop: 'city' },
+    { title: '地址', prop: 'address' },
+    { title: 'zip', prop: 'zip' },
+    { title: '标签', prop: 'tag' },
+  ]
+  const tableData = [
+    {
+      date: '2016-05-03',
+      name: 'Tom',
+      state: 'California',
+      city: 'Los Angeles',
+      address: 'No. 189, Grove St, Los Angeles',
+      zip: 'CA 90036',
+      tag: 'Home',
+    },
+    {
+      date: '2016-05-02',
+      name: 'Jack',
+      state: 'California',
+      city: '上海',
+      address: '上海市青浦区华新镇e通世界花新园C栋',
+      zip: 'CA 90036',
+      tag: 'Office',
+    },
+    {
+      date: '2016-05-04',
+      name: 'Tom',
+      state: 'California',
+      city: 'Los Angeles',
+      address: 'No. 189, Grove St, Los Angeles',
+      zip: 'CA 90036',
+      tag: 'Home',
+    },
+    {
+      date: '2016-05-01',
+      name: 'Tom',
+      state: 'California',
+      city: 'Los Angeles',
+      address: 'No. 189, Grove St, Los Angeles',
+      zip: 'CA 90036',
+      tag: 'Office',
+    },
+  ]
+  document.querySelector('#btn').addEventListener('click', () => {
+    console.log('click')
+    document.querySelector('#table').setData(tableData)
+  })
+  document.querySelector('#table').setColumns(columns)
+</script>
+
+</html>

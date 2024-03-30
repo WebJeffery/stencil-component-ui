@@ -1,0 +1,33 @@
+{
+  "name": "@swc-ui/themes",
+  "version": "1.0.0",
+  "main": "lib/components/index.css",
+  "style": "src/style-skin-1.css",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp dev"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "files": [
+    "lib",
+    "src"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-better-sass-inheritance": "^0.0.3",
+    "gulp-cached": "^1.1.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "onchange": "^7.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-cached": "^1.1.1",
+    "gulp-watch": "^5.0.1"
+  }
+}
