@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:icon": "vite build",
     "preview": "vite preview",
     "gen": "node scripts/transfer.mjs"
   },

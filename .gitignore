@@ -5,3 +5,4 @@ docs/src/.vitepress/.temp
 .idea
 docs/dist
 /packages/components/src/components/**/readme.md
+.turbo
