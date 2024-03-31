@@ -1,8 +1,0 @@
-:host {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-:host([reverse]) {
-  flex-direction: column-reverse;
-}

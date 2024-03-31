@@ -1,9 +1,0 @@
-.demo-button .swc-button+.swc-button {
-  margin-left: 12px;
-}
-.demo-button swc-button-group+swc-button-group {
-  margin-left: 12px;
-}
-.demo-button swc-row {
-  margin-bottom: 1rem
-}
