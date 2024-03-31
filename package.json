@@ -18,7 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "consola": "^3.2.3"
+    "consola": "^3.2.3",
+    "rimraf": "^5.0.5"
   },
   "dependencies": {
     "taze": "^0.12.0"

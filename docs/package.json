@@ -6,17 +6,15 @@
   "scripts": {
     "dev": "vitepress dev src",
     "build": "vitepress build src",
-    "serve": "vitepress serve src"
+    "serve": "vitepress serve src",
+    "preview": "vitepress preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "swc-ui": "workspace:^",
     "vitepress": "^1.0.1",
     "vitepress-theme-demoblock": "^3.0.5"
-  },
-  "dependencies": {
-    "@swc-ui/icon": "workspace:*",
-    "swc-ui": "workspace:*"
   }
 }

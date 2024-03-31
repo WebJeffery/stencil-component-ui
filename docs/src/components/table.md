@@ -36,16 +36,6 @@
     </swc-table>
     
 </template>
-    <script>
-        document.getElementById("iSwitch").addEventListener("change", ev => {
-            const checked = ev.detail;
-            if (checked) {
-                document.getElementById("table1").setAttribute("loading", "");
-            } else {
-                document.getElementById("table1").removeAttribute("loading");
-            }
-        });
-    </script>
 ```
 :::
 
