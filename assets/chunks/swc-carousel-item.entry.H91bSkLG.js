@@ -1,0 +1,1 @@
+import{r as t,h as s,H as c}from"./theme.CrvX8CXl.js";import"./framework.DIU08dKJ.js";const o=":host{display:block;width:100%}",r=o,a=class{constructor(e){t(this,e)}render(){return s(c,{key:"d9c9b4cac2e1400d35f8e35b0656ada816027a75"},s("slot",{key:"3170422ec4cfd62056a51f324f38892629640a1d"}))}};a.style=r;export{a as swc_carousel_item};
