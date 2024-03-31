@@ -1,4 +1,5 @@
 @import url(./component.css);
+@import url('swc-ui/dist/swc-ui/swc-ui.css');
 /*重置默认主题的字体大小*/
 .theme-default-content {
   font-size: 15px;

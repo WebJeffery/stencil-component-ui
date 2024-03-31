@@ -6,7 +6,7 @@ const swcNs = useNamespace('button')
 
 @Component({
   tag: 'swc-button',
-  // styleUrls: ['swc-button.css']
+  styleUrl: 'swc-button.scss'
 })
 export class SwcButton {
   @Prop({

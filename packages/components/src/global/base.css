@@ -1,0 +1,29 @@
+
+@import 'base/var.css';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.swc-scroll-lock {
+  overflow: hidden !important;
+}
