@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@stencil/core": "^4.7.2",
+    "@stencil/sass": "^3.0.11",
     "@types/jest": "^29.5.10",
     "@types/node": "^16.18.64",
     "classnames": "^2.5.1",

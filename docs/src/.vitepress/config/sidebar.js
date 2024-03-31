@@ -26,18 +26,18 @@ const components = [
     text: "基础/布局",
     collapsible: true,
     items: [
-      {
-        text: "Icon 图标",
-        link: "/components/icon",
-      },
+      // {
+      //   text: "Icon 图标",
+      //   link: "/components/icon",
+      // },
       {
         text: "Button 按钮",
         link: "/components/button",
       },
-      {
-        text: "Space 间距",
-        link: "/components/space",
-      },
+      // {
+      //   text: "Space 间距",
+      //   link: "/components/space",
+      // },
       {
         text: "Grid 宫格布局",
         link: "/components/grid-layout.md",
@@ -46,18 +46,18 @@ const components = [
         text: "Row/Col 栅格",
         link: "/components/grid",
       },
-      {
-        text: "Split 分割面板",
-        link: "/components/split",
-      },
+      // {
+      //   text: "Split 分割面板",
+      //   link: "/components/split",
+      // },
       {
         text: "Divider 分割线",
         link: "/components/divider",
       },
-      {
-        text: "Link 链接",
-        link: "/components/link",
-      },
+      // {
+      //   text: "Link 链接",
+      //   link: "/components/link",
+      // },
       {
         text: "Text 文字",
         link: "/components/text",
@@ -88,10 +88,10 @@ const components = [
         text: "Switch 开关",
         link: "/components/switch",
       },
-      {
-        text: "Rate 评分",
-        link: "/components/rate",
-      },
+      // {
+      //   text: "Rate 评分",
+      //   link: "/components/rate",
+      // },
     ],
   },
   {
@@ -102,10 +102,10 @@ const components = [
         text: "Description 描述列表",
         link: "/components/description",
       },
-      {
-        text: "Tab 标签页",
-        link: "/components/tab",
-      },
+      // {
+      //   text: "Tab 标签页",
+      //   link: "/components/tab",
+      // },
       {
         text: "Table 表格",
         link: "/components/table",
@@ -152,10 +152,10 @@ const components = [
         text: "Tip 提示信息",
         link: "/components/tip",
       },
-      {
-        text: "Message 消息提示",
-        link: "/components/message",
-      },
+      // {
+      //   text: "Message 消息提示",
+      //   link: "/components/message",
+      // },
       {
         text: "Tooltip 文字提示",
         link: "/components/tooltip",
@@ -190,26 +190,26 @@ const components = [
         text: "Breadcrumb 面包屑",
         link: "/components/breadcrumb",
       },
-      {
-        text: "Steps 步骤条",
-        link: "/components/steps",
-      },
-    ],
-  },
-  {
-    text: "其它",
-    collapsible: true,
-    items: [
       // {
-      //   text: "Clipboard 复制到剪切板",
-      //   link: "/components/clipboard",
+      //   text: "Steps 步骤条",
+      //   link: "/components/steps",
       // },
-      {
-        text: "ContextMenu 右键菜单",
-        link: "/components/contentmenu",
-      },
     ],
   },
+  // {
+  //   text: "其它",
+  //   collapsible: true,
+  //   items: [
+  //     // {
+  //     //   text: "Clipboard 复制到剪切板",
+  //     //   link: "/components/clipboard",
+  //     // },
+  //     {
+  //       text: "ContextMenu 右键菜单",
+  //       link: "/components/contentmenu",
+  //     },
+  //   ],
+  // },
 ];
 
 const sidebar = {

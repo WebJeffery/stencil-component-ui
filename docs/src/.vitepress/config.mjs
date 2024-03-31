@@ -19,11 +19,11 @@ export default defineConfig({
         }
     },
     themeConfig: {
-        editLink: {
-            pattern:
-                "https://github.com/WebJeffery/stencil-component-ui/edit/main/docs/src/components/:path",
-            text: "Edit on GitHub",
-        },
+        // editLink: {
+        //     pattern:
+        //         "https://github.com/WebJeffery/stencil-component-ui/edit/master/docs/src/components/:path",
+        //     text: "Edit on GitHub",
+        // },
         lastUpdatedText: "更新时间",
         outlineTitle: "章节目录",
         nav,
@@ -50,6 +50,9 @@ export default defineConfig({
         },
     },
     vite: {
+        server: {
+            port: 8827
+        },
         build: {
             target: "es2015",
         },

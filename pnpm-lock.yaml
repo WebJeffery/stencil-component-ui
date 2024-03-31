@@ -39,6 +39,9 @@ importers:
       '@stencil/core':
         specifier: ^4.7.2
         version: 4.13.0
+      '@stencil/sass':
+        specifier: ^3.0.11
+        version: 3.0.11(@stencil/core@4.13.0)
       '@types/jest':
         specifier: ^29.5.10
         version: 29.5.12
@@ -1972,6 +1975,15 @@ packages:
     resolution: {integrity: sha512-gg+gtBWekQ08mDja8GVAUHNu+rrFhQaKZDvfhnS3l/5JbYiJddTimuDPPhuc0sR0JZL1iRdJTJSa+JbvmnQ1cQ==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
+    dev: true
+
+  /@stencil/sass@3.0.11(@stencil/core@4.13.0):
+    resolution: {integrity: sha512-YzKBKuV2wYf2aCM2Or8DbksX+8DQKOYFe2QMNAV+LFzyexhiYDz5/Tq04CDtc8xTXmzqC0J8U79GB8Vvz9myAQ==}
+    engines: {node: '>=12.0.0', npm: '>=6.0.0'}
+    peerDependencies:
+      '@stencil/core': '>=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0'
+    dependencies:
+      '@stencil/core': 4.13.0
     dev: true
 
   /@tootallnate/quickjs-emscripten@0.23.0:
