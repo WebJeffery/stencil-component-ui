@@ -4,7 +4,7 @@
   "scripts": {
     "dev:c": "pnpm --filter swc-ui run start",
     "dev:icon": "pnpm --filter @swc-ui/icon run dev",
-    "dev:docs": "pnpm --filter docs run dev",
+    "dev:docs": "pnpm --filter docs run start",
     "dev": "pnpm run dev:icon & pnpm run dev:c",
     "build:c": "pnpm --filter swc-ui run build",
     "build:icon": "pnpm --filter @swc-ui/icon run build",

@@ -5,11 +5,11 @@ export default [
     },
     {
         text: "组件",
-        link: "/components/index",
+        link: "/components/button",
         activeMatch: "/components/",
     },
-    {
-        text: "更新日志",
-        link: "/changelog",
-    },
+    // {
+    //     text: "更新日志",
+    //     link: "/changelog",
+    // },
 ]

@@ -7,6 +7,8 @@ import 'swc-ui/dist/index.css'
 
 import { useComponents } from './useComponent'
 
+import './styles/index.scss'
+
 export default {
     ...DefaultTheme,
     async enhanceApp(ctx) {
