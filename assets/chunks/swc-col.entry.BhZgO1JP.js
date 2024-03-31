@@ -1,1 +1,0 @@
-import{r as e,h as s,H as c}from"./theme.CrvX8CXl.js";import"./framework.DIU08dKJ.js";const o=":host{display:flex}",r=o,a=class{constructor(t){e(this,t),this.span="24"}render(){return s(c,{key:"66837135bdbbd343f296c7e32d77cd04e0525da8",style:{flex:`0 0 ${parseInt(this.span)/24*100}%`}},s("slot",{key:"5055e8b5ffffa7c2f98215128c5c23a357055e24"}))}};a.style=r;export{a as swc_col};

@@ -1,0 +1,1 @@
+import{r as e,h as s,H as c}from"./theme.BibeGvl8.js";import"./framework.DIU08dKJ.js";const o=":host{display:flex;width:100%}",r=o,a=class{constructor(t){e(this,t)}render(){return s(c,{key:"76b4b2b5b1e45f46c9e1772814dd40ab2c351cd5"},s("slot",{key:"2b91f9cb65e900197893ec1982ad77022afb8e82"}))}};a.style=r;export{a as swc_row};
