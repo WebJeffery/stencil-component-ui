@@ -9,6 +9,7 @@ export default defineConfig({
     title: "swc-ui 文档",
     description: "一个名为 swc-ui 的 web component 组件库",
     lastUpdated: true,
+    base: '/stencil-component-ui/',
     outDir: "../dist",
     markdown: {
         config: (md) => {
