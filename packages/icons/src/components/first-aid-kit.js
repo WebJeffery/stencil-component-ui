@@ -1,4 +1,4 @@
-class IvyIconFirstAidKit extends HTMLElement {
+class SwcIconFirstAidKit extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFirstAidKit extends HTMLElement {
           }
         }
       }
-      export default IvyIconFirstAidKit;
+      export default SwcIconFirstAidKit;
       function install(){
         if(window.customElements.get('swc-icon-first-aid-kit')) return;
-        window.customElements.define('swc-icon-first-aid-kit', IvyIconFirstAidKit);
+        window.customElements.define('swc-icon-first-aid-kit', SwcIconFirstAidKit);
       }
       export { install as registerComponent }

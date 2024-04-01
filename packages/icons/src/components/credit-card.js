@@ -1,4 +1,4 @@
-class IvyIconCreditCard extends HTMLElement {
+class SwcIconCreditCard extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCreditCard extends HTMLElement {
           }
         }
       }
-      export default IvyIconCreditCard;
+      export default SwcIconCreditCard;
       function install(){
         if(window.customElements.get('swc-icon-credit-card')) return;
-        window.customElements.define('swc-icon-credit-card', IvyIconCreditCard);
+        window.customElements.define('swc-icon-credit-card', SwcIconCreditCard);
       }
       export { install as registerComponent }

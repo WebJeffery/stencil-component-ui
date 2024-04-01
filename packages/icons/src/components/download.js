@@ -1,4 +1,4 @@
-class IvyIconDownload extends HTMLElement {
+class SwcIconDownload extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDownload extends HTMLElement {
           }
         }
       }
-      export default IvyIconDownload;
+      export default SwcIconDownload;
       function install(){
         if(window.customElements.get('swc-icon-download')) return;
-        window.customElements.define('swc-icon-download', IvyIconDownload);
+        window.customElements.define('swc-icon-download', SwcIconDownload);
       }
       export { install as registerComponent }

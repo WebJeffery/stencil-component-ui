@@ -1,4 +1,4 @@
-class IvyIconIceCreamRound extends HTMLElement {
+class SwcIconIceCreamRound extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconIceCreamRound extends HTMLElement {
           }
         }
       }
-      export default IvyIconIceCreamRound;
+      export default SwcIconIceCreamRound;
       function install(){
         if(window.customElements.get('swc-icon-ice-cream-round')) return;
-        window.customElements.define('swc-icon-ice-cream-round', IvyIconIceCreamRound);
+        window.customElements.define('swc-icon-ice-cream-round', SwcIconIceCreamRound);
       }
       export { install as registerComponent }

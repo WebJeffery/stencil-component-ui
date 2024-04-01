@@ -1,4 +1,4 @@
-class IvyIconCoffee extends HTMLElement {
+class SwcIconCoffee extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCoffee extends HTMLElement {
           }
         }
       }
-      export default IvyIconCoffee;
+      export default SwcIconCoffee;
       function install(){
         if(window.customElements.get('swc-icon-coffee')) return;
-        window.customElements.define('swc-icon-coffee', IvyIconCoffee);
+        window.customElements.define('swc-icon-coffee', SwcIconCoffee);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconSwitchFilled extends HTMLElement {
+class SwcIconSwitchFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSwitchFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconSwitchFilled;
+      export default SwcIconSwitchFilled;
       function install(){
         if(window.customElements.get('swc-icon-switch-filled')) return;
-        window.customElements.define('swc-icon-switch-filled', IvyIconSwitchFilled);
+        window.customElements.define('swc-icon-switch-filled', SwcIconSwitchFilled);
       }
       export { install as registerComponent }

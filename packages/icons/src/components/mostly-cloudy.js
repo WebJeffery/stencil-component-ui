@@ -1,4 +1,4 @@
-class IvyIconMostlyCloudy extends HTMLElement {
+class SwcIconMostlyCloudy extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMostlyCloudy extends HTMLElement {
           }
         }
       }
-      export default IvyIconMostlyCloudy;
+      export default SwcIconMostlyCloudy;
       function install(){
         if(window.customElements.get('swc-icon-mostly-cloudy')) return;
-        window.customElements.define('swc-icon-mostly-cloudy', IvyIconMostlyCloudy);
+        window.customElements.define('swc-icon-mostly-cloudy', SwcIconMostlyCloudy);
       }
       export { install as registerComponent }

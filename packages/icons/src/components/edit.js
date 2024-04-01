@@ -1,4 +1,4 @@
-class IvyIconEdit extends HTMLElement {
+class SwcIconEdit extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconEdit extends HTMLElement {
           }
         }
       }
-      export default IvyIconEdit;
+      export default SwcIconEdit;
       function install(){
         if(window.customElements.get('swc-icon-edit')) return;
-        window.customElements.define('swc-icon-edit', IvyIconEdit);
+        window.customElements.define('swc-icon-edit', SwcIconEdit);
       }
       export { install as registerComponent }

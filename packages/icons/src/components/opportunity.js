@@ -1,4 +1,4 @@
-class IvyIconOpportunity extends HTMLElement {
+class SwcIconOpportunity extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconOpportunity extends HTMLElement {
           }
         }
       }
-      export default IvyIconOpportunity;
+      export default SwcIconOpportunity;
       function install(){
         if(window.customElements.get('swc-icon-opportunity')) return;
-        window.customElements.define('swc-icon-opportunity', IvyIconOpportunity);
+        window.customElements.define('swc-icon-opportunity', SwcIconOpportunity);
       }
       export { install as registerComponent }

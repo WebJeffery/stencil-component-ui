@@ -1,4 +1,4 @@
-class IvyIconVideoCamera extends HTMLElement {
+class SwcIconVideoCamera extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconVideoCamera extends HTMLElement {
           }
         }
       }
-      export default IvyIconVideoCamera;
+      export default SwcIconVideoCamera;
       function install(){
         if(window.customElements.get('swc-icon-video-camera')) return;
-        window.customElements.define('swc-icon-video-camera', IvyIconVideoCamera);
+        window.customElements.define('swc-icon-video-camera', SwcIconVideoCamera);
       }
       export { install as registerComponent }

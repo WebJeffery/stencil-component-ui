@@ -1,4 +1,4 @@
-class IvyIconSetting extends HTMLElement {
+class SwcIconSetting extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSetting extends HTMLElement {
           }
         }
       }
-      export default IvyIconSetting;
+      export default SwcIconSetting;
       function install(){
         if(window.customElements.get('swc-icon-setting')) return;
-        window.customElements.define('swc-icon-setting', IvyIconSetting);
+        window.customElements.define('swc-icon-setting', SwcIconSetting);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconLocationInformation extends HTMLElement {
+class SwcIconLocationInformation extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconLocationInformation extends HTMLElement {
           }
         }
       }
-      export default IvyIconLocationInformation;
+      export default SwcIconLocationInformation;
       function install(){
         if(window.customElements.get('swc-icon-location-information')) return;
-        window.customElements.define('swc-icon-location-information', IvyIconLocationInformation);
+        window.customElements.define('swc-icon-location-information', SwcIconLocationInformation);
       }
       export { install as registerComponent }

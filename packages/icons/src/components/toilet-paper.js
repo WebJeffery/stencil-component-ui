@@ -1,4 +1,4 @@
-class IvyIconToiletPaper extends HTMLElement {
+class SwcIconToiletPaper extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconToiletPaper extends HTMLElement {
           }
         }
       }
-      export default IvyIconToiletPaper;
+      export default SwcIconToiletPaper;
       function install(){
         if(window.customElements.get('swc-icon-toilet-paper')) return;
-        window.customElements.define('swc-icon-toilet-paper', IvyIconToiletPaper);
+        window.customElements.define('swc-icon-toilet-paper', SwcIconToiletPaper);
       }
       export { install as registerComponent }

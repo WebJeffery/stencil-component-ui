@@ -1,4 +1,4 @@
-class IvyIconClose extends HTMLElement {
+class SwcIconClose extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconClose extends HTMLElement {
           }
         }
       }
-      export default IvyIconClose;
+      export default SwcIconClose;
       function install(){
         if(window.customElements.get('swc-icon-close')) return;
-        window.customElements.define('swc-icon-close', IvyIconClose);
+        window.customElements.define('swc-icon-close', SwcIconClose);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconCoordinate extends HTMLElement {
+class SwcIconCoordinate extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCoordinate extends HTMLElement {
           }
         }
       }
-      export default IvyIconCoordinate;
+      export default SwcIconCoordinate;
       function install(){
         if(window.customElements.get('swc-icon-coordinate')) return;
-        window.customElements.define('swc-icon-coordinate', IvyIconCoordinate);
+        window.customElements.define('swc-icon-coordinate', SwcIconCoordinate);
       }
       export { install as registerComponent }

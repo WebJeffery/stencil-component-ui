@@ -1,4 +1,4 @@
-class IvyIconTools extends HTMLElement {
+class SwcIconTools extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconTools extends HTMLElement {
           }
         }
       }
-      export default IvyIconTools;
+      export default SwcIconTools;
       function install(){
         if(window.customElements.get('swc-icon-tools')) return;
-        window.customElements.define('swc-icon-tools', IvyIconTools);
+        window.customElements.define('swc-icon-tools', SwcIconTools);
       }
       export { install as registerComponent }

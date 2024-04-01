@@ -1,4 +1,4 @@
-class IvyIconCellphone extends HTMLElement {
+class SwcIconCellphone extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCellphone extends HTMLElement {
           }
         }
       }
-      export default IvyIconCellphone;
+      export default SwcIconCellphone;
       function install(){
         if(window.customElements.get('swc-icon-cellphone')) return;
-        window.customElements.define('swc-icon-cellphone', IvyIconCellphone);
+        window.customElements.define('swc-icon-cellphone', SwcIconCellphone);
       }
       export { install as registerComponent }

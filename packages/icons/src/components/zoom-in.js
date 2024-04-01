@@ -1,4 +1,4 @@
-class IvyIconZoomIn extends HTMLElement {
+class SwcIconZoomIn extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconZoomIn extends HTMLElement {
           }
         }
       }
-      export default IvyIconZoomIn;
+      export default SwcIconZoomIn;
       function install(){
         if(window.customElements.get('swc-icon-zoom-in')) return;
-        window.customElements.define('swc-icon-zoom-in', IvyIconZoomIn);
+        window.customElements.define('swc-icon-zoom-in', SwcIconZoomIn);
       }
       export { install as registerComponent }

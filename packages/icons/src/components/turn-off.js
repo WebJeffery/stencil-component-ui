@@ -1,4 +1,4 @@
-class IvyIconTurnOff extends HTMLElement {
+class SwcIconTurnOff extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconTurnOff extends HTMLElement {
           }
         }
       }
-      export default IvyIconTurnOff;
+      export default SwcIconTurnOff;
       function install(){
         if(window.customElements.get('swc-icon-turn-off')) return;
-        window.customElements.define('swc-icon-turn-off', IvyIconTurnOff);
+        window.customElements.define('swc-icon-turn-off', SwcIconTurnOff);
       }
       export { install as registerComponent }

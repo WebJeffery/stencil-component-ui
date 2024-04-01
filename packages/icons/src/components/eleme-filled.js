@@ -1,4 +1,4 @@
-class IvyIconElemeFilled extends HTMLElement {
+class SwcIconElemeFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconElemeFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconElemeFilled;
+      export default SwcIconElemeFilled;
       function install(){
         if(window.customElements.get('swc-icon-eleme-filled')) return;
-        window.customElements.define('swc-icon-eleme-filled', IvyIconElemeFilled);
+        window.customElements.define('swc-icon-eleme-filled', SwcIconElemeFilled);
       }
       export { install as registerComponent }

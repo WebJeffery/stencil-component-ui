@@ -1,4 +1,4 @@
-class IvyIconCherry extends HTMLElement {
+class SwcIconCherry extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCherry extends HTMLElement {
           }
         }
       }
-      export default IvyIconCherry;
+      export default SwcIconCherry;
       function install(){
         if(window.customElements.get('swc-icon-cherry')) return;
-        window.customElements.define('swc-icon-cherry', IvyIconCherry);
+        window.customElements.define('swc-icon-cherry', SwcIconCherry);
       }
       export { install as registerComponent }

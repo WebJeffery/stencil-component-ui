@@ -1,4 +1,4 @@
-class IvyIconMapLocation extends HTMLElement {
+class SwcIconMapLocation extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMapLocation extends HTMLElement {
           }
         }
       }
-      export default IvyIconMapLocation;
+      export default SwcIconMapLocation;
       function install(){
         if(window.customElements.get('swc-icon-map-location')) return;
-        window.customElements.define('swc-icon-map-location', IvyIconMapLocation);
+        window.customElements.define('swc-icon-map-location', SwcIconMapLocation);
       }
       export { install as registerComponent }

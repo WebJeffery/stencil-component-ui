@@ -1,4 +1,4 @@
-class IvyIconRefresh extends HTMLElement {
+class SwcIconRefresh extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconRefresh extends HTMLElement {
           }
         }
       }
-      export default IvyIconRefresh;
+      export default SwcIconRefresh;
       function install(){
         if(window.customElements.get('swc-icon-refresh')) return;
-        window.customElements.define('swc-icon-refresh', IvyIconRefresh);
+        window.customElements.define('swc-icon-refresh', SwcIconRefresh);
       }
       export { install as registerComponent }

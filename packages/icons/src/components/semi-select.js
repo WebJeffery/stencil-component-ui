@@ -1,4 +1,4 @@
-class IvyIconSemiSelect extends HTMLElement {
+class SwcIconSemiSelect extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSemiSelect extends HTMLElement {
           }
         }
       }
-      export default IvyIconSemiSelect;
+      export default SwcIconSemiSelect;
       function install(){
         if(window.customElements.get('swc-icon-semi-select')) return;
-        window.customElements.define('swc-icon-semi-select', IvyIconSemiSelect);
+        window.customElements.define('swc-icon-semi-select', SwcIconSemiSelect);
       }
       export { install as registerComponent }

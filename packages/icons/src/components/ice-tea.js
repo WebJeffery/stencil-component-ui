@@ -1,4 +1,4 @@
-class IvyIconIceTea extends HTMLElement {
+class SwcIconIceTea extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconIceTea extends HTMLElement {
           }
         }
       }
-      export default IvyIconIceTea;
+      export default SwcIconIceTea;
       function install(){
         if(window.customElements.get('swc-icon-ice-tea')) return;
-        window.customElements.define('swc-icon-ice-tea', IvyIconIceTea);
+        window.customElements.define('swc-icon-ice-tea', SwcIconIceTea);
       }
       export { install as registerComponent }

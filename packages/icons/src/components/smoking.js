@@ -1,4 +1,4 @@
-class IvyIconSmoking extends HTMLElement {
+class SwcIconSmoking extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSmoking extends HTMLElement {
           }
         }
       }
-      export default IvyIconSmoking;
+      export default SwcIconSmoking;
       function install(){
         if(window.customElements.get('swc-icon-smoking')) return;
-        window.customElements.define('swc-icon-smoking', IvyIconSmoking);
+        window.customElements.define('swc-icon-smoking', SwcIconSmoking);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconKey extends HTMLElement {
+class SwcIconKey extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconKey extends HTMLElement {
           }
         }
       }
-      export default IvyIconKey;
+      export default SwcIconKey;
       function install(){
         if(window.customElements.get('swc-icon-key')) return;
-        window.customElements.define('swc-icon-key', IvyIconKey);
+        window.customElements.define('swc-icon-key', SwcIconKey);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconTakeawayBox extends HTMLElement {
+class SwcIconTakeawayBox extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconTakeawayBox extends HTMLElement {
           }
         }
       }
-      export default IvyIconTakeawayBox;
+      export default SwcIconTakeawayBox;
       function install(){
         if(window.customElements.get('swc-icon-takeaway-box')) return;
-        window.customElements.define('swc-icon-takeaway-box', IvyIconTakeawayBox);
+        window.customElements.define('swc-icon-takeaway-box', SwcIconTakeawayBox);
       }
       export { install as registerComponent }

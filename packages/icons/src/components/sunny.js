@@ -1,4 +1,4 @@
-class IvyIconSunny extends HTMLElement {
+class SwcIconSunny extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSunny extends HTMLElement {
           }
         }
       }
-      export default IvyIconSunny;
+      export default SwcIconSunny;
       function install(){
         if(window.customElements.get('swc-icon-sunny')) return;
-        window.customElements.define('swc-icon-sunny', IvyIconSunny);
+        window.customElements.define('swc-icon-sunny', SwcIconSunny);
       }
       export { install as registerComponent }

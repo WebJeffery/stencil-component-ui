@@ -1,4 +1,4 @@
-class IvyIconMoon extends HTMLElement {
+class SwcIconMoon extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMoon extends HTMLElement {
           }
         }
       }
-      export default IvyIconMoon;
+      export default SwcIconMoon;
       function install(){
         if(window.customElements.get('swc-icon-moon')) return;
-        window.customElements.define('swc-icon-moon', IvyIconMoon);
+        window.customElements.define('swc-icon-moon', SwcIconMoon);
       }
       export { install as registerComponent }

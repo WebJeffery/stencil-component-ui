@@ -1,4 +1,4 @@
-class IvyIconShoppingBag extends HTMLElement {
+class SwcIconShoppingBag extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconShoppingBag extends HTMLElement {
           }
         }
       }
-      export default IvyIconShoppingBag;
+      export default SwcIconShoppingBag;
       function install(){
         if(window.customElements.get('swc-icon-shopping-bag')) return;
-        window.customElements.define('swc-icon-shopping-bag', IvyIconShoppingBag);
+        window.customElements.define('swc-icon-shopping-bag', SwcIconShoppingBag);
       }
       export { install as registerComponent }

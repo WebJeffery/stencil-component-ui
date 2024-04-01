@@ -1,4 +1,4 @@
-class IvyIconPouring extends HTMLElement {
+class SwcIconPouring extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPouring extends HTMLElement {
           }
         }
       }
-      export default IvyIconPouring;
+      export default SwcIconPouring;
       function install(){
         if(window.customElements.get('swc-icon-pouring')) return;
-        window.customElements.define('swc-icon-pouring', IvyIconPouring);
+        window.customElements.define('swc-icon-pouring', SwcIconPouring);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconApple extends HTMLElement {
+class SwcIconApple extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconApple extends HTMLElement {
           }
         }
       }
-      export default IvyIconApple;
+      export default SwcIconApple;
       function install(){
         if(window.customElements.get('swc-icon-apple')) return;
-        window.customElements.define('swc-icon-apple', IvyIconApple);
+        window.customElements.define('swc-icon-apple', SwcIconApple);
       }
       export { install as registerComponent }

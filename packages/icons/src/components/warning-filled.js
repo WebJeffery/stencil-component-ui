@@ -1,4 +1,4 @@
-class IvyIconWarningFilled extends HTMLElement {
+class SwcIconWarningFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconWarningFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconWarningFilled;
+      export default SwcIconWarningFilled;
       function install(){
         if(window.customElements.get('swc-icon-warning-filled')) return;
-        window.customElements.define('swc-icon-warning-filled', IvyIconWarningFilled);
+        window.customElements.define('swc-icon-warning-filled', SwcIconWarningFilled);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconDataLine extends HTMLElement {
+class SwcIconDataLine extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDataLine extends HTMLElement {
           }
         }
       }
-      export default IvyIconDataLine;
+      export default SwcIconDataLine;
       function install(){
         if(window.customElements.get('swc-icon-data-line')) return;
-        window.customElements.define('swc-icon-data-line', IvyIconDataLine);
+        window.customElements.define('swc-icon-data-line', SwcIconDataLine);
       }
       export { install as registerComponent }

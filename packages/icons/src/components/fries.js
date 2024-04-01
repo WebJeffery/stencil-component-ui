@@ -1,4 +1,4 @@
-class IvyIconFries extends HTMLElement {
+class SwcIconFries extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFries extends HTMLElement {
           }
         }
       }
-      export default IvyIconFries;
+      export default SwcIconFries;
       function install(){
         if(window.customElements.get('swc-icon-fries')) return;
-        window.customElements.define('swc-icon-fries', IvyIconFries);
+        window.customElements.define('swc-icon-fries', SwcIconFries);
       }
       export { install as registerComponent }

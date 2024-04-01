@@ -1,4 +1,4 @@
-class IvyIconEditPen extends HTMLElement {
+class SwcIconEditPen extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconEditPen extends HTMLElement {
           }
         }
       }
-      export default IvyIconEditPen;
+      export default SwcIconEditPen;
       function install(){
         if(window.customElements.get('swc-icon-edit-pen')) return;
-        window.customElements.define('swc-icon-edit-pen', IvyIconEditPen);
+        window.customElements.define('swc-icon-edit-pen', SwcIconEditPen);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconCaretBottom extends HTMLElement {
+class SwcIconCaretBottom extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCaretBottom extends HTMLElement {
           }
         }
       }
-      export default IvyIconCaretBottom;
+      export default SwcIconCaretBottom;
       function install(){
         if(window.customElements.get('swc-icon-caret-bottom')) return;
-        window.customElements.define('swc-icon-caret-bottom', IvyIconCaretBottom);
+        window.customElements.define('swc-icon-caret-bottom', SwcIconCaretBottom);
       }
       export { install as registerComponent }

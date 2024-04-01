@@ -1,4 +1,4 @@
-class IvyIconWallet extends HTMLElement {
+class SwcIconWallet extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconWallet extends HTMLElement {
           }
         }
       }
-      export default IvyIconWallet;
+      export default SwcIconWallet;
       function install(){
         if(window.customElements.get('swc-icon-wallet')) return;
-        window.customElements.define('swc-icon-wallet', IvyIconWallet);
+        window.customElements.define('swc-icon-wallet', SwcIconWallet);
       }
       export { install as registerComponent }

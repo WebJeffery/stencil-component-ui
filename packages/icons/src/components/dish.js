@@ -1,4 +1,4 @@
-class IvyIconDish extends HTMLElement {
+class SwcIconDish extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDish extends HTMLElement {
           }
         }
       }
-      export default IvyIconDish;
+      export default SwcIconDish;
       function install(){
         if(window.customElements.get('swc-icon-dish')) return;
-        window.customElements.define('swc-icon-dish', IvyIconDish);
+        window.customElements.define('swc-icon-dish', SwcIconDish);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconManagement extends HTMLElement {
+class SwcIconManagement extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconManagement extends HTMLElement {
           }
         }
       }
-      export default IvyIconManagement;
+      export default SwcIconManagement;
       function install(){
         if(window.customElements.get('swc-icon-management')) return;
-        window.customElements.define('swc-icon-management', IvyIconManagement);
+        window.customElements.define('swc-icon-management', SwcIconManagement);
       }
       export { install as registerComponent }

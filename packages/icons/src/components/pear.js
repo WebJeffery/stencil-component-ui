@@ -1,4 +1,4 @@
-class IvyIconPear extends HTMLElement {
+class SwcIconPear extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPear extends HTMLElement {
           }
         }
       }
-      export default IvyIconPear;
+      export default SwcIconPear;
       function install(){
         if(window.customElements.get('swc-icon-pear')) return;
-        window.customElements.define('swc-icon-pear', IvyIconPear);
+        window.customElements.define('swc-icon-pear', SwcIconPear);
       }
       export { install as registerComponent }

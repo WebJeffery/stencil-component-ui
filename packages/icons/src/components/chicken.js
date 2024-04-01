@@ -1,4 +1,4 @@
-class IvyIconChicken extends HTMLElement {
+class SwcIconChicken extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconChicken extends HTMLElement {
           }
         }
       }
-      export default IvyIconChicken;
+      export default SwcIconChicken;
       function install(){
         if(window.customElements.get('swc-icon-chicken')) return;
-        window.customElements.define('swc-icon-chicken', IvyIconChicken);
+        window.customElements.define('swc-icon-chicken', SwcIconChicken);
       }
       export { install as registerComponent }

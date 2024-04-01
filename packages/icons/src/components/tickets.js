@@ -1,4 +1,4 @@
-class IvyIconTickets extends HTMLElement {
+class SwcIconTickets extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconTickets extends HTMLElement {
           }
         }
       }
-      export default IvyIconTickets;
+      export default SwcIconTickets;
       function install(){
         if(window.customElements.get('swc-icon-tickets')) return;
-        window.customElements.define('swc-icon-tickets', IvyIconTickets);
+        window.customElements.define('swc-icon-tickets', SwcIconTickets);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconMoreFilled extends HTMLElement {
+class SwcIconMoreFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMoreFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconMoreFilled;
+      export default SwcIconMoreFilled;
       function install(){
         if(window.customElements.get('swc-icon-more-filled')) return;
-        window.customElements.define('swc-icon-more-filled', IvyIconMoreFilled);
+        window.customElements.define('swc-icon-more-filled', SwcIconMoreFilled);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconSuccessFilled extends HTMLElement {
+class SwcIconSuccessFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSuccessFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconSuccessFilled;
+      export default SwcIconSuccessFilled;
       function install(){
         if(window.customElements.get('swc-icon-success-filled')) return;
-        window.customElements.define('swc-icon-success-filled', IvyIconSuccessFilled);
+        window.customElements.define('swc-icon-success-filled', SwcIconSuccessFilled);
       }
       export { install as registerComponent }

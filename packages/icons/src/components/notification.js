@@ -1,4 +1,4 @@
-class IvyIconNotification extends HTMLElement {
+class SwcIconNotification extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconNotification extends HTMLElement {
           }
         }
       }
-      export default IvyIconNotification;
+      export default SwcIconNotification;
       function install(){
         if(window.customElements.get('swc-icon-notification')) return;
-        window.customElements.define('swc-icon-notification', IvyIconNotification);
+        window.customElements.define('swc-icon-notification', SwcIconNotification);
       }
       export { install as registerComponent }

@@ -1,5 +1,5 @@
 {
-  "name": "@swc-ui/icon",
+  "name": "@swc-ui/icons",
   "version": "1.6.0",
   "description": "一个使用原生js开发的web component 图标组件库",
   "main": "dist/index.cjs.js",
@@ -23,7 +23,7 @@
     "dev": "vite",
     "build:icon": "vite build",
     "preview": "vite preview",
-    "gen": "node scripts/transfer.mjs"
+    "generate": "node scripts/transfer.mjs"
   },
   "devDependencies": {
     "svgo": "^3.0.4",

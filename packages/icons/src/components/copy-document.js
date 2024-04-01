@@ -1,4 +1,4 @@
-class IvyIconCopyDocument extends HTMLElement {
+class SwcIconCopyDocument extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCopyDocument extends HTMLElement {
           }
         }
       }
-      export default IvyIconCopyDocument;
+      export default SwcIconCopyDocument;
       function install(){
         if(window.customElements.get('swc-icon-copy-document')) return;
-        window.customElements.define('swc-icon-copy-document', IvyIconCopyDocument);
+        window.customElements.define('swc-icon-copy-document', SwcIconCopyDocument);
       }
       export { install as registerComponent }

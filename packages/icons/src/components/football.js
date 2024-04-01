@@ -1,4 +1,4 @@
-class IvyIconFootball extends HTMLElement {
+class SwcIconFootball extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFootball extends HTMLElement {
           }
         }
       }
-      export default IvyIconFootball;
+      export default SwcIconFootball;
       function install(){
         if(window.customElements.get('swc-icon-football')) return;
-        window.customElements.define('swc-icon-football', IvyIconFootball);
+        window.customElements.define('swc-icon-football', SwcIconFootball);
       }
       export { install as registerComponent }

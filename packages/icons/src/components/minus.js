@@ -1,4 +1,4 @@
-class IvyIconMinus extends HTMLElement {
+class SwcIconMinus extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMinus extends HTMLElement {
           }
         }
       }
-      export default IvyIconMinus;
+      export default SwcIconMinus;
       function install(){
         if(window.customElements.get('swc-icon-minus')) return;
-        window.customElements.define('swc-icon-minus', IvyIconMinus);
+        window.customElements.define('swc-icon-minus', SwcIconMinus);
       }
       export { install as registerComponent }

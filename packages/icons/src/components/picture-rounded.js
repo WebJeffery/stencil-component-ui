@@ -1,4 +1,4 @@
-class IvyIconPictureRounded extends HTMLElement {
+class SwcIconPictureRounded extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPictureRounded extends HTMLElement {
           }
         }
       }
-      export default IvyIconPictureRounded;
+      export default SwcIconPictureRounded;
       function install(){
         if(window.customElements.get('swc-icon-picture-rounded')) return;
-        window.customElements.define('swc-icon-picture-rounded', IvyIconPictureRounded);
+        window.customElements.define('swc-icon-picture-rounded', SwcIconPictureRounded);
       }
       export { install as registerComponent }

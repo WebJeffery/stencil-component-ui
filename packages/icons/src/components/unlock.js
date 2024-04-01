@@ -1,4 +1,4 @@
-class IvyIconUnlock extends HTMLElement {
+class SwcIconUnlock extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconUnlock extends HTMLElement {
           }
         }
       }
-      export default IvyIconUnlock;
+      export default SwcIconUnlock;
       function install(){
         if(window.customElements.get('swc-icon-unlock')) return;
-        window.customElements.define('swc-icon-unlock', IvyIconUnlock);
+        window.customElements.define('swc-icon-unlock', SwcIconUnlock);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconArrowDownBold extends HTMLElement {
+class SwcIconArrowDownBold extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconArrowDownBold extends HTMLElement {
           }
         }
       }
-      export default IvyIconArrowDownBold;
+      export default SwcIconArrowDownBold;
       function install(){
         if(window.customElements.get('swc-icon-arrow-down-bold')) return;
-        window.customElements.define('swc-icon-arrow-down-bold', IvyIconArrowDownBold);
+        window.customElements.define('swc-icon-arrow-down-bold', SwcIconArrowDownBold);
       }
       export { install as registerComponent }

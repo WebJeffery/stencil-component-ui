@@ -1,4 +1,4 @@
-class IvyIconPieChart extends HTMLElement {
+class SwcIconPieChart extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPieChart extends HTMLElement {
           }
         }
       }
-      export default IvyIconPieChart;
+      export default SwcIconPieChart;
       function install(){
         if(window.customElements.get('swc-icon-pie-chart')) return;
-        window.customElements.define('swc-icon-pie-chart', IvyIconPieChart);
+        window.customElements.define('swc-icon-pie-chart', SwcIconPieChart);
       }
       export { install as registerComponent }

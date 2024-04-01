@@ -1,4 +1,4 @@
-class IvyIconDocumentDelete extends HTMLElement {
+class SwcIconDocumentDelete extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDocumentDelete extends HTMLElement {
           }
         }
       }
-      export default IvyIconDocumentDelete;
+      export default SwcIconDocumentDelete;
       function install(){
         if(window.customElements.get('swc-icon-document-delete')) return;
-        window.customElements.define('swc-icon-document-delete', IvyIconDocumentDelete);
+        window.customElements.define('swc-icon-document-delete', SwcIconDocumentDelete);
       }
       export { install as registerComponent }

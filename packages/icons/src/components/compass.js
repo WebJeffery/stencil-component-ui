@@ -1,4 +1,4 @@
-class IvyIconCompass extends HTMLElement {
+class SwcIconCompass extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCompass extends HTMLElement {
           }
         }
       }
-      export default IvyIconCompass;
+      export default SwcIconCompass;
       function install(){
         if(window.customElements.get('swc-icon-compass')) return;
-        window.customElements.define('swc-icon-compass', IvyIconCompass);
+        window.customElements.define('swc-icon-compass', SwcIconCompass);
       }
       export { install as registerComponent }

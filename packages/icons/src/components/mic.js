@@ -1,4 +1,4 @@
-class IvyIconMic extends HTMLElement {
+class SwcIconMic extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMic extends HTMLElement {
           }
         }
       }
-      export default IvyIconMic;
+      export default SwcIconMic;
       function install(){
         if(window.customElements.get('swc-icon-mic')) return;
-        window.customElements.define('swc-icon-mic', IvyIconMic);
+        window.customElements.define('swc-icon-mic', SwcIconMic);
       }
       export { install as registerComponent }

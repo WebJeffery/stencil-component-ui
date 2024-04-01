@@ -1,4 +1,4 @@
-class IvyIconQuartzWatch extends HTMLElement {
+class SwcIconQuartzWatch extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconQuartzWatch extends HTMLElement {
           }
         }
       }
-      export default IvyIconQuartzWatch;
+      export default SwcIconQuartzWatch;
       function install(){
         if(window.customElements.get('swc-icon-quartz-watch')) return;
-        window.customElements.define('swc-icon-quartz-watch', IvyIconQuartzWatch);
+        window.customElements.define('swc-icon-quartz-watch', SwcIconQuartzWatch);
       }
       export { install as registerComponent }

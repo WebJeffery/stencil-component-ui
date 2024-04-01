@@ -2,7 +2,7 @@ import { Component, Host, h, getAssetPath, Prop } from '@stencil/core';
 
 @Component({
   tag: 'swc-icon',
-  styleUrl: 'swc-icon.css',
+  styleUrl: 'swc-icon.scss',
   assetsDirs: ['assets'],
   shadow: true,
 })

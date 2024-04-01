@@ -1,4 +1,4 @@
-class IvyIconMonitor extends HTMLElement {
+class SwcIconMonitor extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMonitor extends HTMLElement {
           }
         }
       }
-      export default IvyIconMonitor;
+      export default SwcIconMonitor;
       function install(){
         if(window.customElements.get('swc-icon-monitor')) return;
-        window.customElements.define('swc-icon-monitor', IvyIconMonitor);
+        window.customElements.define('swc-icon-monitor', SwcIconMonitor);
       }
       export { install as registerComponent }

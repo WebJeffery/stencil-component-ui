@@ -1,4 +1,4 @@
-class IvyIconCircleCheckFilled extends HTMLElement {
+class SwcIconCircleCheckFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCircleCheckFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconCircleCheckFilled;
+      export default SwcIconCircleCheckFilled;
       function install(){
         if(window.customElements.get('swc-icon-circle-check-filled')) return;
-        window.customElements.define('swc-icon-circle-check-filled', IvyIconCircleCheckFilled);
+        window.customElements.define('swc-icon-circle-check-filled', SwcIconCircleCheckFilled);
       }
       export { install as registerComponent }

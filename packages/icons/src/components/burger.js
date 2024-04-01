@@ -1,4 +1,4 @@
-class IvyIconBurger extends HTMLElement {
+class SwcIconBurger extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBurger extends HTMLElement {
           }
         }
       }
-      export default IvyIconBurger;
+      export default SwcIconBurger;
       function install(){
         if(window.customElements.get('swc-icon-burger')) return;
-        window.customElements.define('swc-icon-burger', IvyIconBurger);
+        window.customElements.define('swc-icon-burger', SwcIconBurger);
       }
       export { install as registerComponent }

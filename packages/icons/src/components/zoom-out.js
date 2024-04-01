@@ -1,4 +1,4 @@
-class IvyIconZoomOut extends HTMLElement {
+class SwcIconZoomOut extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconZoomOut extends HTMLElement {
           }
         }
       }
-      export default IvyIconZoomOut;
+      export default SwcIconZoomOut;
       function install(){
         if(window.customElements.get('swc-icon-zoom-out')) return;
-        window.customElements.define('swc-icon-zoom-out', IvyIconZoomOut);
+        window.customElements.define('swc-icon-zoom-out', SwcIconZoomOut);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconChromeFilled extends HTMLElement {
+class SwcIconChromeFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconChromeFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconChromeFilled;
+      export default SwcIconChromeFilled;
       function install(){
         if(window.customElements.get('swc-icon-chrome-filled')) return;
-        window.customElements.define('swc-icon-chrome-filled', IvyIconChromeFilled);
+        window.customElements.define('swc-icon-chrome-filled', SwcIconChromeFilled);
       }
       export { install as registerComponent }

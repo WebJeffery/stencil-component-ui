@@ -1,4 +1,4 @@
-class IvyIconRank extends HTMLElement {
+class SwcIconRank extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconRank extends HTMLElement {
           }
         }
       }
-      export default IvyIconRank;
+      export default SwcIconRank;
       function install(){
         if(window.customElements.get('swc-icon-rank')) return;
-        window.customElements.define('swc-icon-rank', IvyIconRank);
+        window.customElements.define('swc-icon-rank', SwcIconRank);
       }
       export { install as registerComponent }

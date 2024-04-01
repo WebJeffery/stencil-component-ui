@@ -1,4 +1,4 @@
-class IvyIconChatLineRound extends HTMLElement {
+class SwcIconChatLineRound extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconChatLineRound extends HTMLElement {
           }
         }
       }
-      export default IvyIconChatLineRound;
+      export default SwcIconChatLineRound;
       function install(){
         if(window.customElements.get('swc-icon-chat-line-round')) return;
-        window.customElements.define('swc-icon-chat-line-round', IvyIconChatLineRound);
+        window.customElements.define('swc-icon-chat-line-round', SwcIconChatLineRound);
       }
       export { install as registerComponent }

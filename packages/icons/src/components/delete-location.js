@@ -1,4 +1,4 @@
-class IvyIconDeleteLocation extends HTMLElement {
+class SwcIconDeleteLocation extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDeleteLocation extends HTMLElement {
           }
         }
       }
-      export default IvyIconDeleteLocation;
+      export default SwcIconDeleteLocation;
       function install(){
         if(window.customElements.get('swc-icon-delete-location')) return;
-        window.customElements.define('swc-icon-delete-location', IvyIconDeleteLocation);
+        window.customElements.define('swc-icon-delete-location', SwcIconDeleteLocation);
       }
       export { install as registerComponent }

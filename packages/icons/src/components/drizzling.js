@@ -1,4 +1,4 @@
-class IvyIconDrizzling extends HTMLElement {
+class SwcIconDrizzling extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDrizzling extends HTMLElement {
           }
         }
       }
-      export default IvyIconDrizzling;
+      export default SwcIconDrizzling;
       function install(){
         if(window.customElements.get('swc-icon-drizzling')) return;
-        window.customElements.define('swc-icon-drizzling', IvyIconDrizzling);
+        window.customElements.define('swc-icon-drizzling', SwcIconDrizzling);
       }
       export { install as registerComponent }

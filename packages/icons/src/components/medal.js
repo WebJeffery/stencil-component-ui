@@ -1,4 +1,4 @@
-class IvyIconMedal extends HTMLElement {
+class SwcIconMedal extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMedal extends HTMLElement {
           }
         }
       }
-      export default IvyIconMedal;
+      export default SwcIconMedal;
       function install(){
         if(window.customElements.get('swc-icon-medal')) return;
-        window.customElements.define('swc-icon-medal', IvyIconMedal);
+        window.customElements.define('swc-icon-medal', SwcIconMedal);
       }
       export { install as registerComponent }

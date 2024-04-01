@@ -1,4 +1,4 @@
-class IvyIconSwitchButton extends HTMLElement {
+class SwcIconSwitchButton extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSwitchButton extends HTMLElement {
           }
         }
       }
-      export default IvyIconSwitchButton;
+      export default SwcIconSwitchButton;
       function install(){
         if(window.customElements.get('swc-icon-switch-button')) return;
-        window.customElements.define('swc-icon-switch-button', IvyIconSwitchButton);
+        window.customElements.define('swc-icon-switch-button', SwcIconSwitchButton);
       }
       export { install as registerComponent }

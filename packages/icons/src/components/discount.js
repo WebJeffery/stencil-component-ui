@@ -1,4 +1,4 @@
-class IvyIconDiscount extends HTMLElement {
+class SwcIconDiscount extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDiscount extends HTMLElement {
           }
         }
       }
-      export default IvyIconDiscount;
+      export default SwcIconDiscount;
       function install(){
         if(window.customElements.get('swc-icon-discount')) return;
-        window.customElements.define('swc-icon-discount', IvyIconDiscount);
+        window.customElements.define('swc-icon-discount', SwcIconDiscount);
       }
       export { install as registerComponent }

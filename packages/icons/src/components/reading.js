@@ -1,4 +1,4 @@
-class IvyIconReading extends HTMLElement {
+class SwcIconReading extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconReading extends HTMLElement {
           }
         }
       }
-      export default IvyIconReading;
+      export default SwcIconReading;
       function install(){
         if(window.customElements.get('swc-icon-reading')) return;
-        window.customElements.define('swc-icon-reading', IvyIconReading);
+        window.customElements.define('swc-icon-reading', SwcIconReading);
       }
       export { install as registerComponent }

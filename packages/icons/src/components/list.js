@@ -1,4 +1,4 @@
-class IvyIconList extends HTMLElement {
+class SwcIconList extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconList extends HTMLElement {
           }
         }
       }
-      export default IvyIconList;
+      export default SwcIconList;
       function install(){
         if(window.customElements.get('swc-icon-list')) return;
-        window.customElements.define('swc-icon-list', IvyIconList);
+        window.customElements.define('swc-icon-list', SwcIconList);
       }
       export { install as registerComponent }

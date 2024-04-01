@@ -1,4 +1,4 @@
-class IvyIconFolderOpened extends HTMLElement {
+class SwcIconFolderOpened extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFolderOpened extends HTMLElement {
           }
         }
       }
-      export default IvyIconFolderOpened;
+      export default SwcIconFolderOpened;
       function install(){
         if(window.customElements.get('swc-icon-folder-opened')) return;
-        window.customElements.define('swc-icon-folder-opened', IvyIconFolderOpened);
+        window.customElements.define('swc-icon-folder-opened', SwcIconFolderOpened);
       }
       export { install as registerComponent }

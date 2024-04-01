@@ -1,4 +1,4 @@
-class IvyIconDeleteFilled extends HTMLElement {
+class SwcIconDeleteFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDeleteFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconDeleteFilled;
+      export default SwcIconDeleteFilled;
       function install(){
         if(window.customElements.get('swc-icon-delete-filled')) return;
-        window.customElements.define('swc-icon-delete-filled', IvyIconDeleteFilled);
+        window.customElements.define('swc-icon-delete-filled', SwcIconDeleteFilled);
       }
       export { install as registerComponent }

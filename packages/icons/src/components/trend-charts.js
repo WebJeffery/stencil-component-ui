@@ -1,4 +1,4 @@
-class IvyIconTrendCharts extends HTMLElement {
+class SwcIconTrendCharts extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconTrendCharts extends HTMLElement {
           }
         }
       }
-      export default IvyIconTrendCharts;
+      export default SwcIconTrendCharts;
       function install(){
         if(window.customElements.get('swc-icon-trend-charts')) return;
-        window.customElements.define('swc-icon-trend-charts', IvyIconTrendCharts);
+        window.customElements.define('swc-icon-trend-charts', SwcIconTrendCharts);
       }
       export { install as registerComponent }

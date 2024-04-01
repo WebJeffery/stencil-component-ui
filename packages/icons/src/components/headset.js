@@ -1,4 +1,4 @@
-class IvyIconHeadset extends HTMLElement {
+class SwcIconHeadset extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconHeadset extends HTMLElement {
           }
         }
       }
-      export default IvyIconHeadset;
+      export default SwcIconHeadset;
       function install(){
         if(window.customElements.get('swc-icon-headset')) return;
-        window.customElements.define('swc-icon-headset', IvyIconHeadset);
+        window.customElements.define('swc-icon-headset', SwcIconHeadset);
       }
       export { install as registerComponent }

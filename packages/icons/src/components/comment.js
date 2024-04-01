@@ -1,4 +1,4 @@
-class IvyIconComment extends HTMLElement {
+class SwcIconComment extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconComment extends HTMLElement {
           }
         }
       }
-      export default IvyIconComment;
+      export default SwcIconComment;
       function install(){
         if(window.customElements.get('swc-icon-comment')) return;
-        window.customElements.define('swc-icon-comment', IvyIconComment);
+        window.customElements.define('swc-icon-comment', SwcIconComment);
       }
       export { install as registerComponent }

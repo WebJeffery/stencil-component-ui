@@ -1,4 +1,4 @@
-class IvyIconUploadFilled extends HTMLElement {
+class SwcIconUploadFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconUploadFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconUploadFilled;
+      export default SwcIconUploadFilled;
       function install(){
         if(window.customElements.get('swc-icon-upload-filled')) return;
-        window.customElements.define('swc-icon-upload-filled', IvyIconUploadFilled);
+        window.customElements.define('swc-icon-upload-filled', SwcIconUploadFilled);
       }
       export { install as registerComponent }

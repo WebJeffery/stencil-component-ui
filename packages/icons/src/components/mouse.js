@@ -1,4 +1,4 @@
-class IvyIconMouse extends HTMLElement {
+class SwcIconMouse extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMouse extends HTMLElement {
           }
         }
       }
-      export default IvyIconMouse;
+      export default SwcIconMouse;
       function install(){
         if(window.customElements.get('swc-icon-mouse')) return;
-        window.customElements.define('swc-icon-mouse', IvyIconMouse);
+        window.customElements.define('swc-icon-mouse', SwcIconMouse);
       }
       export { install as registerComponent }

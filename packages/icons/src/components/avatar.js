@@ -1,4 +1,4 @@
-class IvyIconAvatar extends HTMLElement {
+class SwcIconAvatar extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconAvatar extends HTMLElement {
           }
         }
       }
-      export default IvyIconAvatar;
+      export default SwcIconAvatar;
       function install(){
         if(window.customElements.get('swc-icon-avatar')) return;
-        window.customElements.define('swc-icon-avatar', IvyIconAvatar);
+        window.customElements.define('swc-icon-avatar', SwcIconAvatar);
       }
       export { install as registerComponent }

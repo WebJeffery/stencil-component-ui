@@ -1,4 +1,4 @@
-class IvyIconPostcard extends HTMLElement {
+class SwcIconPostcard extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPostcard extends HTMLElement {
           }
         }
       }
-      export default IvyIconPostcard;
+      export default SwcIconPostcard;
       function install(){
         if(window.customElements.get('swc-icon-postcard')) return;
-        window.customElements.define('swc-icon-postcard', IvyIconPostcard);
+        window.customElements.define('swc-icon-postcard', SwcIconPostcard);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconWindPower extends HTMLElement {
+class SwcIconWindPower extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconWindPower extends HTMLElement {
           }
         }
       }
-      export default IvyIconWindPower;
+      export default SwcIconWindPower;
       function install(){
         if(window.customElements.get('swc-icon-wind-power')) return;
-        window.customElements.define('swc-icon-wind-power', IvyIconWindPower);
+        window.customElements.define('swc-icon-wind-power', SwcIconWindPower);
       }
       export { install as registerComponent }

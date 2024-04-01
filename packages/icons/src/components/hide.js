@@ -1,4 +1,4 @@
-class IvyIconHide extends HTMLElement {
+class SwcIconHide extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconHide extends HTMLElement {
           }
         }
       }
-      export default IvyIconHide;
+      export default SwcIconHide;
       function install(){
         if(window.customElements.get('swc-icon-hide')) return;
-        window.customElements.define('swc-icon-hide', IvyIconHide);
+        window.customElements.define('swc-icon-hide', SwcIconHide);
       }
       export { install as registerComponent }

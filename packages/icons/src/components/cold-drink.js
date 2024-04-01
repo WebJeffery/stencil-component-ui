@@ -1,4 +1,4 @@
-class IvyIconColdDrink extends HTMLElement {
+class SwcIconColdDrink extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconColdDrink extends HTMLElement {
           }
         }
       }
-      export default IvyIconColdDrink;
+      export default SwcIconColdDrink;
       function install(){
         if(window.customElements.get('swc-icon-cold-drink')) return;
-        window.customElements.define('swc-icon-cold-drink', IvyIconColdDrink);
+        window.customElements.define('swc-icon-cold-drink', SwcIconColdDrink);
       }
       export { install as registerComponent }

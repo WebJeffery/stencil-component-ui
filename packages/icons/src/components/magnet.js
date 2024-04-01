@@ -1,4 +1,4 @@
-class IvyIconMagnet extends HTMLElement {
+class SwcIconMagnet extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMagnet extends HTMLElement {
           }
         }
       }
-      export default IvyIconMagnet;
+      export default SwcIconMagnet;
       function install(){
         if(window.customElements.get('swc-icon-magnet')) return;
-        window.customElements.define('swc-icon-magnet', IvyIconMagnet);
+        window.customElements.define('swc-icon-magnet', SwcIconMagnet);
       }
       export { install as registerComponent }

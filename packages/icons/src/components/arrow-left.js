@@ -1,4 +1,4 @@
-class IvyIconArrowLeft extends HTMLElement {
+class SwcIconArrowLeft extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconArrowLeft extends HTMLElement {
           }
         }
       }
-      export default IvyIconArrowLeft;
+      export default SwcIconArrowLeft;
       function install(){
         if(window.customElements.get('swc-icon-arrow-left')) return;
-        window.customElements.define('swc-icon-arrow-left', IvyIconArrowLeft);
+        window.customElements.define('swc-icon-arrow-left', SwcIconArrowLeft);
       }
       export { install as registerComponent }

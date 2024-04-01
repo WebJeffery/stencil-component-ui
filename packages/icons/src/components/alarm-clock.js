@@ -1,4 +1,4 @@
-class IvyIconAlarmClock extends HTMLElement {
+class SwcIconAlarmClock extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconAlarmClock extends HTMLElement {
           }
         }
       }
-      export default IvyIconAlarmClock;
+      export default SwcIconAlarmClock;
       function install(){
         if(window.customElements.get('swc-icon-alarm-clock')) return;
-        window.customElements.define('swc-icon-alarm-clock', IvyIconAlarmClock);
+        window.customElements.define('swc-icon-alarm-clock', SwcIconAlarmClock);
       }
       export { install as registerComponent }

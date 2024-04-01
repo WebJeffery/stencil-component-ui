@@ -1,4 +1,4 @@
-class IvyIconNotebook extends HTMLElement {
+class SwcIconNotebook extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconNotebook extends HTMLElement {
           }
         }
       }
-      export default IvyIconNotebook;
+      export default SwcIconNotebook;
       function install(){
         if(window.customElements.get('swc-icon-notebook')) return;
-        window.customElements.define('swc-icon-notebook', IvyIconNotebook);
+        window.customElements.define('swc-icon-notebook', SwcIconNotebook);
       }
       export { install as registerComponent }

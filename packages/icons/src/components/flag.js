@@ -1,4 +1,4 @@
-class IvyIconFlag extends HTMLElement {
+class SwcIconFlag extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFlag extends HTMLElement {
           }
         }
       }
-      export default IvyIconFlag;
+      export default SwcIconFlag;
       function install(){
         if(window.customElements.get('swc-icon-flag')) return;
-        window.customElements.define('swc-icon-flag', IvyIconFlag);
+        window.customElements.define('swc-icon-flag', SwcIconFlag);
       }
       export { install as registerComponent }

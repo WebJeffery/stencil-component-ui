@@ -1,4 +1,4 @@
-class IvyIconCircleClose extends HTMLElement {
+class SwcIconCircleClose extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCircleClose extends HTMLElement {
           }
         }
       }
-      export default IvyIconCircleClose;
+      export default SwcIconCircleClose;
       function install(){
         if(window.customElements.get('swc-icon-circle-close')) return;
-        window.customElements.define('swc-icon-circle-close', IvyIconCircleClose);
+        window.customElements.define('swc-icon-circle-close', SwcIconCircleClose);
       }
       export { install as registerComponent }

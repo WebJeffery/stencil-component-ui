@@ -1,4 +1,4 @@
-class IvyIconLocationFilled extends HTMLElement {
+class SwcIconLocationFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconLocationFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconLocationFilled;
+      export default SwcIconLocationFilled;
       function install(){
         if(window.customElements.get('swc-icon-location-filled')) return;
-        window.customElements.define('swc-icon-location-filled', IvyIconLocationFilled);
+        window.customElements.define('swc-icon-location-filled', SwcIconLocationFilled);
       }
       export { install as registerComponent }

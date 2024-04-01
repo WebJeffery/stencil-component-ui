@@ -1,4 +1,4 @@
-class IvyIconGrape extends HTMLElement {
+class SwcIconGrape extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconGrape extends HTMLElement {
           }
         }
       }
-      export default IvyIconGrape;
+      export default SwcIconGrape;
       function install(){
         if(window.customElements.get('swc-icon-grape')) return;
-        window.customElements.define('swc-icon-grape', IvyIconGrape);
+        window.customElements.define('swc-icon-grape', SwcIconGrape);
       }
       export { install as registerComponent }

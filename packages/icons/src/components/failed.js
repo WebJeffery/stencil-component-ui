@@ -1,4 +1,4 @@
-class IvyIconFailed extends HTMLElement {
+class SwcIconFailed extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFailed extends HTMLElement {
           }
         }
       }
-      export default IvyIconFailed;
+      export default SwcIconFailed;
       function install(){
         if(window.customElements.get('swc-icon-failed')) return;
-        window.customElements.define('swc-icon-failed', IvyIconFailed);
+        window.customElements.define('swc-icon-failed', SwcIconFailed);
       }
       export { install as registerComponent }

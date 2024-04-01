@@ -1,4 +1,4 @@
-class IvyIconKnifeFork extends HTMLElement {
+class SwcIconKnifeFork extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconKnifeFork extends HTMLElement {
           }
         }
       }
-      export default IvyIconKnifeFork;
+      export default SwcIconKnifeFork;
       function install(){
         if(window.customElements.get('swc-icon-knife-fork')) return;
-        window.customElements.define('swc-icon-knife-fork', IvyIconKnifeFork);
+        window.customElements.define('swc-icon-knife-fork', SwcIconKnifeFork);
       }
       export { install as registerComponent }

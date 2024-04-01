@@ -1,4 +1,4 @@
-class IvyIconLightning extends HTMLElement {
+class SwcIconLightning extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconLightning extends HTMLElement {
           }
         }
       }
-      export default IvyIconLightning;
+      export default SwcIconLightning;
       function install(){
         if(window.customElements.get('swc-icon-lightning')) return;
-        window.customElements.define('swc-icon-lightning', IvyIconLightning);
+        window.customElements.define('swc-icon-lightning', SwcIconLightning);
       }
       export { install as registerComponent }

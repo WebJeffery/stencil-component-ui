@@ -1,4 +1,4 @@
-class IvyIconPrinter extends HTMLElement {
+class SwcIconPrinter extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPrinter extends HTMLElement {
           }
         }
       }
-      export default IvyIconPrinter;
+      export default SwcIconPrinter;
       function install(){
         if(window.customElements.get('swc-icon-printer')) return;
-        window.customElements.define('swc-icon-printer', IvyIconPrinter);
+        window.customElements.define('swc-icon-printer', SwcIconPrinter);
       }
       export { install as registerComponent }

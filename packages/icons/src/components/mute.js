@@ -1,4 +1,4 @@
-class IvyIconMute extends HTMLElement {
+class SwcIconMute extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMute extends HTMLElement {
           }
         }
       }
-      export default IvyIconMute;
+      export default SwcIconMute;
       function install(){
         if(window.customElements.get('swc-icon-mute')) return;
-        window.customElements.define('swc-icon-mute', IvyIconMute);
+        window.customElements.define('swc-icon-mute', SwcIconMute);
       }
       export { install as registerComponent }

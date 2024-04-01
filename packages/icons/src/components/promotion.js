@@ -1,4 +1,4 @@
-class IvyIconPromotion extends HTMLElement {
+class SwcIconPromotion extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPromotion extends HTMLElement {
           }
         }
       }
-      export default IvyIconPromotion;
+      export default SwcIconPromotion;
       function install(){
         if(window.customElements.get('swc-icon-promotion')) return;
-        window.customElements.define('swc-icon-promotion', IvyIconPromotion);
+        window.customElements.define('swc-icon-promotion', SwcIconPromotion);
       }
       export { install as registerComponent }

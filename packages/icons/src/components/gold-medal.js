@@ -1,4 +1,4 @@
-class IvyIconGoldMedal extends HTMLElement {
+class SwcIconGoldMedal extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconGoldMedal extends HTMLElement {
           }
         }
       }
-      export default IvyIconGoldMedal;
+      export default SwcIconGoldMedal;
       function install(){
         if(window.customElements.get('swc-icon-gold-medal')) return;
-        window.customElements.define('swc-icon-gold-medal', IvyIconGoldMedal);
+        window.customElements.define('swc-icon-gold-medal', SwcIconGoldMedal);
       }
       export { install as registerComponent }

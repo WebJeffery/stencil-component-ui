@@ -1,4 +1,4 @@
-class IvyIconOdometer extends HTMLElement {
+class SwcIconOdometer extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconOdometer extends HTMLElement {
           }
         }
       }
-      export default IvyIconOdometer;
+      export default SwcIconOdometer;
       function install(){
         if(window.customElements.get('swc-icon-odometer')) return;
-        window.customElements.define('swc-icon-odometer', IvyIconOdometer);
+        window.customElements.define('swc-icon-odometer', SwcIconOdometer);
       }
       export { install as registerComponent }

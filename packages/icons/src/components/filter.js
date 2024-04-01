@@ -1,4 +1,4 @@
-class IvyIconFilter extends HTMLElement {
+class SwcIconFilter extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFilter extends HTMLElement {
           }
         }
       }
-      export default IvyIconFilter;
+      export default SwcIconFilter;
       function install(){
         if(window.customElements.get('swc-icon-filter')) return;
-        window.customElements.define('swc-icon-filter', IvyIconFilter);
+        window.customElements.define('swc-icon-filter', SwcIconFilter);
       }
       export { install as registerComponent }

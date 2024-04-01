@@ -1,4 +1,4 @@
-class IvyIconGuide extends HTMLElement {
+class SwcIconGuide extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconGuide extends HTMLElement {
           }
         }
       }
-      export default IvyIconGuide;
+      export default SwcIconGuide;
       function install(){
         if(window.customElements.get('swc-icon-guide')) return;
-        window.customElements.define('swc-icon-guide', IvyIconGuide);
+        window.customElements.define('swc-icon-guide', SwcIconGuide);
       }
       export { install as registerComponent }

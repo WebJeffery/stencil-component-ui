@@ -1,4 +1,4 @@
-class IvyIconSortUp extends HTMLElement {
+class SwcIconSortUp extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSortUp extends HTMLElement {
           }
         }
       }
-      export default IvyIconSortUp;
+      export default SwcIconSortUp;
       function install(){
         if(window.customElements.get('swc-icon-sort-up')) return;
-        window.customElements.define('swc-icon-sort-up', IvyIconSortUp);
+        window.customElements.define('swc-icon-sort-up', SwcIconSortUp);
       }
       export { install as registerComponent }

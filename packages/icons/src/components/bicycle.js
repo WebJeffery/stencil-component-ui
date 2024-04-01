@@ -1,4 +1,4 @@
-class IvyIconBicycle extends HTMLElement {
+class SwcIconBicycle extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBicycle extends HTMLElement {
           }
         }
       }
-      export default IvyIconBicycle;
+      export default SwcIconBicycle;
       function install(){
         if(window.customElements.get('swc-icon-bicycle')) return;
-        window.customElements.define('swc-icon-bicycle', IvyIconBicycle);
+        window.customElements.define('swc-icon-bicycle', SwcIconBicycle);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconCircleCheck extends HTMLElement {
+class SwcIconCircleCheck extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCircleCheck extends HTMLElement {
           }
         }
       }
-      export default IvyIconCircleCheck;
+      export default SwcIconCircleCheck;
       function install(){
         if(window.customElements.get('swc-icon-circle-check')) return;
-        window.customElements.define('swc-icon-circle-check', IvyIconCircleCheck);
+        window.customElements.define('swc-icon-circle-check', SwcIconCircleCheck);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconFold extends HTMLElement {
+class SwcIconFold extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFold extends HTMLElement {
           }
         }
       }
-      export default IvyIconFold;
+      export default SwcIconFold;
       function install(){
         if(window.customElements.get('swc-icon-fold')) return;
-        window.customElements.define('swc-icon-fold', IvyIconFold);
+        window.customElements.define('swc-icon-fold', SwcIconFold);
       }
       export { install as registerComponent }

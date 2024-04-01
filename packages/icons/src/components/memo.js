@@ -1,4 +1,4 @@
-class IvyIconMemo extends HTMLElement {
+class SwcIconMemo extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMemo extends HTMLElement {
           }
         }
       }
-      export default IvyIconMemo;
+      export default SwcIconMemo;
       function install(){
         if(window.customElements.get('swc-icon-memo')) return;
-        window.customElements.define('swc-icon-memo', IvyIconMemo);
+        window.customElements.define('swc-icon-memo', SwcIconMemo);
       }
       export { install as registerComponent }

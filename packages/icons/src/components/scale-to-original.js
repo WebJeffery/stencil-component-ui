@@ -1,4 +1,4 @@
-class IvyIconScaleToOriginal extends HTMLElement {
+class SwcIconScaleToOriginal extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconScaleToOriginal extends HTMLElement {
           }
         }
       }
-      export default IvyIconScaleToOriginal;
+      export default SwcIconScaleToOriginal;
       function install(){
         if(window.customElements.get('swc-icon-scale-to-original')) return;
-        window.customElements.define('swc-icon-scale-to-original', IvyIconScaleToOriginal);
+        window.customElements.define('swc-icon-scale-to-original', SwcIconScaleToOriginal);
       }
       export { install as registerComponent }

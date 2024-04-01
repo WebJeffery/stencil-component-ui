@@ -1,4 +1,4 @@
-class IvyIconHotWater extends HTMLElement {
+class SwcIconHotWater extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconHotWater extends HTMLElement {
           }
         }
       }
-      export default IvyIconHotWater;
+      export default SwcIconHotWater;
       function install(){
         if(window.customElements.get('swc-icon-hot-water')) return;
-        window.customElements.define('swc-icon-hot-water', IvyIconHotWater);
+        window.customElements.define('swc-icon-hot-water', SwcIconHotWater);
       }
       export { install as registerComponent }

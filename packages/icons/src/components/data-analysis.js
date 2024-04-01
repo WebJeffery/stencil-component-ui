@@ -1,4 +1,4 @@
-class IvyIconDataAnalysis extends HTMLElement {
+class SwcIconDataAnalysis extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDataAnalysis extends HTMLElement {
           }
         }
       }
-      export default IvyIconDataAnalysis;
+      export default SwcIconDataAnalysis;
       function install(){
         if(window.customElements.get('swc-icon-data-analysis')) return;
-        window.customElements.define('swc-icon-data-analysis', IvyIconDataAnalysis);
+        window.customElements.define('swc-icon-data-analysis', SwcIconDataAnalysis);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconHandbag extends HTMLElement {
+class SwcIconHandbag extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconHandbag extends HTMLElement {
           }
         }
       }
-      export default IvyIconHandbag;
+      export default SwcIconHandbag;
       function install(){
         if(window.customElements.get('swc-icon-handbag')) return;
-        window.customElements.define('swc-icon-handbag', IvyIconHandbag);
+        window.customElements.define('swc-icon-handbag', SwcIconHandbag);
       }
       export { install as registerComponent }

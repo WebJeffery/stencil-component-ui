@@ -1,4 +1,4 @@
-class IvyIconWatermelon extends HTMLElement {
+class SwcIconWatermelon extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconWatermelon extends HTMLElement {
           }
         }
       }
-      export default IvyIconWatermelon;
+      export default SwcIconWatermelon;
       function install(){
         if(window.customElements.get('swc-icon-watermelon')) return;
-        window.customElements.define('swc-icon-watermelon', IvyIconWatermelon);
+        window.customElements.define('swc-icon-watermelon', SwcIconWatermelon);
       }
       export { install as registerComponent }

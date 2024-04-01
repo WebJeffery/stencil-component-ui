@@ -1,4 +1,4 @@
-class IvyIconArrowRightBold extends HTMLElement {
+class SwcIconArrowRightBold extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconArrowRightBold extends HTMLElement {
           }
         }
       }
-      export default IvyIconArrowRightBold;
+      export default SwcIconArrowRightBold;
       function install(){
         if(window.customElements.get('swc-icon-arrow-right-bold')) return;
-        window.customElements.define('swc-icon-arrow-right-bold', IvyIconArrowRightBold);
+        window.customElements.define('swc-icon-arrow-right-bold', SwcIconArrowRightBold);
       }
       export { install as registerComponent }

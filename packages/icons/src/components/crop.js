@@ -1,4 +1,4 @@
-class IvyIconCrop extends HTMLElement {
+class SwcIconCrop extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCrop extends HTMLElement {
           }
         }
       }
-      export default IvyIconCrop;
+      export default SwcIconCrop;
       function install(){
         if(window.customElements.get('swc-icon-crop')) return;
-        window.customElements.define('swc-icon-crop', IvyIconCrop);
+        window.customElements.define('swc-icon-crop', SwcIconCrop);
       }
       export { install as registerComponent }

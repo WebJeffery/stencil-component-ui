@@ -1,4 +1,4 @@
-class IvyIconStamp extends HTMLElement {
+class SwcIconStamp extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconStamp extends HTMLElement {
           }
         }
       }
-      export default IvyIconStamp;
+      export default SwcIconStamp;
       function install(){
         if(window.customElements.get('swc-icon-stamp')) return;
-        window.customElements.define('swc-icon-stamp', IvyIconStamp);
+        window.customElements.define('swc-icon-stamp', SwcIconStamp);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconLoading extends HTMLElement {
+class SwcIconLoading extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconLoading extends HTMLElement {
           }
         }
       }
-      export default IvyIconLoading;
+      export default SwcIconLoading;
       function install(){
         if(window.customElements.get('swc-icon-loading')) return;
-        window.customElements.define('swc-icon-loading', IvyIconLoading);
+        window.customElements.define('swc-icon-loading', SwcIconLoading);
       }
       export { install as registerComponent }

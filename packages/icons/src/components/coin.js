@@ -1,4 +1,4 @@
-class IvyIconCoin extends HTMLElement {
+class SwcIconCoin extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCoin extends HTMLElement {
           }
         }
       }
-      export default IvyIconCoin;
+      export default SwcIconCoin;
       function install(){
         if(window.customElements.get('swc-icon-coin')) return;
-        window.customElements.define('swc-icon-coin', IvyIconCoin);
+        window.customElements.define('swc-icon-coin', SwcIconCoin);
       }
       export { install as registerComponent }

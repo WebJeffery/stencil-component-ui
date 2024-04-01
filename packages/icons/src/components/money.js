@@ -1,4 +1,4 @@
-class IvyIconMoney extends HTMLElement {
+class SwcIconMoney extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMoney extends HTMLElement {
           }
         }
       }
-      export default IvyIconMoney;
+      export default SwcIconMoney;
       function install(){
         if(window.customElements.get('swc-icon-money')) return;
-        window.customElements.define('swc-icon-money', IvyIconMoney);
+        window.customElements.define('swc-icon-money', SwcIconMoney);
       }
       export { install as registerComponent }

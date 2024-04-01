@@ -1,4 +1,4 @@
-class IvyIconMug extends HTMLElement {
+class SwcIconMug extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMug extends HTMLElement {
           }
         }
       }
-      export default IvyIconMug;
+      export default SwcIconMug;
       function install(){
         if(window.customElements.get('swc-icon-mug')) return;
-        window.customElements.define('swc-icon-mug', IvyIconMug);
+        window.customElements.define('swc-icon-mug', SwcIconMug);
       }
       export { install as registerComponent }

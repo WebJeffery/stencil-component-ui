@@ -1,4 +1,4 @@
-class IvyIcondCaret extends HTMLElement {
+class SwcIcondCaret extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIcondCaret extends HTMLElement {
           }
         }
       }
-      export default IvyIcondCaret;
+      export default SwcIcondCaret;
       function install(){
         if(window.customElements.get('swc-icon-d-caret')) return;
-        window.customElements.define('swc-icon-d-caret', IvyIcondCaret);
+        window.customElements.define('swc-icon-d-caret', SwcIcondCaret);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconWatch extends HTMLElement {
+class SwcIconWatch extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconWatch extends HTMLElement {
           }
         }
       }
-      export default IvyIconWatch;
+      export default SwcIconWatch;
       function install(){
         if(window.customElements.get('swc-icon-watch')) return;
-        window.customElements.define('swc-icon-watch', IvyIconWatch);
+        window.customElements.define('swc-icon-watch', SwcIconWatch);
       }
       export { install as registerComponent }

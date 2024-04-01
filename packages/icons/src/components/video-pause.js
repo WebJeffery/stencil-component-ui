@@ -1,4 +1,4 @@
-class IvyIconVideoPause extends HTMLElement {
+class SwcIconVideoPause extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconVideoPause extends HTMLElement {
           }
         }
       }
-      export default IvyIconVideoPause;
+      export default SwcIconVideoPause;
       function install(){
         if(window.customElements.get('swc-icon-video-pause')) return;
-        window.customElements.define('swc-icon-video-pause', IvyIconVideoPause);
+        window.customElements.define('swc-icon-video-pause', SwcIconVideoPause);
       }
       export { install as registerComponent }

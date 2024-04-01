@@ -1,4 +1,4 @@
-class IvyIconOfficeBuilding extends HTMLElement {
+class SwcIconOfficeBuilding extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconOfficeBuilding extends HTMLElement {
           }
         }
       }
-      export default IvyIconOfficeBuilding;
+      export default SwcIconOfficeBuilding;
       function install(){
         if(window.customElements.get('swc-icon-office-building')) return;
-        window.customElements.define('swc-icon-office-building', IvyIconOfficeBuilding);
+        window.customElements.define('swc-icon-office-building', SwcIconOfficeBuilding);
       }
       export { install as registerComponent }

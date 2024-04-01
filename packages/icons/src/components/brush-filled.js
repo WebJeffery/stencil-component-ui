@@ -1,4 +1,4 @@
-class IvyIconBrushFilled extends HTMLElement {
+class SwcIconBrushFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBrushFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconBrushFilled;
+      export default SwcIconBrushFilled;
       function install(){
         if(window.customElements.get('swc-icon-brush-filled')) return;
-        window.customElements.define('swc-icon-brush-filled', IvyIconBrushFilled);
+        window.customElements.define('swc-icon-brush-filled', SwcIconBrushFilled);
       }
       export { install as registerComponent }

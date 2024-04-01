@@ -1,4 +1,4 @@
-class IvyIconCpu extends HTMLElement {
+class SwcIconCpu extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCpu extends HTMLElement {
           }
         }
       }
-      export default IvyIconCpu;
+      export default SwcIconCpu;
       function install(){
         if(window.customElements.get('swc-icon-cpu')) return;
-        window.customElements.define('swc-icon-cpu', IvyIconCpu);
+        window.customElements.define('swc-icon-cpu', SwcIconCpu);
       }
       export { install as registerComponent }

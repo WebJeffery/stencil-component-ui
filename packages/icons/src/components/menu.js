@@ -1,4 +1,4 @@
-class IvyIconMenu extends HTMLElement {
+class SwcIconMenu extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMenu extends HTMLElement {
           }
         }
       }
-      export default IvyIconMenu;
+      export default SwcIconMenu;
       function install(){
         if(window.customElements.get('swc-icon-menu')) return;
-        window.customElements.define('swc-icon-menu', IvyIconMenu);
+        window.customElements.define('swc-icon-menu', SwcIconMenu);
       }
       export { install as registerComponent }

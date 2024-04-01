@@ -1,4 +1,4 @@
-class IvyIconPlatform extends HTMLElement {
+class SwcIconPlatform extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPlatform extends HTMLElement {
           }
         }
       }
-      export default IvyIconPlatform;
+      export default SwcIconPlatform;
       function install(){
         if(window.customElements.get('swc-icon-platform')) return;
-        window.customElements.define('swc-icon-platform', IvyIconPlatform);
+        window.customElements.define('swc-icon-platform', SwcIconPlatform);
       }
       export { install as registerComponent }

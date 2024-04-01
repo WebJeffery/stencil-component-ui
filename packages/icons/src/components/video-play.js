@@ -1,4 +1,4 @@
-class IvyIconVideoPlay extends HTMLElement {
+class SwcIconVideoPlay extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconVideoPlay extends HTMLElement {
           }
         }
       }
-      export default IvyIconVideoPlay;
+      export default SwcIconVideoPlay;
       function install(){
         if(window.customElements.get('swc-icon-video-play')) return;
-        window.customElements.define('swc-icon-video-play', IvyIconVideoPlay);
+        window.customElements.define('swc-icon-video-play', SwcIconVideoPlay);
       }
       export { install as registerComponent }

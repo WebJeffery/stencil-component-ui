@@ -1,4 +1,4 @@
-class IvyIconPriceTag extends HTMLElement {
+class SwcIconPriceTag extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPriceTag extends HTMLElement {
           }
         }
       }
-      export default IvyIconPriceTag;
+      export default SwcIconPriceTag;
       function install(){
         if(window.customElements.get('swc-icon-price-tag')) return;
-        window.customElements.define('swc-icon-price-tag', IvyIconPriceTag);
+        window.customElements.define('swc-icon-price-tag', SwcIconPriceTag);
       }
       export { install as registerComponent }

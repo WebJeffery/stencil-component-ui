@@ -1,4 +1,4 @@
-class IvyIconMagicStick extends HTMLElement {
+class SwcIconMagicStick extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMagicStick extends HTMLElement {
           }
         }
       }
-      export default IvyIconMagicStick;
+      export default SwcIconMagicStick;
       function install(){
         if(window.customElements.get('swc-icon-magic-stick')) return;
-        window.customElements.define('swc-icon-magic-stick', IvyIconMagicStick);
+        window.customElements.define('swc-icon-magic-stick', SwcIconMagicStick);
       }
       export { install as registerComponent }

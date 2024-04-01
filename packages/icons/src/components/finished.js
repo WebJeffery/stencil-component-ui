@@ -1,4 +1,4 @@
-class IvyIconFinished extends HTMLElement {
+class SwcIconFinished extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFinished extends HTMLElement {
           }
         }
       }
-      export default IvyIconFinished;
+      export default SwcIconFinished;
       function install(){
         if(window.customElements.get('swc-icon-finished')) return;
-        window.customElements.define('swc-icon-finished', IvyIconFinished);
+        window.customElements.define('swc-icon-finished', SwcIconFinished);
       }
       export { install as registerComponent }

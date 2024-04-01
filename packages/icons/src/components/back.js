@@ -1,4 +1,4 @@
-class IvyIconBack extends HTMLElement {
+class SwcIconBack extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBack extends HTMLElement {
           }
         }
       }
-      export default IvyIconBack;
+      export default SwcIconBack;
       function install(){
         if(window.customElements.get('swc-icon-back')) return;
-        window.customElements.define('swc-icon-back', IvyIconBack);
+        window.customElements.define('swc-icon-back', SwcIconBack);
       }
       export { install as registerComponent }

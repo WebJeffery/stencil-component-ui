@@ -1,4 +1,4 @@
-class IvyIconCheck extends HTMLElement {
+class SwcIconCheck extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCheck extends HTMLElement {
           }
         }
       }
-      export default IvyIconCheck;
+      export default SwcIconCheck;
       function install(){
         if(window.customElements.get('swc-icon-check')) return;
-        window.customElements.define('swc-icon-check', IvyIconCheck);
+        window.customElements.define('swc-icon-check', SwcIconCheck);
       }
       export { install as registerComponent }

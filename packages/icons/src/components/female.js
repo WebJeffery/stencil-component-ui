@@ -1,4 +1,4 @@
-class IvyIconFemale extends HTMLElement {
+class SwcIconFemale extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFemale extends HTMLElement {
           }
         }
       }
-      export default IvyIconFemale;
+      export default SwcIconFemale;
       function install(){
         if(window.customElements.get('swc-icon-female')) return;
-        window.customElements.define('swc-icon-female', IvyIconFemale);
+        window.customElements.define('swc-icon-female', SwcIconFemale);
       }
       export { install as registerComponent }

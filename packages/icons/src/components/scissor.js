@@ -1,4 +1,4 @@
-class IvyIconScissor extends HTMLElement {
+class SwcIconScissor extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconScissor extends HTMLElement {
           }
         }
       }
-      export default IvyIconScissor;
+      export default SwcIconScissor;
       function install(){
         if(window.customElements.get('swc-icon-scissor')) return;
-        window.customElements.define('swc-icon-scissor', IvyIconScissor);
+        window.customElements.define('swc-icon-scissor', SwcIconScissor);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconRemoveFilled extends HTMLElement {
+class SwcIconRemoveFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconRemoveFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconRemoveFilled;
+      export default SwcIconRemoveFilled;
       function install(){
         if(window.customElements.get('swc-icon-remove-filled')) return;
-        window.customElements.define('swc-icon-remove-filled', IvyIconRemoveFilled);
+        window.customElements.define('swc-icon-remove-filled', SwcIconRemoveFilled);
       }
       export { install as registerComponent }

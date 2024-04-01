@@ -1,4 +1,4 @@
-class IvyIconBox extends HTMLElement {
+class SwcIconBox extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBox extends HTMLElement {
           }
         }
       }
-      export default IvyIconBox;
+      export default SwcIconBox;
       function install(){
         if(window.customElements.get('swc-icon-box')) return;
-        window.customElements.define('swc-icon-box', IvyIconBox);
+        window.customElements.define('swc-icon-box', SwcIconBox);
       }
       export { install as registerComponent }

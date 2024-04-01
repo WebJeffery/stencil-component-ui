@@ -1,4 +1,4 @@
-class IvyIconSoldOut extends HTMLElement {
+class SwcIconSoldOut extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSoldOut extends HTMLElement {
           }
         }
       }
-      export default IvyIconSoldOut;
+      export default SwcIconSoldOut;
       function install(){
         if(window.customElements.get('swc-icon-sold-out')) return;
-        window.customElements.define('swc-icon-sold-out', IvyIconSoldOut);
+        window.customElements.define('swc-icon-sold-out', SwcIconSoldOut);
       }
       export { install as registerComponent }

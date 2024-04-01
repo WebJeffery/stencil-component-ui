@@ -1,4 +1,4 @@
-class IvyIconTrophy extends HTMLElement {
+class SwcIconTrophy extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconTrophy extends HTMLElement {
           }
         }
       }
-      export default IvyIconTrophy;
+      export default SwcIconTrophy;
       function install(){
         if(window.customElements.get('swc-icon-trophy')) return;
-        window.customElements.define('swc-icon-trophy', IvyIconTrophy);
+        window.customElements.define('swc-icon-trophy', SwcIconTrophy);
       }
       export { install as registerComponent }

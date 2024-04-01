@@ -1,4 +1,4 @@
-class IvyIconShoppingCart extends HTMLElement {
+class SwcIconShoppingCart extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconShoppingCart extends HTMLElement {
           }
         }
       }
-      export default IvyIconShoppingCart;
+      export default SwcIconShoppingCart;
       function install(){
         if(window.customElements.get('swc-icon-shopping-cart')) return;
-        window.customElements.define('swc-icon-shopping-cart', IvyIconShoppingCart);
+        window.customElements.define('swc-icon-shopping-cart', SwcIconShoppingCart);
       }
       export { install as registerComponent }

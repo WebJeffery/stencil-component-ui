@@ -1,4 +1,4 @@
-class IvyIconClock extends HTMLElement {
+class SwcIconClock extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconClock extends HTMLElement {
           }
         }
       }
-      export default IvyIconClock;
+      export default SwcIconClock;
       function install(){
         if(window.customElements.get('swc-icon-clock')) return;
-        window.customElements.define('swc-icon-clock', IvyIconClock);
+        window.customElements.define('swc-icon-clock', SwcIconClock);
       }
       export { install as registerComponent }

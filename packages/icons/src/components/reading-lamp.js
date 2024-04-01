@@ -1,4 +1,4 @@
-class IvyIconReadingLamp extends HTMLElement {
+class SwcIconReadingLamp extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconReadingLamp extends HTMLElement {
           }
         }
       }
-      export default IvyIconReadingLamp;
+      export default SwcIconReadingLamp;
       function install(){
         if(window.customElements.get('swc-icon-reading-lamp')) return;
-        window.customElements.define('swc-icon-reading-lamp', IvyIconReadingLamp);
+        window.customElements.define('swc-icon-reading-lamp', SwcIconReadingLamp);
       }
       export { install as registerComponent }

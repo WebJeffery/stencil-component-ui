@@ -1,4 +1,4 @@
-class IvyIconDocument extends HTMLElement {
+class SwcIconDocument extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDocument extends HTMLElement {
           }
         }
       }
-      export default IvyIconDocument;
+      export default SwcIconDocument;
       function install(){
         if(window.customElements.get('swc-icon-document')) return;
-        window.customElements.define('swc-icon-document', IvyIconDocument);
+        window.customElements.define('swc-icon-document', SwcIconDocument);
       }
       export { install as registerComponent }

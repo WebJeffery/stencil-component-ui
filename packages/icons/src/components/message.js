@@ -1,4 +1,4 @@
-class IvyIconMessage extends HTMLElement {
+class SwcIconMessage extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMessage extends HTMLElement {
           }
         }
       }
-      export default IvyIconMessage;
+      export default SwcIconMessage;
       function install(){
         if(window.customElements.get('swc-icon-message')) return;
-        window.customElements.define('swc-icon-message', IvyIconMessage);
+        window.customElements.define('swc-icon-message', SwcIconMessage);
       }
       export { install as registerComponent }

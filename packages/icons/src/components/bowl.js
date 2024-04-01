@@ -1,4 +1,4 @@
-class IvyIconBowl extends HTMLElement {
+class SwcIconBowl extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBowl extends HTMLElement {
           }
         }
       }
-      export default IvyIconBowl;
+      export default SwcIconBowl;
       function install(){
         if(window.customElements.get('swc-icon-bowl')) return;
-        window.customElements.define('swc-icon-bowl', IvyIconBowl);
+        window.customElements.define('swc-icon-bowl', SwcIconBowl);
       }
       export { install as registerComponent }

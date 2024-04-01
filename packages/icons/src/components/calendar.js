@@ -1,4 +1,4 @@
-class IvyIconCalendar extends HTMLElement {
+class SwcIconCalendar extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCalendar extends HTMLElement {
           }
         }
       }
-      export default IvyIconCalendar;
+      export default SwcIconCalendar;
       function install(){
         if(window.customElements.get('swc-icon-calendar')) return;
-        window.customElements.define('swc-icon-calendar', IvyIconCalendar);
+        window.customElements.define('swc-icon-calendar', SwcIconCalendar);
       }
       export { install as registerComponent }

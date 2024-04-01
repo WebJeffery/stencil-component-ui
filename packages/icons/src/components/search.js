@@ -1,4 +1,4 @@
-class IvyIconSearch extends HTMLElement {
+class SwcIconSearch extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSearch extends HTMLElement {
           }
         }
       }
-      export default IvyIconSearch;
+      export default SwcIconSearch;
       function install(){
         if(window.customElements.get('swc-icon-search')) return;
-        window.customElements.define('swc-icon-search', IvyIconSearch);
+        window.customElements.define('swc-icon-search', SwcIconSearch);
       }
       export { install as registerComponent }

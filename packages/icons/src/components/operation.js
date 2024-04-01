@@ -1,4 +1,4 @@
-class IvyIconOperation extends HTMLElement {
+class SwcIconOperation extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconOperation extends HTMLElement {
           }
         }
       }
-      export default IvyIconOperation;
+      export default SwcIconOperation;
       function install(){
         if(window.customElements.get('swc-icon-operation')) return;
-        window.customElements.define('swc-icon-operation', IvyIconOperation);
+        window.customElements.define('swc-icon-operation', SwcIconOperation);
       }
       export { install as registerComponent }

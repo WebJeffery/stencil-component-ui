@@ -1,4 +1,4 @@
-class IvyIconFiles extends HTMLElement {
+class SwcIconFiles extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFiles extends HTMLElement {
           }
         }
       }
-      export default IvyIconFiles;
+      export default SwcIconFiles;
       function install(){
         if(window.customElements.get('swc-icon-files')) return;
-        window.customElements.define('swc-icon-files', IvyIconFiles);
+        window.customElements.define('swc-icon-files', SwcIconFiles);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconCameraFilled extends HTMLElement {
+class SwcIconCameraFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCameraFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconCameraFilled;
+      export default SwcIconCameraFilled;
       function install(){
         if(window.customElements.get('swc-icon-camera-filled')) return;
-        window.customElements.define('swc-icon-camera-filled', IvyIconCameraFilled);
+        window.customElements.define('swc-icon-camera-filled', SwcIconCameraFilled);
       }
       export { install as registerComponent }

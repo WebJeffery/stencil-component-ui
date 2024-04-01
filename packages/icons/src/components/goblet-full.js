@@ -1,4 +1,4 @@
-class IvyIconGobletFull extends HTMLElement {
+class SwcIconGobletFull extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconGobletFull extends HTMLElement {
           }
         }
       }
-      export default IvyIconGobletFull;
+      export default SwcIconGobletFull;
       function install(){
         if(window.customElements.get('swc-icon-goblet-full')) return;
-        window.customElements.define('swc-icon-goblet-full', IvyIconGobletFull);
+        window.customElements.define('swc-icon-goblet-full', SwcIconGobletFull);
       }
       export { install as registerComponent }

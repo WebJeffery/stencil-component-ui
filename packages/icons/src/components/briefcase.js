@@ -1,4 +1,4 @@
-class IvyIconBriefcase extends HTMLElement {
+class SwcIconBriefcase extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBriefcase extends HTMLElement {
           }
         }
       }
-      export default IvyIconBriefcase;
+      export default SwcIconBriefcase;
       function install(){
         if(window.customElements.get('swc-icon-briefcase')) return;
-        window.customElements.define('swc-icon-briefcase', IvyIconBriefcase);
+        window.customElements.define('swc-icon-briefcase', SwcIconBriefcase);
       }
       export { install as registerComponent }

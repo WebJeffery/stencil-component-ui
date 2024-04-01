@@ -1,4 +1,4 @@
-class IvyIconMicrophone extends HTMLElement {
+class SwcIconMicrophone extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconMicrophone extends HTMLElement {
           }
         }
       }
-      export default IvyIconMicrophone;
+      export default SwcIconMicrophone;
       function install(){
         if(window.customElements.get('swc-icon-microphone')) return;
-        window.customElements.define('swc-icon-microphone', IvyIconMicrophone);
+        window.customElements.define('swc-icon-microphone', SwcIconMicrophone);
       }
       export { install as registerComponent }

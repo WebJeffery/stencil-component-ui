@@ -1,4 +1,4 @@
-class IvyIconWarning extends HTMLElement {
+class SwcIconWarning extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconWarning extends HTMLElement {
           }
         }
       }
-      export default IvyIconWarning;
+      export default SwcIconWarning;
       function install(){
         if(window.customElements.get('swc-icon-warning')) return;
-        window.customElements.define('swc-icon-warning', IvyIconWarning);
+        window.customElements.define('swc-icon-warning', SwcIconWarning);
       }
       export { install as registerComponent }

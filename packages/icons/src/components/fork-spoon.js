@@ -1,4 +1,4 @@
-class IvyIconForkSpoon extends HTMLElement {
+class SwcIconForkSpoon extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconForkSpoon extends HTMLElement {
           }
         }
       }
-      export default IvyIconForkSpoon;
+      export default SwcIconForkSpoon;
       function install(){
         if(window.customElements.get('swc-icon-fork-spoon')) return;
-        window.customElements.define('swc-icon-fork-spoon', IvyIconForkSpoon);
+        window.customElements.define('swc-icon-fork-spoon', SwcIconForkSpoon);
       }
       export { install as registerComponent }

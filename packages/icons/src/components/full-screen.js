@@ -1,4 +1,4 @@
-class IvyIconFullScreen extends HTMLElement {
+class SwcIconFullScreen extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFullScreen extends HTMLElement {
           }
         }
       }
-      export default IvyIconFullScreen;
+      export default SwcIconFullScreen;
       function install(){
         if(window.customElements.get('swc-icon-full-screen')) return;
-        window.customElements.define('swc-icon-full-screen', IvyIconFullScreen);
+        window.customElements.define('swc-icon-full-screen', SwcIconFullScreen);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconGrid extends HTMLElement {
+class SwcIconGrid extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconGrid extends HTMLElement {
           }
         }
       }
-      export default IvyIconGrid;
+      export default SwcIconGrid;
       function install(){
         if(window.customElements.get('swc-icon-grid')) return;
-        window.customElements.define('swc-icon-grid', IvyIconGrid);
+        window.customElements.define('swc-icon-grid', SwcIconGrid);
       }
       export { install as registerComponent }

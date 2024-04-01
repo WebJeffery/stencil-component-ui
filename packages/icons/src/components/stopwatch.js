@@ -1,4 +1,4 @@
-class IvyIconStopwatch extends HTMLElement {
+class SwcIconStopwatch extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconStopwatch extends HTMLElement {
           }
         }
       }
-      export default IvyIconStopwatch;
+      export default SwcIconStopwatch;
       function install(){
         if(window.customElements.get('swc-icon-stopwatch')) return;
-        window.customElements.define('swc-icon-stopwatch', IvyIconStopwatch);
+        window.customElements.define('swc-icon-stopwatch', SwcIconStopwatch);
       }
       export { install as registerComponent }

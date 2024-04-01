@@ -1,4 +1,4 @@
-class IvyIconStarFilled extends HTMLElement {
+class SwcIconStarFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconStarFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconStarFilled;
+      export default SwcIconStarFilled;
       function install(){
         if(window.customElements.get('swc-icon-star-filled')) return;
-        window.customElements.define('swc-icon-star-filled', IvyIconStarFilled);
+        window.customElements.define('swc-icon-star-filled', SwcIconStarFilled);
       }
       export { install as registerComponent }

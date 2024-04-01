@@ -1,4 +1,4 @@
-class IvyIconShare extends HTMLElement {
+class SwcIconShare extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconShare extends HTMLElement {
           }
         }
       }
-      export default IvyIconShare;
+      export default SwcIconShare;
       function install(){
         if(window.customElements.get('swc-icon-share')) return;
-        window.customElements.define('swc-icon-share', IvyIconShare);
+        window.customElements.define('swc-icon-share', SwcIconShare);
       }
       export { install as registerComponent }

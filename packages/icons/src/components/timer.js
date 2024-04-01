@@ -1,4 +1,4 @@
-class IvyIconTimer extends HTMLElement {
+class SwcIconTimer extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconTimer extends HTMLElement {
           }
         }
       }
-      export default IvyIconTimer;
+      export default SwcIconTimer;
       function install(){
         if(window.customElements.get('swc-icon-timer')) return;
-        window.customElements.define('swc-icon-timer', IvyIconTimer);
+        window.customElements.define('swc-icon-timer', SwcIconTimer);
       }
       export { install as registerComponent }

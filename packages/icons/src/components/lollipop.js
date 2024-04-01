@@ -1,4 +1,4 @@
-class IvyIconLollipop extends HTMLElement {
+class SwcIconLollipop extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconLollipop extends HTMLElement {
           }
         }
       }
-      export default IvyIconLollipop;
+      export default SwcIconLollipop;
       function install(){
         if(window.customElements.get('swc-icon-lollipop')) return;
-        window.customElements.define('swc-icon-lollipop', IvyIconLollipop);
+        window.customElements.define('swc-icon-lollipop', SwcIconLollipop);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconRefreshRight extends HTMLElement {
+class SwcIconRefreshRight extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconRefreshRight extends HTMLElement {
           }
         }
       }
-      export default IvyIconRefreshRight;
+      export default SwcIconRefreshRight;
       function install(){
         if(window.customElements.get('swc-icon-refresh-right')) return;
-        window.customElements.define('swc-icon-refresh-right', IvyIconRefreshRight);
+        window.customElements.define('swc-icon-refresh-right', SwcIconRefreshRight);
       }
       export { install as registerComponent }

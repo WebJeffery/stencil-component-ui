@@ -1,4 +1,4 @@
-class IvyIconFilm extends HTMLElement {
+class SwcIconFilm extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFilm extends HTMLElement {
           }
         }
       }
-      export default IvyIconFilm;
+      export default SwcIconFilm;
       function install(){
         if(window.customElements.get('swc-icon-film')) return;
-        window.customElements.define('swc-icon-film', IvyIconFilm);
+        window.customElements.define('swc-icon-film', SwcIconFilm);
       }
       export { install as registerComponent }

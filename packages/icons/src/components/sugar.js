@@ -1,4 +1,4 @@
-class IvyIconSugar extends HTMLElement {
+class SwcIconSugar extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSugar extends HTMLElement {
           }
         }
       }
-      export default IvyIconSugar;
+      export default SwcIconSugar;
       function install(){
         if(window.customElements.get('swc-icon-sugar')) return;
-        window.customElements.define('swc-icon-sugar', IvyIconSugar);
+        window.customElements.define('swc-icon-sugar', SwcIconSugar);
       }
       export { install as registerComponent }

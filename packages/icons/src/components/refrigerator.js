@@ -1,4 +1,4 @@
-class IvyIconRefrigerator extends HTMLElement {
+class SwcIconRefrigerator extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconRefrigerator extends HTMLElement {
           }
         }
       }
-      export default IvyIconRefrigerator;
+      export default SwcIconRefrigerator;
       function install(){
         if(window.customElements.get('swc-icon-refrigerator')) return;
-        window.customElements.define('swc-icon-refrigerator', IvyIconRefrigerator);
+        window.customElements.define('swc-icon-refrigerator', SwcIconRefrigerator);
       }
       export { install as registerComponent }

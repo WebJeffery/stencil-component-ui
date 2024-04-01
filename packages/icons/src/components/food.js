@@ -1,4 +1,4 @@
-class IvyIconFood extends HTMLElement {
+class SwcIconFood extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFood extends HTMLElement {
           }
         }
       }
-      export default IvyIconFood;
+      export default SwcIconFood;
       function install(){
         if(window.customElements.get('swc-icon-food')) return;
-        window.customElements.define('swc-icon-food', IvyIconFood);
+        window.customElements.define('swc-icon-food', SwcIconFood);
       }
       export { install as registerComponent }

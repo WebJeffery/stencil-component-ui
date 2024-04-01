@@ -1,4 +1,4 @@
-class IvyIconSunset extends HTMLElement {
+class SwcIconSunset extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSunset extends HTMLElement {
           }
         }
       }
-      export default IvyIconSunset;
+      export default SwcIconSunset;
       function install(){
         if(window.customElements.get('swc-icon-sunset')) return;
-        window.customElements.define('swc-icon-sunset', IvyIconSunset);
+        window.customElements.define('swc-icon-sunset', SwcIconSunset);
       }
       export { install as registerComponent }

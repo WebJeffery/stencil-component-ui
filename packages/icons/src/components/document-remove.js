@@ -1,4 +1,4 @@
-class IvyIconDocumentRemove extends HTMLElement {
+class SwcIconDocumentRemove extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDocumentRemove extends HTMLElement {
           }
         }
       }
-      export default IvyIconDocumentRemove;
+      export default SwcIconDocumentRemove;
       function install(){
         if(window.customElements.get('swc-icon-document-remove')) return;
-        window.customElements.define('swc-icon-document-remove', IvyIconDocumentRemove);
+        window.customElements.define('swc-icon-document-remove', SwcIconDocumentRemove);
       }
       export { install as registerComponent }

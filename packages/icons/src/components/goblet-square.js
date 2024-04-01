@@ -1,4 +1,4 @@
-class IvyIconGobletSquare extends HTMLElement {
+class SwcIconGobletSquare extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconGobletSquare extends HTMLElement {
           }
         }
       }
-      export default IvyIconGobletSquare;
+      export default SwcIconGobletSquare;
       function install(){
         if(window.customElements.get('swc-icon-goblet-square')) return;
-        window.customElements.define('swc-icon-goblet-square', IvyIconGobletSquare);
+        window.customElements.define('swc-icon-goblet-square', SwcIconGobletSquare);
       }
       export { install as registerComponent }

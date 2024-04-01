@@ -1,4 +1,4 @@
-class IvyIconSuitcaseLine extends HTMLElement {
+class SwcIconSuitcaseLine extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconSuitcaseLine extends HTMLElement {
           }
         }
       }
-      export default IvyIconSuitcaseLine;
+      export default SwcIconSuitcaseLine;
       function install(){
         if(window.customElements.get('swc-icon-suitcase-line')) return;
-        window.customElements.define('swc-icon-suitcase-line', IvyIconSuitcaseLine);
+        window.customElements.define('swc-icon-suitcase-line', SwcIconSuitcaseLine);
       }
       export { install as registerComponent }

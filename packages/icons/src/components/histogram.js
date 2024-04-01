@@ -1,4 +1,4 @@
-class IvyIconHistogram extends HTMLElement {
+class SwcIconHistogram extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconHistogram extends HTMLElement {
           }
         }
       }
-      export default IvyIconHistogram;
+      export default SwcIconHistogram;
       function install(){
         if(window.customElements.get('swc-icon-histogram')) return;
-        window.customElements.define('swc-icon-histogram', IvyIconHistogram);
+        window.customElements.define('swc-icon-histogram', SwcIconHistogram);
       }
       export { install as registerComponent }

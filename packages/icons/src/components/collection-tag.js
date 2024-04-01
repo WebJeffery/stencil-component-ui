@@ -1,4 +1,4 @@
-class IvyIconCollectionTag extends HTMLElement {
+class SwcIconCollectionTag extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconCollectionTag extends HTMLElement {
           }
         }
       }
-      export default IvyIconCollectionTag;
+      export default SwcIconCollectionTag;
       function install(){
         if(window.customElements.get('swc-icon-collection-tag')) return;
-        window.customElements.define('swc-icon-collection-tag', IvyIconCollectionTag);
+        window.customElements.define('swc-icon-collection-tag', SwcIconCollectionTag);
       }
       export { install as registerComponent }

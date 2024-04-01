@@ -1,4 +1,4 @@
-class IvyIconPointer extends HTMLElement {
+class SwcIconPointer extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPointer extends HTMLElement {
           }
         }
       }
-      export default IvyIconPointer;
+      export default SwcIconPointer;
       function install(){
         if(window.customElements.get('swc-icon-pointer')) return;
-        window.customElements.define('swc-icon-pointer', IvyIconPointer);
+        window.customElements.define('swc-icon-pointer', SwcIconPointer);
       }
       export { install as registerComponent }

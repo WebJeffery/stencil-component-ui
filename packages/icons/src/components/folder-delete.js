@@ -1,4 +1,4 @@
-class IvyIconFolderDelete extends HTMLElement {
+class SwcIconFolderDelete extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFolderDelete extends HTMLElement {
           }
         }
       }
-      export default IvyIconFolderDelete;
+      export default SwcIconFolderDelete;
       function install(){
         if(window.customElements.get('swc-icon-folder-delete')) return;
-        window.customElements.define('swc-icon-folder-delete', IvyIconFolderDelete);
+        window.customElements.define('swc-icon-folder-delete', SwcIconFolderDelete);
       }
       export { install as registerComponent }

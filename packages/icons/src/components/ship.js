@@ -1,4 +1,4 @@
-class IvyIconShip extends HTMLElement {
+class SwcIconShip extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconShip extends HTMLElement {
           }
         }
       }
-      export default IvyIconShip;
+      export default SwcIconShip;
       function install(){
         if(window.customElements.get('swc-icon-ship')) return;
-        window.customElements.define('swc-icon-ship', IvyIconShip);
+        window.customElements.define('swc-icon-ship', SwcIconShip);
       }
       export { install as registerComponent }

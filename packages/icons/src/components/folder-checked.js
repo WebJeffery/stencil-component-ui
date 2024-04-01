@@ -1,4 +1,4 @@
-class IvyIconFolderChecked extends HTMLElement {
+class SwcIconFolderChecked extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconFolderChecked extends HTMLElement {
           }
         }
       }
-      export default IvyIconFolderChecked;
+      export default SwcIconFolderChecked;
       function install(){
         if(window.customElements.get('swc-icon-folder-checked')) return;
-        window.customElements.define('swc-icon-folder-checked', IvyIconFolderChecked);
+        window.customElements.define('swc-icon-folder-checked', SwcIconFolderChecked);
       }
       export { install as registerComponent }

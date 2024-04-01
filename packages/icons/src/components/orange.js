@@ -1,4 +1,4 @@
-class IvyIconOrange extends HTMLElement {
+class SwcIconOrange extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconOrange extends HTMLElement {
           }
         }
       }
-      export default IvyIconOrange;
+      export default SwcIconOrange;
       function install(){
         if(window.customElements.get('swc-icon-orange')) return;
-        window.customElements.define('swc-icon-orange', IvyIconOrange);
+        window.customElements.define('swc-icon-orange', SwcIconOrange);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconWarnTriangleFilled extends HTMLElement {
+class SwcIconWarnTriangleFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconWarnTriangleFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconWarnTriangleFilled;
+      export default SwcIconWarnTriangleFilled;
       function install(){
         if(window.customElements.get('swc-icon-warn-triangle-filled')) return;
-        window.customElements.define('swc-icon-warn-triangle-filled', IvyIconWarnTriangleFilled);
+        window.customElements.define('swc-icon-warn-triangle-filled', SwcIconWarnTriangleFilled);
       }
       export { install as registerComponent }

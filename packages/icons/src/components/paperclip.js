@@ -1,4 +1,4 @@
-class IvyIconPaperclip extends HTMLElement {
+class SwcIconPaperclip extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPaperclip extends HTMLElement {
           }
         }
       }
-      export default IvyIconPaperclip;
+      export default SwcIconPaperclip;
       function install(){
         if(window.customElements.get('swc-icon-paperclip')) return;
-        window.customElements.define('swc-icon-paperclip', IvyIconPaperclip);
+        window.customElements.define('swc-icon-paperclip', SwcIconPaperclip);
       }
       export { install as registerComponent }

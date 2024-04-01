@@ -1,4 +1,4 @@
-class IvyIconPhoneFilled extends HTMLElement {
+class SwcIconPhoneFilled extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconPhoneFilled extends HTMLElement {
           }
         }
       }
-      export default IvyIconPhoneFilled;
+      export default SwcIconPhoneFilled;
       function install(){
         if(window.customElements.get('swc-icon-phone-filled')) return;
-        window.customElements.define('swc-icon-phone-filled', IvyIconPhoneFilled);
+        window.customElements.define('swc-icon-phone-filled', SwcIconPhoneFilled);
       }
       export { install as registerComponent }

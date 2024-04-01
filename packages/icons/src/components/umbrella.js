@@ -1,4 +1,4 @@
-class IvyIconUmbrella extends HTMLElement {
+class SwcIconUmbrella extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconUmbrella extends HTMLElement {
           }
         }
       }
-      export default IvyIconUmbrella;
+      export default SwcIconUmbrella;
       function install(){
         if(window.customElements.get('swc-icon-umbrella')) return;
-        window.customElements.define('swc-icon-umbrella', IvyIconUmbrella);
+        window.customElements.define('swc-icon-umbrella', SwcIconUmbrella);
       }
       export { install as registerComponent }

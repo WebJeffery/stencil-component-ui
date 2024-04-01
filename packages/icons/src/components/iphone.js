@@ -1,4 +1,4 @@
-class IvyIconIphone extends HTMLElement {
+class SwcIconIphone extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconIphone extends HTMLElement {
           }
         }
       }
-      export default IvyIconIphone;
+      export default SwcIconIphone;
       function install(){
         if(window.customElements.get('swc-icon-iphone')) return;
-        window.customElements.define('swc-icon-iphone', IvyIconIphone);
+        window.customElements.define('swc-icon-iphone', SwcIconIphone);
       }
       export { install as registerComponent }

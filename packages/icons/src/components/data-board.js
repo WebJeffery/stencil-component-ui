@@ -1,4 +1,4 @@
-class IvyIconDataBoard extends HTMLElement {
+class SwcIconDataBoard extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDataBoard extends HTMLElement {
           }
         }
       }
-      export default IvyIconDataBoard;
+      export default SwcIconDataBoard;
       function install(){
         if(window.customElements.get('swc-icon-data-board')) return;
-        window.customElements.define('swc-icon-data-board', IvyIconDataBoard);
+        window.customElements.define('swc-icon-data-board', SwcIconDataBoard);
       }
       export { install as registerComponent }

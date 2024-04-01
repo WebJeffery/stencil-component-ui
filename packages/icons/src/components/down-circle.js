@@ -1,4 +1,4 @@
-class IvyIconDownCircle extends HTMLElement {
+class SwcIconDownCircle extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconDownCircle extends HTMLElement {
           }
         }
       }
-      export default IvyIconDownCircle;
+      export default SwcIconDownCircle;
       function install(){
         if(window.customElements.get('swc-icon-down-circle')) return;
-        window.customElements.define('swc-icon-down-circle', IvyIconDownCircle);
+        window.customElements.define('swc-icon-down-circle', SwcIconDownCircle);
       }
       export { install as registerComponent }

@@ -1,4 +1,4 @@
-class IvyIconGoblet extends HTMLElement {
+class SwcIconGoblet extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconGoblet extends HTMLElement {
           }
         }
       }
-      export default IvyIconGoblet;
+      export default SwcIconGoblet;
       function install(){
         if(window.customElements.get('swc-icon-goblet')) return;
-        window.customElements.define('swc-icon-goblet', IvyIconGoblet);
+        window.customElements.define('swc-icon-goblet', SwcIconGoblet);
       }
       export { install as registerComponent }

@@ -9,9 +9,9 @@
 ## 使用
 
 ```bash
-npm i @swc-ui/icon
+npm i @swc-ui/icons
 #or
-yarn add @swc-ui/icon
+yarn add @swc-ui/icons
 #or
-pnpm i @swc-ui/icon
+pnpm i @swc-ui/icons
 ```

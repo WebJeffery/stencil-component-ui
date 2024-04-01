@@ -1,4 +1,4 @@
-class IvyIconBrush extends HTMLElement {
+class SwcIconBrush extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBrush extends HTMLElement {
           }
         }
       }
-      export default IvyIconBrush;
+      export default SwcIconBrush;
       function install(){
         if(window.customElements.get('swc-icon-brush')) return;
-        window.customElements.define('swc-icon-brush', IvyIconBrush);
+        window.customElements.define('swc-icon-brush', SwcIconBrush);
       }
       export { install as registerComponent }

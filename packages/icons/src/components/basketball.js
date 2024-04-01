@@ -1,4 +1,4 @@
-class IvyIconBasketball extends HTMLElement {
+class SwcIconBasketball extends HTMLElement {
         constructor() {
           super();
           const host = this.attachShadow({ mode: 'open' });
@@ -45,9 +45,9 @@ class IvyIconBasketball extends HTMLElement {
           }
         }
       }
-      export default IvyIconBasketball;
+      export default SwcIconBasketball;
       function install(){
         if(window.customElements.get('swc-icon-basketball')) return;
-        window.customElements.define('swc-icon-basketball', IvyIconBasketball);
+        window.customElements.define('swc-icon-basketball', SwcIconBasketball);
       }
       export { install as registerComponent }
