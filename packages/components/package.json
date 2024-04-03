@@ -43,5 +43,8 @@
     "puppeteer": "^21.5.2"
   },
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@swc-ui/icons": "workspace:^"
+  }
 }

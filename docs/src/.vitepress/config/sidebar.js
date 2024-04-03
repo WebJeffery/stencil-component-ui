@@ -26,10 +26,10 @@ const components = [
     text: "基础/布局",
     collapsible: true,
     items: [
-      // {
-      //   text: "Icon 图标",
-      //   link: "/components/icon",
-      // },
+      {
+        text: "Icon 图标",
+        link: "/components/icon",
+      },
       {
         text: "Button 按钮",
         link: "/components/button",
