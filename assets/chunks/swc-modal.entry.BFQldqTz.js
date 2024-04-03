@@ -1,1 +1,0 @@
-import{r as o,h as s,H as t}from"./theme.BibeGvl8.js";import"./framework.DIU08dKJ.js";const a=":host{display:block}",c=a,d=class{constructor(e){o(this,e)}render(){return s(t,{key:"0693d5be326d608637442fafeddfa378585680d1"},s("slot",{key:"4d0d29e3970fe71b20e1ab45d61c9f6a01e493cb"}))}};d.style=c;export{d as swc_modal};
