@@ -27,7 +27,7 @@
     "clean": "rimraf dist loader www docs",
     "build": "npm run clean && stencil build --docs",
     "watch": "npm run clean && stencil build --watch",
-    "start": "stencil build --dev --watch --serve --no-open",
+    "start": "stencil build --docs --watch --serve --no-open",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
@@ -43,5 +43,8 @@
     "puppeteer": "^21.5.2"
   },
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@swc-ui/icons": "workspace:^"
+  }
 }

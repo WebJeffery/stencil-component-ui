@@ -129,7 +129,34 @@ export namespace Components {
         "col": string;
     }
     interface SwcIcon {
+        /**
+          * 传入的class名称
+         */
+        "classNames": string;
+        /**
+          * color 颜色
+         */
+        "color": string;
+        /**
+          * 字体图标名称
+         */
         "name": string;
+        /**
+          * 旋转的角度
+         */
+        "rotate": number;
+        /**
+          * icon 尺寸 默认 20
+         */
+        "size": string;
+        /**
+          * 是否自动旋转
+         */
+        "spin": boolean;
+        /**
+          * styles 传入的css样式
+         */
+        "styles": object;
     }
     interface SwcImage {
         "alt": string;
@@ -987,7 +1014,34 @@ declare namespace LocalJSX {
         "col"?: string;
     }
     interface SwcIcon {
+        /**
+          * 传入的class名称
+         */
+        "classNames"?: string;
+        /**
+          * color 颜色
+         */
+        "color"?: string;
+        /**
+          * 字体图标名称
+         */
         "name"?: string;
+        /**
+          * 旋转的角度
+         */
+        "rotate"?: number;
+        /**
+          * icon 尺寸 默认 20
+         */
+        "size"?: string;
+        /**
+          * 是否自动旋转
+         */
+        "spin"?: boolean;
+        /**
+          * styles 传入的css样式
+         */
+        "styles"?: object;
     }
     interface SwcImage {
         "alt"?: string;

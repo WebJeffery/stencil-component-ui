@@ -1,0 +1,29 @@
+@use 'src/global/mixins/mixins' as *;
+@use 'src/global/common/var' as *;
+
+
+
+@include b(icon) {
+  --swc-icon-color: inherit;
+  height: 1em;
+  width: 1em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  color: var(--swc-icon-color);
+  font-size: inherit;
+
+  @include when(spin) {
+    animation: rotating 2s linear infinite;
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

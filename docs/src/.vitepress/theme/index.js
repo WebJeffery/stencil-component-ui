@@ -1,6 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import { defineCustomElements } from "swc-ui/loader";
-// import { registerComponent } from '@swc-ui/icon'
+import { defineCustomElements as defineIconCustomElements } from "@swc-ui/icons/loader";
+// import { registerComponent } from '@swc-ui/icons'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 import "./index.css";
 
@@ -15,6 +16,7 @@ export default {
         DefaultTheme.enhanceApp(ctx);
         useComponents(ctx.app)
         defineCustomElements();
+        defineIconCustomElements()
         if (!import.meta.env.SSR) {
             // registerComponent()
         }

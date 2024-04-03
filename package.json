@@ -4,12 +4,12 @@
   "scripts": {
     "dev:c": "pnpm --filter swc-ui run start",
     "build:c": "pnpm --filter swc-ui run build",
-    "build:icon": "pnpm --filter @swc-ui/icon run build",
+    "build:icon": "pnpm --filter @swc-ui/icons run build",
     "start:docs": "pnpm --filter docs run start",
     "build:docs": "turbo run build --filter docs",
     "build": "pnpm run build:icon & pnpm run build:c",
     "g": "pnpm --filter swc-ui run generate",
-    "g:icon": "pnpm --filter @swc-ui/icon run generate"
+    "g:icon": "pnpm --filter @swc-ui/icons run generate"
   },
   "keywords": [],
   "author": "",
