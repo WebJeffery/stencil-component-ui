@@ -1,4 +1,6 @@
 module.exports = {
+  ignorePatterns: ["docs/**", "packages/**"],
+  extends: ["@swc-ui/eslint-config/library.js"],
   'parser': '@typescript-eslint/parser',
   'plugins': ['@typescript-eslint'],
   'rules': {
@@ -19,6 +21,7 @@ module.exports = {
     'no-undef': 0
   },
   'parserOptions': {
+    project: true,
     'ecmaVersion': 6,
     'sourceType': 'module',
     'ecmaFeatures': {

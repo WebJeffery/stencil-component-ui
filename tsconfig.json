@@ -1,0 +1,3 @@
+{
+  "extends": "@swc-ui/typescript-config/base.json"
+}
