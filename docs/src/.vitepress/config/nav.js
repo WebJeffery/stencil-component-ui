@@ -8,6 +8,11 @@ export default [
         link: "/components/button",
         activeMatch: "/components/",
     },
+    {
+        text: "开发文档",
+        link: "/develop/web-component",
+    },
+    
     // {
     //     text: "更新日志",
     //     link: "/changelog",

@@ -111,6 +111,28 @@ const renderCode = (name, ctx) => {
   `;
 };
 
+// 所有 icon 标签
+const swcIconTemplate = (entry, outDir) => {
+  getSvgFiles(entry)
+    .then(res => {
+      const icon = res.map(val => {
+        let str = val.replace('.svg', '')
+        return `<swc-icon-${str} style="margin-right: 10px;"></swc-icon-${str}>\n`
+      }).join('')
+
+      writeFile(`${outDir}/swc-icon.md`, icon, err => {
+        if (err) {
+          throw err;
+        }
+      });
+    })
+}
+
+/**
+ * 编译 svg 图标为 class 组件
+ * @param {*} entry 解析入口目录
+ * @param {*} outDir 输出目录
+ */
 const renderCompFile = (entry, outDir) => {
   getSvgFiles(entry)
     .then(res => {
@@ -136,15 +158,15 @@ const renderCompFile = (entry, outDir) => {
             });
           }
 
-          // return {
-          //   name: c.value?.name,
-          //   className: camelCase(c.value?.name),
-          //   compName: `swc-icon-${c.value?.name}`,
-          // };
-        });
-      });
-      return names;
-    })
+    //       // return {
+    //       //   name: c.value?.name,
+    //       //   className: camelCase(c.value?.name),
+    //       //   compName: `swc-icon-${c.value?.name}`,
+    //       // };
+    //     });
+    //   });
+    //   return names;
+    // })
     // .then(res => {
     //   const importStr = res.map(c => `import ${c.className} from './components/swc-icon/${c.name}.js';`).join('\n');
     //   const compNameList = [...res.map(c => ({ compName: c.compName, className: [c.className].join('') }))];

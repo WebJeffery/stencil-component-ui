@@ -52,9 +52,5 @@ pnpm install
 3、启动项目
 
 ```shell
-# 先启动组件包
-npm run dev:c
-
-# 启动文档预览
-npm run dev:doc
+npm run dev
 ``

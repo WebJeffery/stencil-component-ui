@@ -7,3 +7,7 @@
 .demo-button swc-row {
   margin-bottom: 1rem
 }
+
+.all-icons .swc-icon {
+  margin: 0 10px 10px 0;
+}
