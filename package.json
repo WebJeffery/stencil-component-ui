@@ -7,7 +7,7 @@
     "build:icon": "pnpm --filter @swc-ui/icons run build",
     "start:docs": "pnpm --filter docs run start",
     "build:docs": "turbo run build --filter docs",
-    "build": "pnpm run build:icon & pnpm run build:c",
+    "build": "turbo run build",
     "g": "pnpm --filter swc-ui run generate",
     "g:icon": "pnpm --filter @swc-ui/icons run generate"
   },
