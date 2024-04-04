@@ -19,7 +19,7 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "gen:icon": "node scripts/transfer-svg.mjs"
+    "transform": "node scripts/transfer-svg.mjs"
   },
   "devDependencies": {
     "@stencil/core": "^4.7.0",

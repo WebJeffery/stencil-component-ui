@@ -6,3 +6,6 @@ docs/src/.vitepress/.temp
 docs/dist
 /packages/components/src/components/**/readme.md
 .turbo
+build/**
+dist/**
+.next/**

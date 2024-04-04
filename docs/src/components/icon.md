@@ -102,285 +102,315 @@ import '@swc-ui/icons/dist/components/swc-icon-add-location.js'
 
 ## 所有 icon
 
-<div id="icons">
-<swc-icon-edit size="20" style="margin: 10px;"></swc-icon-edit>
-<swc-icon-download size="20" style="margin: 10px;"></swc-icon-download>
-<swc-icon-coin size="20" style="margin: 10px;"></swc-icon-coin>
-<swc-icon-female size="20" style="margin: 10px;"></swc-icon-female>
-<swc-icon-edit-outline size="20" style="margin: 10px;"></swc-icon-edit-outline>
-<swc-icon-files size="20" style="margin: 10px;"></swc-icon-files>
-<swc-icon-film size="20" style="margin: 10px;"></swc-icon-film>
-<swc-icon-error size="20" style="margin: 10px;"></swc-icon-error>
-<swc-icon-eleme size="20" style="margin: 10px;"></swc-icon-eleme>
-<swc-icon-coffee size="20" style="margin: 10px;"></swc-icon-coffee>
-<swc-icon-folder-remove size="20" style="margin: 10px;"></swc-icon-folder-remove>
-<swc-icon-folder-checked size="20" style="margin: 10px;"></swc-icon-folder-checked>
-<swc-icon-folder-add size="20" style="margin: 10px;"></swc-icon-folder-add>
-<swc-icon-folder-delete size="20" style="margin: 10px;"></swc-icon-folder-delete>
-<swc-icon-football size="20" style="margin: 10px;"></swc-icon-football>
-<swc-icon-finished size="20" style="margin: 10px;"></swc-icon-finished>
-<swc-icon-folder size="20" style="margin: 10px;"></swc-icon-folder>
-<swc-icon-fork-spoon size="20" style="margin: 10px;"></swc-icon-fork-spoon>
-<swc-icon-first-aid-kit size="20" style="margin: 10px;"></swc-icon-first-aid-kit>
-<swc-icon-goblet-full size="20" style="margin: 10px;"></swc-icon-goblet-full>
-<swc-icon-food size="20" style="margin: 10px;"></swc-icon-food>
-<swc-icon-folder-opened size="20" style="margin: 10px;"></swc-icon-folder-opened>
-<swc-icon-full-screen size="20" style="margin: 10px;"></swc-icon-full-screen>
-<swc-icon-goblet-square-full size="20" style="margin: 10px;"></swc-icon-goblet-square-full>
-<swc-icon-goblet size="20" style="margin: 10px;"></swc-icon-goblet>
-<swc-icon-goblet-square size="20" style="margin: 10px;"></swc-icon-goblet-square>
-<swc-icon-goods size="20" style="margin: 10px;"></swc-icon-goods>
-<swc-icon-guide size="20" style="margin: 10px;"></swc-icon-guide>
-<swc-icon-help size="20" style="margin: 10px;"></swc-icon-help>
-<swc-icon-headset size="20" style="margin: 10px;"></swc-icon-headset>
-<swc-icon-house size="20" style="margin: 10px;"></swc-icon-house>
-<swc-icon-ice-cream-round size="20" style="margin: 10px;"></swc-icon-ice-cream-round>
-<swc-icon-hot-water size="20" style="margin: 10px;"></swc-icon-hot-water>
-<swc-icon-heavy-rain size="20" style="margin: 10px;"></swc-icon-heavy-rain>
-<swc-icon-ice-drink size="20" style="margin: 10px;"></swc-icon-ice-drink>
-<swc-icon-ice-cream size="20" style="margin: 10px;"></swc-icon-ice-cream>
-<swc-icon-key size="20" style="margin: 10px;"></swc-icon-key>
-<swc-icon-ice-cream-square size="20" style="margin: 10px;"></swc-icon-ice-cream-square>
-<swc-icon-knife-fork size="20" style="margin: 10px;"></swc-icon-knife-fork>
-<swc-icon-ice-tea size="20" style="margin: 10px;"></swc-icon-ice-tea>
-<swc-icon-info size="20" style="margin: 10px;"></swc-icon-info>
-<swc-icon-grape size="20" style="margin: 10px;"></swc-icon-grape>
-<swc-icon-light-rain size="20" style="margin: 10px;"></swc-icon-light-rain>
-<swc-icon-location-information size="20" style="margin: 10px;"></swc-icon-location-information>
-<swc-icon-lock size="20" style="margin: 10px;"></swc-icon-lock>
-<swc-icon-location-outline size="20" style="margin: 10px;"></swc-icon-location-outline>
-<swc-icon-lightning size="20" style="margin: 10px;"></swc-icon-lightning>
-<swc-icon-magic-stick size="20" style="margin: 10px;"></swc-icon-magic-stick>
-<swc-icon-link size="20" style="margin: 10px;"></swc-icon-link>
-<swc-icon-lollipop size="20" style="margin: 10px;"></swc-icon-lollipop>
-<swc-icon-location size="20" style="margin: 10px;"></swc-icon-location>
-<swc-icon-loading size="20" style="margin: 10px;"></swc-icon-loading>
-<swc-icon-male size="20" style="margin: 10px;"></swc-icon-male>
-<swc-icon-menu size="20" style="margin: 10px;"></swc-icon-menu>
-<swc-icon-microphone size="20" style="margin: 10px;"></swc-icon-microphone>
-<swc-icon-minus size="20" style="margin: 10px;"></swc-icon-minus>
-<swc-icon-message size="20" style="margin: 10px;"></swc-icon-message>
-<swc-icon-map-location size="20" style="margin: 10px;"></swc-icon-map-location>
-<swc-icon-message-solid size="20" style="margin: 10px;"></swc-icon-message-solid>
-<swc-icon-mic size="20" style="margin: 10px;"></swc-icon-mic>
-<swc-icon-milk-tea size="20" style="margin: 10px;"></swc-icon-milk-tea>
-<swc-icon-medal size="20" style="margin: 10px;"></swc-icon-medal>
-<swc-icon-medal- size="20" style="margin: 10px;"></swc-icon-medal->
-<swc-icon-mobile size="20" style="margin: 10px;"></swc-icon-mobile>
-<swc-icon-mobile-phone size="20" style="margin: 10px;"></swc-icon-mobile-phone>
-<swc-icon-money size="20" style="margin: 10px;"></swc-icon-money>
-<swc-icon-more size="20" style="margin: 10px;"></swc-icon-more>
-<swc-icon-no-smoking size="20" style="margin: 10px;"></swc-icon-no-smoking>
-<swc-icon-more-outline size="20" style="margin: 10px;"></swc-icon-more-outline>
-<swc-icon-notebook- size="20" style="margin: 10px;"></swc-icon-notebook->
-<swc-icon-s-home size="20" style="margin: 10px;"></swc-icon-s-home>
-<swc-icon-news size="20" style="margin: 10px;"></swc-icon-news>
-<swc-icon-odometer size="20" style="margin: 10px;"></swc-icon-odometer>
-<swc-icon name="notebook-1" size="20" style="margin: 10px;"></swc-icon>
-<swc-icon-s-open size="20" style="margin: 10px;"></swc-icon-s-open>
-<swc-icon-s-marketing size="20" style="margin: 10px;"></swc-icon-s-marketing>
-<swc-icon-mouse size="20" style="margin: 10px;"></swc-icon-mouse>
-<swc-icon-s-management size="20" style="margin: 10px;"></swc-icon-s-management>
-<swc-icon-s-operation size="20" style="margin: 10px;"></swc-icon-s-operation>
-<swc-icon-office-building size="20" style="margin: 10px;"></swc-icon-office-building>
-<swc-icon-open size="20" style="margin: 10px;"></swc-icon-open>
-<swc-icon-ship size="20" style="margin: 10px;"></swc-icon-ship>
-<swc-icon-sell size="20" style="margin: 10px;"></swc-icon-sell>
-<swc-icon-search size="20" style="margin: 10px;"></swc-icon-search>
-<swc-icon-service size="20" style="margin: 10px;"></swc-icon-service>
-<swc-icon-scissors size="20" style="margin: 10px;"></swc-icon-scissors>
-<swc-icon-shopping-bag- size="20" style="margin: 10px;"></swc-icon-shopping-bag->
-<swc-icon-orange size="20" style="margin: 10px;"></swc-icon-orange>
-<swc-icon-phone-outline size="20" style="margin: 10px;"></swc-icon-phone-outline>
-<swc-icon-picture size="20" style="margin: 10px;"></swc-icon-picture>
-<swc-icon-receiving size="20" style="margin: 10px;"></swc-icon-receiving>
-<swc-icon-phone size="20" style="margin: 10px;"></swc-icon-phone>
-<swc-icon-picture-outline-round size="20" style="margin: 10px;"></swc-icon-picture-outline-round>
-<swc-icon-refresh-left size="20" style="margin: 10px;"></swc-icon-refresh-left>
-<swc-icon-picture-outline size="20" style="margin: 10px;"></swc-icon-picture-outline>
-<swc-icon-pie-chart size="20" style="margin: 10px;"></swc-icon-pie-chart>
-<swc-icon-s-data size="20" style="margin: 10px;"></swc-icon-s-data>
-<swc-icon-refrigerator size="20" style="margin: 10px;"></swc-icon-refrigerator>
-<swc-icon-s-cooperation size="20" style="margin: 10px;"></swc-icon-s-cooperation>
-<swc-icon-s-check size="20" style="margin: 10px;"></swc-icon-s-check>
-<swc-icon-s-flag size="20" style="margin: 10px;"></swc-icon-s-flag>
-<swc-icon-s-custom size="20" style="margin: 10px;"></swc-icon-s-custom>
-<swc-icon-s-fold size="20" style="margin: 10px;"></swc-icon-s-fold>
-<swc-icon-s-finance size="20" style="margin: 10px;"></swc-icon-s-finance>
-<swc-icon-remove-outline size="20" style="margin: 10px;"></swc-icon-remove-outline>
-<swc-icon-s-comment size="20" style="margin: 10px;"></swc-icon-s-comment>
-<swc-icon-remove size="20" style="margin: 10px;"></swc-icon-remove>
-<swc-icon-refresh-right size="20" style="margin: 10px;"></swc-icon-refresh-right>
-<swc-icon-s-unfold size="20" style="margin: 10px;"></swc-icon-s-unfold>
-<swc-icon-school size="20" style="margin: 10px;"></swc-icon-school>
-<swc-icon-s-shop size="20" style="margin: 10px;"></swc-icon-s-shop>
-<swc-icon-s-ticket size="20" style="margin: 10px;"></swc-icon-s-ticket>
-<swc-icon-sort-up size="20" style="margin: 10px;"></swc-icon-sort-up>
-<swc-icon-star-on size="20" style="margin: 10px;"></swc-icon-star-on>
-<swc-icon-success size="20" style="margin: 10px;"></swc-icon-success>
-<swc-icon-sort size="20" style="margin: 10px;"></swc-icon-sort>
-<swc-icon-takeaway-box size="20" style="margin: 10px;"></swc-icon-takeaway-box>
-<swc-icon-stopwatch size="20" style="margin: 10px;"></swc-icon-stopwatch>
-<swc-icon-thumb size="20" style="margin: 10px;"></swc-icon-thumb>
-<swc-icon-tickets size="20" style="margin: 10px;"></swc-icon-tickets>
-<swc-icon-turn-off-microphone size="20" style="margin: 10px;"></swc-icon-turn-off-microphone>
-<swc-icon-time size="20" style="margin: 10px;"></swc-icon-time>
-<swc-icon-truck size="20" style="margin: 10px;"></swc-icon-truck>
-<swc-icon-upload size="20" style="margin: 10px;"></swc-icon-upload>
-<swc-icon-user size="20" style="margin: 10px;"></swc-icon-user>
-<swc-icon-user-solid size="20" style="margin: 10px;"></swc-icon-user-solid>
-<swc-icon name="upload1" size="20" style="margin: 10px;"></swc-icon>
-<swc-icon-video-camera-solid size="20" style="margin: 10px;"></swc-icon-video-camera-solid>
-<swc-icon-video-play size="20" style="margin: 10px;"></swc-icon-video-play>
-<swc-icon-video-camera size="20" style="margin: 10px;"></swc-icon-video-camera>
-<swc-icon-right size="20" style="margin: 10px;"></swc-icon-right>
-<swc-icon-video-pause size="20" style="margin: 10px;"></swc-icon-video-pause>
-<swc-icon-star-off size="20" style="margin: 10px;"></swc-icon-star-off>
-<swc-icon-trophy size="20" style="margin: 10px;"></swc-icon-trophy>
-<swc-icon-wallet size="20" style="margin: 10px;"></swc-icon-wallet>
-<swc-icon-watch size="20" style="margin: 10px;"></swc-icon-watch>
-<swc-icon-warning-outline size="20" style="margin: 10px;"></swc-icon-warning-outline>
-<swc-icon-wind-power size="20" style="margin: 10px;"></swc-icon-wind-power>
-<swc-icon-view size="20" style="margin: 10px;"></swc-icon-view>
-<swc-icon-watermelon size="20" style="margin: 10px;"></swc-icon-watermelon>
-<swc-icon-share size="20" style="margin: 10px;"></swc-icon-share>
-<swc-icon-set-up size="20" style="margin: 10px;"></swc-icon-set-up>
-<swc-icon-zoom-in size="20" style="margin: 10px;"></swc-icon-zoom-in>
-<swc-icon-water-cup size="20" style="margin: 10px;"></swc-icon-water-cup>
-<swc-icon-warning size="20" style="margin: 10px;"></swc-icon-warning>
-<swc-icon-watch- size="20" style="margin: 10px;"></swc-icon-watch->
-<swc-icon-setting size="20" style="margin: 10px;"></swc-icon-setting>
-<swc-icon-plus size="20" style="margin: 10px;"></swc-icon-plus>
-<swc-icon-zoom-out size="20" style="margin: 10px;"></swc-icon-zoom-out>
-<swc-icon-place size="20" style="margin: 10px;"></swc-icon-place>
-<swc-icon-pear size="20" style="margin: 10px;"></swc-icon-pear>
-<swc-icon-partly-cloudy size="20" style="margin: 10px;"></swc-icon-partly-cloudy>
-<swc-icon-paperclip size="20" style="margin: 10px;"></swc-icon-paperclip>
-<swc-icon-platform-eleme size="20" style="margin: 10px;"></swc-icon-platform-eleme>
-<swc-icon-s-claim size="20" style="margin: 10px;"></swc-icon-s-claim>
-<swc-icon-s-goods size="20" style="margin: 10px;"></swc-icon-s-goods>
-<swc-icon-s-grid size="20" style="margin: 10px;"></swc-icon-s-grid>
-<swc-icon-s-help size="20" style="margin: 10px;"></swc-icon-s-help>
-<swc-icon name="shopping-bag-1" size="20" style="margin: 10px;"></swc-icon>
-<swc-icon-shopping-cart- size="20" style="margin: 10px;"></swc-icon-shopping-cart->
-<swc-icon name="shopping-cart-1" size="20" style="margin: 10px;"></swc-icon>
-<swc-icon-smoking size="20" style="margin: 10px;"></swc-icon-smoking>
-<swc-icon-shopping-cart-full size="20" style="margin: 10px;"></swc-icon-shopping-cart-full>
-<swc-icon-soccer size="20" style="margin: 10px;"></swc-icon-soccer>
-<swc-icon-s-promotion size="20" style="margin: 10px;"></swc-icon-s-promotion>
-<swc-icon-sort-down size="20" style="margin: 10px;"></swc-icon-sort-down>
-<swc-icon-s-release size="20" style="margin: 10px;"></swc-icon-s-release>
-<swc-icon-s-opportunity size="20" style="margin: 10px;"></swc-icon-s-opportunity>
-<swc-icon-s-order size="20" style="margin: 10px;"></swc-icon-s-order>
-<swc-icon-s-tools size="20" style="margin: 10px;"></swc-icon-s-tools>
-<swc-icon-sold-out size="20" style="margin: 10px;"></swc-icon-sold-out>
-<swc-icon-s-platform size="20" style="margin: 10px;"></swc-icon-s-platform>
-<swc-icon-suitcase size="20" style="margin: 10px;"></swc-icon-suitcase>
-<swc-icon-suitcase- size="20" style="margin: 10px;"></swc-icon-suitcase->
-<swc-icon-sugar size="20" style="margin: 10px;"></swc-icon-sugar>
-<swc-icon-refresh size="20" style="margin: 10px;"></swc-icon-refresh>
-<swc-icon-sunset size="20" style="margin: 10px;"></swc-icon-sunset>
-<swc-icon-sunrise size="20" style="margin: 10px;"></swc-icon-sunrise>
-<swc-icon-sunrise size="20" style="margin: 10px;"></swc-icon-sunrise>
-<swc-icon-top-left size="20" style="margin: 10px;"></swc-icon-top-left>
-<swc-icon-add-location size="20" style="margin: 10px;"></swc-icon-add-location>
-<swc-icon-switch-button size="20" style="margin: 10px;"></swc-icon-switch-button>
-<swc-icon-aim size="20" style="margin: 10px;"></swc-icon-aim>
-<swc-icon-toilet-paper size="20" style="margin: 10px;"></swc-icon-toilet-paper>
-<swc-icon-back size="20" style="margin: 10px;"></swc-icon-back>
-<swc-icon-timer size="20" style="margin: 10px;"></swc-icon-timer>
-<swc-icon-arrow-left size="20" style="margin: 10px;"></swc-icon-arrow-left>
-<swc-icon-table-lamp size="20" style="margin: 10px;"></swc-icon-table-lamp>
-<swc-icon-attract size="20" style="margin: 10px;"></swc-icon-attract>
-<swc-icon-tableware size="20" style="margin: 10px;"></swc-icon-tableware>
-<swc-icon-arrow-right size="20" style="margin: 10px;"></swc-icon-arrow-right>
-<swc-icon-top-right size="20" style="margin: 10px;"></swc-icon-top-right>
-<swc-icon-arrow-up size="20" style="margin: 10px;"></swc-icon-arrow-up>
-<swc-icon-trophy- size="20" style="margin: 10px;"></swc-icon-trophy->
-<swc-icon-alarm-clock size="20" style="margin: 10px;"></swc-icon-alarm-clock>
-<swc-icon-top size="20" style="margin: 10px;"></swc-icon-top>
-<swc-icon-arrow-down size="20" style="margin: 10px;"></swc-icon-arrow-down>
-<swc-icon-turn-off size="20" style="margin: 10px;"></swc-icon-turn-off>
-<swc-icon-apple size="20" style="margin: 10px;"></swc-icon-apple>
-<swc-icon-monitor size="20" style="margin: 10px;"></swc-icon-monitor>
-<swc-icon-bangzhu size="20" style="margin: 10px;"></swc-icon-bangzhu>
-<swc-icon-unlock size="20" style="margin: 10px;"></swc-icon-unlock>
-<swc-icon-bell size="20" style="margin: 10px;"></swc-icon-bell>
-<swc-icon-postcard size="20" style="margin: 10px;"></swc-icon-postcard>
-<swc-icon-bottom-right size="20" style="margin: 10px;"></swc-icon-bottom-right>
-<swc-icon-umbrella size="20" style="margin: 10px;"></swc-icon-umbrella>
-<swc-icon-box size="20" style="margin: 10px;"></swc-icon-box>
-<swc-icon-moon size="20" style="margin: 10px;"></swc-icon-moon>
-<swc-icon-brush size="20" style="margin: 10px;"></swc-icon-brush>
-<swc-icon-present size="20" style="margin: 10px;"></swc-icon-present>
-<swc-icon-bank-card size="20" style="margin: 10px;"></swc-icon-bank-card>
-<swc-icon-position size="20" style="margin: 10px;"></swc-icon-position>
-<swc-icon-bottom-left size="20" style="margin: 10px;"></swc-icon-bottom-left>
-<swc-icon-price-tag size="20" style="margin: 10px;"></swc-icon-price-tag>
-<swc-icon-bicycle size="20" style="margin: 10px;"></swc-icon-bicycle>
-<swc-icon-potato-strips size="20" style="margin: 10px;"></swc-icon-potato-strips>
-<swc-icon-baseball size="20" style="margin: 10px;"></swc-icon-baseball>
-<swc-icon-printer size="20" style="margin: 10px;"></swc-icon-printer>
-<swc-icon-caret-left size="20" style="margin: 10px;"></swc-icon-caret-left>
-<swc-icon-sunny size="20" style="margin: 10px;"></swc-icon-sunny>
-<swc-icon-camera-solid size="20" style="margin: 10px;"></swc-icon-camera-solid>
-<swc-icon-moon-night size="20" style="margin: 10px;"></swc-icon-moon-night>
-<swc-icon-caret-right size="20" style="margin: 10px;"></swc-icon-caret-right>
-<swc-icon-reading size="20" style="margin: 10px;"></swc-icon-reading>
-<swc-icon-caret-top size="20" style="margin: 10px;"></swc-icon-caret-top>
-<swc-icon-rank size="20" style="margin: 10px;"></swc-icon-rank>
-<swc-icon-caret-bottom size="20" style="margin: 10px;"></swc-icon-caret-bottom>
-<swc-icon-question size="20" style="margin: 10px;"></swc-icon-question>
-<swc-icon-basketball size="20" style="margin: 10px;"></swc-icon-basketball>
-<swc-icon-burger size="20" style="margin: 10px;"></swc-icon-burger>
-<swc-icon-bottom size="20" style="margin: 10px;"></swc-icon-bottom>
-<swc-icon-c-scale-to-original size="20" style="margin: 10px;"></swc-icon-c-scale-to-original>
-<swc-icon-camera size="20" style="margin: 10px;"></swc-icon-camera>
-<swc-icon-chat-dot-round size="20" style="margin: 10px;"></swc-icon-chat-dot-round>
-<swc-icon-check size="20" style="margin: 10px;"></swc-icon-check>
-<swc-icon-chat-line-square size="20" style="margin: 10px;"></swc-icon-chat-line-square>
-<swc-icon-chat-round size="20" style="margin: 10px;"></swc-icon-chat-round>
-<swc-icon-chat-dot-square size="20" style="margin: 10px;"></swc-icon-chat-dot-square>
-<swc-icon-chat-line-round size="20" style="margin: 10px;"></swc-icon-chat-line-round>
-<swc-icon-chat-square size="20" style="margin: 10px;"></swc-icon-chat-square>
-<swc-icon-circle-check size="20" style="margin: 10px;"></swc-icon-circle-check>
-<swc-icon-circle-close size="20" style="margin: 10px;"></swc-icon-circle-close>
-<swc-icon-chicken size="20" style="margin: 10px;"></swc-icon-chicken>
-<swc-icon-circle-plus-outline size="20" style="margin: 10px;"></swc-icon-circle-plus-outline>
-<swc-icon-circle-plus size="20" style="margin: 10px;"></swc-icon-circle-plus>
-<swc-icon-close-notification size="20" style="margin: 10px;"></swc-icon-close-notification>
-<swc-icon-close size="20" style="margin: 10px;"></swc-icon-close>
-<swc-icon-cloudy-and-sunny size="20" style="margin: 10px;"></swc-icon-cloudy-and-sunny>
-<swc-icon-cherry size="20" style="margin: 10px;"></swc-icon-cherry>
-<swc-icon-coffee-cup size="20" style="margin: 10px;"></swc-icon-coffee-cup>
-<swc-icon-cloudy size="20" style="margin: 10px;"></swc-icon-cloudy>
-<swc-icon-collection-tag size="20" style="margin: 10px;"></swc-icon-collection-tag>
-<swc-icon-cold-drink size="20" style="margin: 10px;"></swc-icon-cold-drink>
-<swc-icon-collection size="20" style="margin: 10px;"></swc-icon-collection>
-<swc-icon-coordinate size="20" style="margin: 10px;"></swc-icon-coordinate>
-<swc-icon-connection size="20" style="margin: 10px;"></swc-icon-connection>
-<swc-icon-crop size="20" style="margin: 10px;"></swc-icon-crop>
-<swc-icon-cpu size="20" style="margin: 10px;"></swc-icon-cpu>
-<swc-icon-copy-document size="20" style="margin: 10px;"></swc-icon-copy-document>
-<swc-icon-d-caret size="20" style="margin: 10px;"></swc-icon-d-caret>
-<swc-icon-d-arrow-right size="20" style="margin: 10px;"></swc-icon-d-arrow-right>
-<swc-icon-data-board size="20" style="margin: 10px;"></swc-icon-data-board>
-<swc-icon-data-analysis size="20" style="margin: 10px;"></swc-icon-data-analysis>
-<swc-icon-data-line size="20" style="margin: 10px;"></swc-icon-data-line>
-<swc-icon-d-arrow-left size="20" style="margin: 10px;"></swc-icon-d-arrow-left>
-<swc-icon-delete-solid size="20" style="margin: 10px;"></swc-icon-delete-solid>
-<swc-icon-delete-location size="20" style="margin: 10px;"></swc-icon-delete-location>
-<swc-icon-discount size="20" style="margin: 10px;"></swc-icon-discount>
-<swc-icon-date size="20" style="margin: 10px;"></swc-icon-date>
-<swc-icon-dessert size="20" style="margin: 10px;"></swc-icon-dessert>
-<swc-icon-dish size="20" style="margin: 10px;"></swc-icon-dish>
-<swc-icon-delete size="20" style="margin: 10px;"></swc-icon-delete>
-<swc-icon-document-copy size="20" style="margin: 10px;"></swc-icon-document-copy>
-<swc-icon-document size="20" style="margin: 10px;"></swc-icon-document>
-<swc-icon-discover size="20" style="margin: 10px;"></swc-icon-discover>
-<swc-icon-document-add size="20" style="margin: 10px;"></swc-icon-document-add>
-<swc-icon-document-checked size="20" style="margin: 10px;"></swc-icon-document-checked>
-<swc-icon-document-delete size="20" style="margin: 10px;"></swc-icon-document-delete>
-<swc-icon-document-remove size="20" style="margin: 10px;"></swc-icon-document-remove>
-<swc-icon-dish- size="20" style="margin: 10px;"></swc-icon-dish->
+:::demo
+```vue
+<template>
+<div class="all-icons" @click="copySvgIcon">
+<swc-icon-add-location></swc-icon-add-location>
+<swc-icon-aim></swc-icon-aim>
+<swc-icon-alarm-clock></swc-icon-alarm-clock>
+<swc-icon-apple></swc-icon-apple>
+<swc-icon-arrow-down-bold></swc-icon-arrow-down-bold>
+<swc-icon-arrow-down></swc-icon-arrow-down>
+<swc-icon-arrow-left-bold></swc-icon-arrow-left-bold>
+<swc-icon-arrow-left></swc-icon-arrow-left>
+<swc-icon-arrow-right-bold></swc-icon-arrow-right-bold>
+<swc-icon-arrow-right></swc-icon-arrow-right>
+<swc-icon-arrow-up-bold></swc-icon-arrow-up-bold>
+<swc-icon-arrow-up></swc-icon-arrow-up>
+<swc-icon-avatar></swc-icon-avatar>
+<swc-icon-back></swc-icon-back>
+<swc-icon-baseball></swc-icon-baseball>
+<swc-icon-basketball></swc-icon-basketball>
+<swc-icon-bell-filled></swc-icon-bell-filled>
+<swc-icon-bell></swc-icon-bell>
+<swc-icon-bicycle></swc-icon-bicycle>
+<swc-icon-bottom-left></swc-icon-bottom-left>
+<swc-icon-bottom-right></swc-icon-bottom-right>
+<swc-icon-bottom></swc-icon-bottom>
+<swc-icon-bowl></swc-icon-bowl>
+<swc-icon-box></swc-icon-box>
+<swc-icon-briefcase></swc-icon-briefcase>
+<swc-icon-brush-filled></swc-icon-brush-filled>
+<swc-icon-brush></swc-icon-brush>
+<swc-icon-burger></swc-icon-burger>
+<swc-icon-calendar></swc-icon-calendar>
+<swc-icon-camera-filled></swc-icon-camera-filled>
+<swc-icon-camera></swc-icon-camera>
+<swc-icon-caret-bottom></swc-icon-caret-bottom>
+<swc-icon-caret-left></swc-icon-caret-left>
+<swc-icon-caret-right></swc-icon-caret-right>
+<swc-icon-caret-top></swc-icon-caret-top>
+<swc-icon-cellphone></swc-icon-cellphone>
+<swc-icon-chat-dot-round></swc-icon-chat-dot-round>
+<swc-icon-chat-dot-square></swc-icon-chat-dot-square>
+<swc-icon-chat-line-round></swc-icon-chat-line-round>
+<swc-icon-chat-line-square></swc-icon-chat-line-square>
+<swc-icon-chat-round></swc-icon-chat-round>
+<swc-icon-chat-square></swc-icon-chat-square>
+<swc-icon-check></swc-icon-check>
+<swc-icon-checked></swc-icon-checked>
+<swc-icon-cherry></swc-icon-cherry>
+<swc-icon-chicken></swc-icon-chicken>
+<swc-icon-chrome-filled></swc-icon-chrome-filled>
+<swc-icon-circle-check-filled></swc-icon-circle-check-filled>
+<swc-icon-circle-check></swc-icon-circle-check>
+<swc-icon-circle-close-filled></swc-icon-circle-close-filled>
+<swc-icon-circle-close></swc-icon-circle-close>
+<swc-icon-circle-plus-filled></swc-icon-circle-plus-filled>
+<swc-icon-circle-plus></swc-icon-circle-plus>
+<swc-icon-clock></swc-icon-clock>
+<swc-icon-close-bold></swc-icon-close-bold>
+<swc-icon-close></swc-icon-close>
+<swc-icon-cloudy></swc-icon-cloudy>
+<swc-icon-coffee-cup></swc-icon-coffee-cup>
+<swc-icon-coffee></swc-icon-coffee>
+<swc-icon-coin></swc-icon-coin>
+<swc-icon-cold-drink></swc-icon-cold-drink>
+<swc-icon-collection-tag></swc-icon-collection-tag>
+<swc-icon-collection></swc-icon-collection>
+<swc-icon-comment></swc-icon-comment>
+<swc-icon-compass></swc-icon-compass>
+<swc-icon-connection></swc-icon-connection>
+<swc-icon-coordinate></swc-icon-coordinate>
+<swc-icon-copy-document></swc-icon-copy-document>
+<swc-icon-cpu></swc-icon-cpu>
+<swc-icon-credit-card></swc-icon-credit-card>
+<swc-icon-crop></swc-icon-crop>
+<swc-icon-d-arrow-left></swc-icon-d-arrow-left>
+<swc-icon-d-arrow-right></swc-icon-d-arrow-right>
+<swc-icon-d-caret></swc-icon-d-caret>
+<swc-icon-data-analysis></swc-icon-data-analysis>
+<swc-icon-data-board></swc-icon-data-board>
+<swc-icon-data-line></swc-icon-data-line>
+<swc-icon-delete-filled></swc-icon-delete-filled>
+<swc-icon-delete-location></swc-icon-delete-location>
+<swc-icon-delete></swc-icon-delete>
+<swc-icon-dessert></swc-icon-dessert>
+<swc-icon-discount></swc-icon-discount>
+<swc-icon-dish-dot></swc-icon-dish-dot>
+<swc-icon-dish></swc-icon-dish>
+<swc-icon-document-add></swc-icon-document-add>
+<swc-icon-document-checked></swc-icon-document-checked>
+<swc-icon-document-copy></swc-icon-document-copy>
+<swc-icon-document-delete></swc-icon-document-delete>
+<swc-icon-document-remove></swc-icon-document-remove>
+<swc-icon-document></swc-icon-document>
+<swc-icon-download></swc-icon-download>
+<swc-icon-drizzling></swc-icon-drizzling>
+<swc-icon-edit-pen></swc-icon-edit-pen>
+<swc-icon-edit></swc-icon-edit>
+<swc-icon-eleme-filled></swc-icon-eleme-filled>
+<swc-icon-eleme></swc-icon-eleme>
+<swc-icon-element-plus></swc-icon-element-plus>
+<swc-icon-expand></swc-icon-expand>
+<swc-icon-failed></swc-icon-failed>
+<swc-icon-female></swc-icon-female>
+<swc-icon-files></swc-icon-files>
+<swc-icon-film></swc-icon-film>
+<swc-icon-filter></swc-icon-filter>
+<swc-icon-finished></swc-icon-finished>
+<swc-icon-first-aid-kit></swc-icon-first-aid-kit>
+<swc-icon-flag></swc-icon-flag>
+<swc-icon-fold></swc-icon-fold>
+<swc-icon-folder-add></swc-icon-folder-add>
+<swc-icon-folder-checked></swc-icon-folder-checked>
+<swc-icon-folder-delete></swc-icon-folder-delete>
+<swc-icon-folder-opened></swc-icon-folder-opened>
+<swc-icon-folder-remove></swc-icon-folder-remove>
+<swc-icon-folder></swc-icon-folder>
+<swc-icon-food></swc-icon-food>
+<swc-icon-football></swc-icon-football>
+<swc-icon-fork-spoon></swc-icon-fork-spoon>
+<swc-icon-fries></swc-icon-fries>
+<swc-icon-full-screen></swc-icon-full-screen>
+<swc-icon-goblet-full></swc-icon-goblet-full>
+<swc-icon-goblet-square-full></swc-icon-goblet-square-full>
+<swc-icon-goblet-square></swc-icon-goblet-square>
+<swc-icon-goblet></swc-icon-goblet>
+<swc-icon-gold-medal></swc-icon-gold-medal>
+<swc-icon-goods-filled></swc-icon-goods-filled>
+<swc-icon-goods></swc-icon-goods>
+<swc-icon-grape></swc-icon-grape>
+<swc-icon-grid></swc-icon-grid>
+<swc-icon-guide></swc-icon-guide>
+<swc-icon-handbag></swc-icon-handbag>
+<swc-icon-headset></swc-icon-headset>
+<swc-icon-help-filled></swc-icon-help-filled>
+<swc-icon-help></swc-icon-help>
+<swc-icon-hide></swc-icon-hide>
+<swc-icon-histogram></swc-icon-histogram>
+<swc-icon-home-filled></swc-icon-home-filled>
+<swc-icon-hot-water></swc-icon-hot-water>
+<swc-icon-house></swc-icon-house>
+<swc-icon-ice-cream-round></swc-icon-ice-cream-round>
+<swc-icon-ice-cream-square></swc-icon-ice-cream-square>
+<swc-icon-ice-cream></swc-icon-ice-cream>
+<swc-icon-ice-drink></swc-icon-ice-drink>
+<swc-icon-ice-tea></swc-icon-ice-tea>
+<swc-icon-info-filled></swc-icon-info-filled>
+<swc-icon-iphone></swc-icon-iphone>
+<swc-icon-key></swc-icon-key>
+<swc-icon-knife-fork></swc-icon-knife-fork>
+<swc-icon-lightning></swc-icon-lightning>
+<swc-icon-link></swc-icon-link>
+<swc-icon-list></swc-icon-list>
+<swc-icon-loading></swc-icon-loading>
+<swc-icon-location-filled></swc-icon-location-filled>
+<swc-icon-location-information></swc-icon-location-information>
+<swc-icon-location></swc-icon-location>
+<swc-icon-lock></swc-icon-lock>
+<swc-icon-lollipop></swc-icon-lollipop>
+<swc-icon-magic-stick></swc-icon-magic-stick>
+<swc-icon-magnet></swc-icon-magnet>
+<swc-icon-male></swc-icon-male>
+<swc-icon-management></swc-icon-management>
+<swc-icon-map-location></swc-icon-map-location>
+<swc-icon-medal></swc-icon-medal>
+<swc-icon-memo></swc-icon-memo>
+<swc-icon-menu></swc-icon-menu>
+<swc-icon-message-box></swc-icon-message-box>
+<swc-icon-message></swc-icon-message>
+<swc-icon-mic></swc-icon-mic>
+<swc-icon-microphone></swc-icon-microphone>
+<swc-icon-milk-tea></swc-icon-milk-tea>
+<swc-icon-minus></swc-icon-minus>
+<swc-icon-money></swc-icon-money>
+<swc-icon-monitor></swc-icon-monitor>
+<swc-icon-moon-night></swc-icon-moon-night>
+<swc-icon-moon></swc-icon-moon>
+<swc-icon-more-filled></swc-icon-more-filled>
+<swc-icon-more></swc-icon-more>
+<swc-icon-mostly-cloudy></swc-icon-mostly-cloudy>
+<swc-icon-mouse></swc-icon-mouse>
+<swc-icon-mug></swc-icon-mug>
+<swc-icon-mute-notification></swc-icon-mute-notification>
+<swc-icon-mute></swc-icon-mute>
+<swc-icon-no-smoking></swc-icon-no-smoking>
+<swc-icon-notebook></swc-icon-notebook>
+<swc-icon-notification></swc-icon-notification>
+<swc-icon-odometer></swc-icon-odometer>
+<swc-icon-office-building></swc-icon-office-building>
+<swc-icon-open></swc-icon-open>
+<swc-icon-operation></swc-icon-operation>
+<swc-icon-opportunity></swc-icon-opportunity>
+<swc-icon-orange></swc-icon-orange>
+<swc-icon-package.json></swc-icon-package.json>
+<swc-icon-paperclip></swc-icon-paperclip>
+<swc-icon-partly-cloudy></swc-icon-partly-cloudy>
+<swc-icon-pear></swc-icon-pear>
+<swc-icon-phone-filled></swc-icon-phone-filled>
+<swc-icon-phone></swc-icon-phone>
+<swc-icon-picture-filled></swc-icon-picture-filled>
+<swc-icon-picture-rounded></swc-icon-picture-rounded>
+<swc-icon-picture></swc-icon-picture>
+<swc-icon-pie-chart></swc-icon-pie-chart>
+<swc-icon-place></swc-icon-place>
+<swc-icon-platform></swc-icon-platform>
+<swc-icon-plus></swc-icon-plus>
+<swc-icon-pointer></swc-icon-pointer>
+<swc-icon-position></swc-icon-position>
+<swc-icon-postcard></swc-icon-postcard>
+<swc-icon-pouring></swc-icon-pouring>
+<swc-icon-present></swc-icon-present>
+<swc-icon-price-tag></swc-icon-price-tag>
+<swc-icon-printer></swc-icon-printer>
+<swc-icon-promotion></swc-icon-promotion>
+<swc-icon-quartz-watch></swc-icon-quartz-watch>
+<swc-icon-question-filled></swc-icon-question-filled>
+<swc-icon-rank></swc-icon-rank>
+<swc-icon-reading-lamp></swc-icon-reading-lamp>
+<swc-icon-reading></swc-icon-reading>
+<swc-icon-refresh-left></swc-icon-refresh-left>
+<swc-icon-refresh-right></swc-icon-refresh-right>
+<swc-icon-refresh></swc-icon-refresh>
+<swc-icon-refrigerator></swc-icon-refrigerator>
+<swc-icon-remove-filled></swc-icon-remove-filled>
+<swc-icon-remove></swc-icon-remove>
+<swc-icon-right></swc-icon-right>
+<swc-icon-scale-to-original></swc-icon-scale-to-original>
+<swc-icon-school></swc-icon-school>
+<swc-icon-scissor></swc-icon-scissor>
+<swc-icon-search></swc-icon-search>
+<swc-icon-select></swc-icon-select>
+<swc-icon-sell></swc-icon-sell>
+<swc-icon-semi-select></swc-icon-semi-select>
+<swc-icon-service></swc-icon-service>
+<swc-icon-set-up></swc-icon-set-up>
+<swc-icon-setting></swc-icon-setting>
+<swc-icon-share></swc-icon-share>
+<swc-icon-ship></swc-icon-ship>
+<swc-icon-shop></swc-icon-shop>
+<swc-icon-shopping-bag></swc-icon-shopping-bag>
+<swc-icon-shopping-cart-full></swc-icon-shopping-cart-full>
+<swc-icon-shopping-cart></swc-icon-shopping-cart>
+<swc-icon-shopping-trolley></swc-icon-shopping-trolley>
+<swc-icon-smoking></swc-icon-smoking>
+<swc-icon-soccer></swc-icon-soccer>
+<swc-icon-sold-out></swc-icon-sold-out>
+<swc-icon-sort-down></swc-icon-sort-down>
+<swc-icon-sort-up></swc-icon-sort-up>
+<swc-icon-sort></swc-icon-sort>
+<swc-icon-stamp></swc-icon-stamp>
+<swc-icon-star-filled></swc-icon-star-filled>
+<swc-icon-star></swc-icon-star>
+<swc-icon-stopwatch></swc-icon-stopwatch>
+<swc-icon-success-filled></swc-icon-success-filled>
+<swc-icon-sugar></swc-icon-sugar>
+<swc-icon-suitcase-line></swc-icon-suitcase-line>
+<swc-icon-suitcase></swc-icon-suitcase>
+<swc-icon-sunny></swc-icon-sunny>
+<swc-icon-sunrise></swc-icon-sunrise>
+<swc-icon-sunset></swc-icon-sunset>
+<swc-icon-switch-button></swc-icon-switch-button>
+<swc-icon-switch-filled></swc-icon-switch-filled>
+<swc-icon-switch></swc-icon-switch>
+<swc-icon-takeaway-box></swc-icon-takeaway-box>
+<swc-icon-ticket></swc-icon-ticket>
+<swc-icon-tickets></swc-icon-tickets>
+<swc-icon-timer></swc-icon-timer>
+<swc-icon-toilet-paper></swc-icon-toilet-paper>
+<swc-icon-tools></swc-icon-tools>
+<swc-icon-top-left></swc-icon-top-left>
+<swc-icon-top-right></swc-icon-top-right>
+<swc-icon-top></swc-icon-top>
+<swc-icon-trend-charts></swc-icon-trend-charts>
+<swc-icon-trophy-base></swc-icon-trophy-base>
+<swc-icon-trophy></swc-icon-trophy>
+<swc-icon-turn-off></swc-icon-turn-off>
+<swc-icon-umbrella></swc-icon-umbrella>
+<swc-icon-unlock></swc-icon-unlock>
+<swc-icon-upload-filled></swc-icon-upload-filled>
+<swc-icon-upload></swc-icon-upload>
+<swc-icon-user-filled></swc-icon-user-filled>
+<swc-icon-user></swc-icon-user>
+<swc-icon-van></swc-icon-van>
+<swc-icon-video-camera-filled></swc-icon-video-camera-filled>
+<swc-icon-video-camera></swc-icon-video-camera>
+<swc-icon-video-pause></swc-icon-video-pause>
+<swc-icon-video-play></swc-icon-video-play>
+<swc-icon-view></swc-icon-view>
+<swc-icon-wallet-filled></swc-icon-wallet-filled>
+<swc-icon-wallet></swc-icon-wallet>
+<swc-icon-warn-triangle-filled></swc-icon-warn-triangle-filled>
+<swc-icon-warning-filled></swc-icon-warning-filled>
+<swc-icon-warning></swc-icon-warning>
+<swc-icon-watch></swc-icon-watch>
+<swc-icon-watermelon></swc-icon-watermelon>
+<swc-icon-wind-power></swc-icon-wind-power>
+<swc-icon-zoom-in></swc-icon-zoom-in>
+<swc-icon-zoom-out></swc-icon-zoom-out>
 </div>
+</template>
+
+<script setup>
+import clipboardCopy from 'clipboard-copy'
+const copySvgIcon = async (ev) => {
+    const content = ev.target.closest('.hydrated').tagName.toLocaleLowerCase()
+
+    await clipboardCopy(`<${content}></${content}>`)
+    alert('复制成功')
+}
+</script>
+```
+:::

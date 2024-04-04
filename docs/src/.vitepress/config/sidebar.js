@@ -21,19 +21,32 @@ const guide = [
   },
 ];
 
+const develop = [
+  {
+    text: "组件库开发经历",
+    items: [
+      {
+        text: "Web Component 组件库有什么优势",
+        link: "/develop/web-component",
+      },
+    ],
+  },
+];
+
 const components = [
   {
     text: "基础/布局",
     collapsible: true,
     items: [
       {
-        text: "Icon 图标",
-        link: "/components/icon",
-      },
-      {
         text: "Button 按钮",
         link: "/components/button",
       },
+      {
+        text: "Icon 图标",
+        link: "/components/icon",
+      },
+      
       // {
       //   text: "Space 间距",
       //   link: "/components/space",
@@ -214,6 +227,7 @@ const components = [
 
 const sidebar = {
   "/guide/": guide,
+  "/develop/": develop,
   "/components/": components,
 };
 
