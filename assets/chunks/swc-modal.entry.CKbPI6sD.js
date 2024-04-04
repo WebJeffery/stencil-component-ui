@@ -1,0 +1,1 @@
+import{r as e,h as s,H as o}from"./theme.BlE6xyWi.js";import"./framework.DIU08dKJ.js";const t=":host{display:block}",a=t,r=class{constructor(c){e(this,c)}render(){return s(o,{key:"aef5af409b9f49e82fb76c40ab2f8d7227c4414c"},s("slot",{key:"3b2acdc226e2cb09d7404d2745954ec38e0ebfe4"}))}};r.style=a;export{r as swc_modal};
