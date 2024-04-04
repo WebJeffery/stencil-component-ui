@@ -9,14 +9,25 @@
     "build:docs": "turbo run build --filter docs",
     "build": "pnpm run build:icon & pnpm run build:c",
     "g": "pnpm --filter swc-ui run generate",
-    "g:icon": "pnpm --filter @swc-ui/icons run generate"
+    "g:icon": "pnpm --filter @swc-ui/icons run generate",
+    "changeset": "changeset",
+    "commit": "cz"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "commitizen": "^4.3.0",
     "consola": "^3.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "rimraf": "^5.0.5",
     "turbo": "^1.13.0"
   },
