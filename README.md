@@ -13,11 +13,11 @@ Stencil Web Component，简称（SWC UI）使用 [stencil.js](https://stenciljs.
 
 ```bash
 # npm
-npm i swc-ui -S
+npm i @swc-ui/components -S
 # yarn
-yarn add swc-ui -S
+yarn add @swc-ui/components -S
 # pnpm
-pnpm add swc-ui
+pnpm add @swc-ui/components
 ```
 
 ### 使用
@@ -29,7 +29,7 @@ import 'swc-ui/dist/swc-ui/swc-ui.css'
 
 全局注册组件
 ```js
-import { defineCustomElements } from "swc-ui/loader";
+import { defineCustomElements } from "@swc-ui/components/loader";
 
 defineCustomElements()
 ```
