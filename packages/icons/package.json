@@ -1,6 +1,7 @@
 {
   "name": "@swc-ui/icons",
-  "version": "0.0.1",
+  "version": "1.1.0",
+  "keywords": ["icon", "web-component"],
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -15,7 +16,7 @@
   ],
   "scripts": {
     "build": "stencil build",
-    "start": "stencil build --docs --watch --serve --no-open",
+    "dev": "stencil build --docs --watch --serve --no-open",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",

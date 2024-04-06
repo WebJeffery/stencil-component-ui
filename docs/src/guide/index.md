@@ -1,40 +1,45 @@
 # 快速开始
 
-## 通过包管理器使用
-
-### 安装
+## 安装
 
 ```bash
-npm i swc-ui
-#OR
-yarn add swc-ui
-#OR
-pnpm add swc-ui
+# npm
+npm i @swc-ui/components
+
+# yarn
+yarn add @swc-ui/components
+
+# pnpm
+pnpm add @swc-ui/components
 ```
 
-### vue 中使用
+## vue2 使用
 
 ```js
 // vue2
 import Vue from "vue";
-import "swc-ui";
+import "@swc-ui/components";
 Vue.config.ignoredElements = [
   // 用一个 `RegExp` 忽略所有“ion-”开头的元素
   // 仅在 2.5+ 支持
   /^swc-/,
 ];
 
-// vue3
+```
+
+## vue 3 使用
+
+```js
 import { createApp } from "vue";
 createApp().config.compilerOptions.isCustomElement = (tag) =>
   tag.startsWith("swc-");
 ```
 
-### react 中使用
+## react 使用
 
 ```js
-import "swc-ui";
+import "@swc-ui/components";
 //如需单独使用
-import "swc-ui/dist/es/swc-button.js";
+import "@swc-ui/components/dist/components/swc-button.js";
 ReactDOM.render(<swc-button>button</swc-button>, document.body);
 ```

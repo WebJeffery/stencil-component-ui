@@ -1,2 +1,2 @@
 @import url(./component.css);
-@import url('swc-ui/dist/swc-ui/swc-ui.css');
+@import url('@swc-ui/components/dist/swc-ui/swc-ui.css');
