@@ -15,7 +15,8 @@
     "transform:icon": "pnpm --filter @swc-ui/icons run transform",
     "changeset": "changeset",
     "commit": "cz",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -27,8 +28,10 @@
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
     "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
     "consola": "^3.2.3",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
@@ -42,5 +45,16 @@
   "engines": {
     "node": ">=16",
     "pnpm": ">=7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,vue}": [
+      "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+      "stylelint --fix \"packages/components/src/**/*.{css,less}\""
+    ]
   }
 }
