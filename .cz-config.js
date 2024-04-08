@@ -19,7 +19,6 @@ module.exports = {
     {name: 'components'},
     {name: 'icons'},
   ],
-
   // it needs to match the value for field type. Eg.: 'fix'
   /*
   scopeOverrides: {
