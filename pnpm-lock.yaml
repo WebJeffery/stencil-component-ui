@@ -30,9 +30,6 @@ importers:
       commitizen:
         specifier: ^4.3.0
         version: 4.3.0(@types/node@16.18.93)(typescript@5.4.3)
-      commitlint-config-cz:
-        specifier: ^0.13.3
-        version: 0.13.3
       consola:
         specifier: ^3.2.3
         version: 3.2.3
@@ -2982,11 +2979,6 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /app-root-path@3.0.0:
-    resolution: {integrity: sha512-qMcx+Gy2UZynHjOHOIXPNvpf+9cjvk3cWrBBK7zg4gH9+clobJRb9NGzcT7mQTcV/6Gm/1WelUtqxVXnNlrwcw==}
-    engines: {node: '>= 6.0.0'}
-    dev: true
-
   /argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
     dependencies:
@@ -3652,13 +3644,6 @@ packages:
     transitivePeerDependencies:
       - '@types/node'
       - typescript
-    dev: true
-
-  /commitlint-config-cz@0.13.3:
-    resolution: {integrity: sha512-6LmCvGiFDTVSmLF0mzVVp1etMM8lAqLmPRlU7Oml1J8J9oOLadf+2g4uMTchdxOvvYLgll99SESFUHgmc6oATA==}
-    dependencies:
-      app-root-path: 3.0.0
-      lodash.clonedeep: 4.5.0
     dev: true
 
   /compare-func@2.0.0:
@@ -6688,10 +6673,6 @@ packages:
 
   /lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
-    dev: true
-
-  /lodash.clonedeep@4.5.0:
-    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
     dev: true
 
   /lodash.isplainobject@4.0.6:
