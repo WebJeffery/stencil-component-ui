@@ -14,6 +14,8 @@
     "g:icon": "pnpm --filter @swc-ui/icons run generate",
     "transform:icon": "pnpm --filter @swc-ui/icons run transform",
     "changeset": "changeset",
+    "update-changelog": "changeset version",
+    "release": "changeset publish --registry=https://registry.npmjs.com/ --access=public",
     "commit": "cz",
     "preinstall": "npx only-allow pnpm",
     "lint-staged": "lint-staged"
