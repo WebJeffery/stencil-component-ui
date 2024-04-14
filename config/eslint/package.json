@@ -1,0 +1,25 @@
+{
+  "name": "@swc-ui/eslint-config",
+  "version": "0.0.1",
+  "files": [
+    "base.js",
+    "stencil.js",
+    "react-internal.js"
+  ],
+  "exports": {
+    "./base": "./base.js",
+    "./stencil": "./stencil.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@vercel/style-guide": "^5.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^1.12.4",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  }
+}

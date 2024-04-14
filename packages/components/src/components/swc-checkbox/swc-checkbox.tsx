@@ -1,5 +1,5 @@
 import { Component, Host, h, Element, Prop, Event, EventEmitter } from '@stencil/core';
-import { findElementUpward } from 'src/utils/utils';
+import { findElementUpward } from '../../utils/utils';
 
 @Component({
   tag: 'swc-checkbox',
