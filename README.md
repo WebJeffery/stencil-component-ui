@@ -53,7 +53,8 @@ pnpm install
 
 ```shell
 npm run dev
-``
+```
+
 ## 提交规范
 
 使用 `git cz` 代替 `git commit`
