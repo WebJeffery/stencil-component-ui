@@ -1,9 +1,7 @@
-# swc-ui
+# @swc-ui/components
 
-## 1.0.0
+## 0.1.3
 
 ### Patch Changes
 
-- Feats：
-  1、添加 changelog 自动工具
-
+- Fix Button

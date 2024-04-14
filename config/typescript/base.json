@@ -2,7 +2,11 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
+    "target": "ES2022",
+    "removeComments": true,
+    "strict": true,
     "declaration": true,
+    "declarationDir": "types",
     "declarationMap": true,
     "esModuleInterop": true,
     "incremental": false,
@@ -14,7 +18,5 @@
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strict": true,
-    "target": "ES2022"
   }
 }
