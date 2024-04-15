@@ -1,6 +1,6 @@
 {
   "name": "@swc-ui/icons",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "keywords": [
     "icon",
     "web-component"
@@ -34,5 +34,8 @@
     "puppeteer": "^21.9.0",
     "svgo": "^3.0.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
