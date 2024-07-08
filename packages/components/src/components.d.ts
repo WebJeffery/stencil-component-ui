@@ -5,20 +5,1241 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { SwcResultType } from "./components/swc-result/swc-result";
+import { Columns, Rows } from "./components/swc-table/swc-table";
+export { SwcResultType } from "./components/swc-result/swc-result";
+export { Columns, Rows } from "./components/swc-table/swc-table";
 export namespace Components {
+    interface SwcAspectRatio {
+        "aspectRatio": string;
+        "width": string;
+    }
+    interface SwcBadge {
+        "isDot": boolean;
+        "max": string;
+        "type": string;
+        "value": string;
+    }
+    interface SwcBreadcrumb {
+        "separator": string;
+    }
+    interface SwcBreadcrumbItem {
+        "blank": boolean;
+        "href": string;
+        "separator": string;
+        "setSeparator": (val: string) => Promise<void>;
+    }
+    interface SwcButton {
+        "bg": boolean;
+        "circle": boolean;
+        "disabled": boolean;
+        "link": boolean;
+        "loading": boolean;
+        "plain": boolean;
+        "round": boolean;
+        "size": string;
+        "text": boolean;
+        "type": string;
+    }
+    interface SwcCard {
+        "header": string;
+    }
+    interface SwcCarousel {
+        "defaultActive": string;
+    }
+    interface SwcCarouselItem {
+    }
+    interface SwcCheckbox {
+        "checked": boolean;
+        "disabled": boolean;
+        "falseValue": string;
+        "trueValue": string;
+        "value": string;
+    }
+    interface SwcCheckboxGroup {
+        "disabled": boolean;
+        "removeValue": (item: string) => Promise<void>;
+        "setValue": (item: string) => Promise<void>;
+        "value": Array<string>;
+    }
+    interface SwcCol {
+        "span": string;
+    }
+    interface SwcCollapse {
+        "active": string;
+    }
+    interface SwcCollapseItem {
+        "active": boolean;
+        "header": string;
+        "index": string;
+    }
+    interface SwcContextmenu {
+        "visible": boolean;
+    }
+    interface SwcContextmenuItem {
+    }
+    interface SwcDescription {
+        "border": boolean;
+        "columns": number;
+        "gutter": string;
+        "header": string;
+        "labelWidth": string;
+    }
+    interface SwcDescriptionItem {
+        "gutter": string;
+        "label": string;
+        "labelWidth": string;
+        "span": string;
+    }
+    interface SwcDetails {
+        "header": string;
+        "open": boolean;
+    }
+    interface SwcDialog {
+        "close": () => Promise<void>;
+        "header": string;
+        "open": () => Promise<void>;
+        "visible": Boolean;
+    }
+    interface SwcDivider {
+    }
+    interface SwcDrawer {
+        "close": () => Promise<void>;
+        "header": string;
+        "maskClosable": boolean;
+        "open": () => Promise<void>;
+        "placement": string;
+        "showHeader": boolean;
+        "visible": Boolean;
+        "width": string;
+    }
+    interface SwcDropdown {
+        "disabled": boolean;
+    }
+    interface SwcDropdownItem {
+    }
+    interface SwcEmpty {
+    }
+    interface SwcGrid {
+        "border": boolean;
+        "col": string;
+        "square": boolean;
+    }
+    interface SwcGridItem {
+        "col": string;
+    }
+    interface SwcIcon {
+        /**
+          * 传入的class名称
+         */
+        "classNames": string;
+        /**
+          * color 颜色
+         */
+        "color": string;
+        /**
+          * 字体图标名称
+         */
+        "name": string;
+        /**
+          * 旋转的角度
+         */
+        "rotate": number;
+        /**
+          * icon 尺寸 默认 20
+         */
+        "size": string;
+        /**
+          * 是否自动旋转
+         */
+        "spin": boolean;
+        /**
+          * styles 传入的css样式
+         */
+        "styles": object;
+    }
+    interface SwcLink {
+        "disabled": boolean;
+        "href": string;
+        "type": string;
+        "underline": boolean;
+    }
+    interface SwcLoading {
+        "loading": boolean;
+        "text": string;
+    }
+    interface SwcMessage {
+        "content": string;
+        "show": boolean;
+        "type": string;
+    }
+    interface SwcModal {
+    }
+    interface SwcNotification {
+        "content": string;
+        "header": string;
+        "show": boolean;
+        "type": string;
+    }
+    interface SwcOption {
+        "disabled": boolean;
+        "label": string;
+        "value": string;
+    }
+    interface SwcPager {
+        "defaultPage": string;
+        "layout": string;
+        "setTotal": (total: number) => Promise<void>;
+        "size": string;
+        "sizes": string;
+        "total": string;
+    }
+    interface SwcProgress {
+        "color": string;
+        "formatter": string;
+        "setValue": (val: string | number) => Promise<void>;
+        "showText": boolean;
+        "value": string | number;
+    }
+    interface SwcRadio {
+        "checked": boolean;
+        "disabled": boolean;
+        "value": string;
+    }
+    interface SwcRadioGroup {
+        "disabled": boolean;
+        "dispatchEventChange": (val: string) => Promise<void>;
+        "value": string;
+    }
+    interface SwcResult {
+        "description": string;
+        "header": string;
+        "type": SwcResultType;
+    }
+    interface SwcRow {
+    }
+    interface SwcScrollbar {
+        "height": string;
+        "maxHeight": string;
+        "minSize": number;
+    }
+    interface SwcSelect {
+        "disabled": boolean;
+        "placeholder": string;
+        "value": string;
+    }
+    interface SwcSpace {
+        "direction": string;
+    }
+    interface SwcStep {
+        "content": string;
+        "setIndex": (val: string) => Promise<void>;
+        "status": string;
+    }
+    interface SwcSteps {
+        "current": string;
+        "status": string;
+    }
+    interface SwcSwitch {
+        "checked": boolean;
+        "disabled": boolean;
+    }
+    interface SwcTabPane {
+        "index": string;
+        "label": string;
+        "show": boolean;
+    }
+    interface SwcTable {
+        "border": boolean;
+        "setColumns": (columns: Columns) => Promise<void>;
+        "setData": (data: Rows) => Promise<void>;
+    }
+    interface SwcTabs {
+        "active": string;
+    }
+    interface SwcTag {
+        "size": string;
+        "theme": string;
+        "type": string;
+    }
+    interface SwcText {
+        "lineClamp": string;
+        "truncated": boolean;
+        "type": string;
+    }
+    interface SwcTimeline {
+        "reverse": boolean;
+    }
+    interface SwcTimelineItem {
+        "reverse": boolean;
+        "timestamp": string;
+    }
+    interface SwcTip {
+        "name": string;
+        "type": string;
+    }
+    interface SwcTooltip {
+        "content": string;
+        "delay": string;
+        "placement": string;
+        "show": boolean;
+        "theme": string;
+    }
+}
+export interface SwcCheckboxCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcCheckboxElement;
+}
+export interface SwcCheckboxGroupCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcCheckboxGroupElement;
+}
+export interface SwcContextmenuCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcContextmenuElement;
+}
+export interface SwcDialogCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcDialogElement;
+}
+export interface SwcDrawerCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcDrawerElement;
+}
+export interface SwcDropdownCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcDropdownElement;
+}
+export interface SwcPagerCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcPagerElement;
+}
+export interface SwcRadioCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcRadioElement;
+}
+export interface SwcRadioGroupCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcRadioGroupElement;
+}
+export interface SwcSelectCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcSelectElement;
+}
+export interface SwcSwitchCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcSwitchElement;
+}
+export interface SwcTabsCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSwcTabsElement;
 }
 declare global {
+    interface HTMLSwcAspectRatioElement extends Components.SwcAspectRatio, HTMLStencilElement {
+    }
+    var HTMLSwcAspectRatioElement: {
+        prototype: HTMLSwcAspectRatioElement;
+        new (): HTMLSwcAspectRatioElement;
+    };
+    interface HTMLSwcBadgeElement extends Components.SwcBadge, HTMLStencilElement {
+    }
+    var HTMLSwcBadgeElement: {
+        prototype: HTMLSwcBadgeElement;
+        new (): HTMLSwcBadgeElement;
+    };
+    interface HTMLSwcBreadcrumbElement extends Components.SwcBreadcrumb, HTMLStencilElement {
+    }
+    var HTMLSwcBreadcrumbElement: {
+        prototype: HTMLSwcBreadcrumbElement;
+        new (): HTMLSwcBreadcrumbElement;
+    };
+    interface HTMLSwcBreadcrumbItemElement extends Components.SwcBreadcrumbItem, HTMLStencilElement {
+    }
+    var HTMLSwcBreadcrumbItemElement: {
+        prototype: HTMLSwcBreadcrumbItemElement;
+        new (): HTMLSwcBreadcrumbItemElement;
+    };
+    interface HTMLSwcButtonElement extends Components.SwcButton, HTMLStencilElement {
+    }
+    var HTMLSwcButtonElement: {
+        prototype: HTMLSwcButtonElement;
+        new (): HTMLSwcButtonElement;
+    };
+    interface HTMLSwcCardElement extends Components.SwcCard, HTMLStencilElement {
+    }
+    var HTMLSwcCardElement: {
+        prototype: HTMLSwcCardElement;
+        new (): HTMLSwcCardElement;
+    };
+    interface HTMLSwcCarouselElement extends Components.SwcCarousel, HTMLStencilElement {
+    }
+    var HTMLSwcCarouselElement: {
+        prototype: HTMLSwcCarouselElement;
+        new (): HTMLSwcCarouselElement;
+    };
+    interface HTMLSwcCarouselItemElement extends Components.SwcCarouselItem, HTMLStencilElement {
+    }
+    var HTMLSwcCarouselItemElement: {
+        prototype: HTMLSwcCarouselItemElement;
+        new (): HTMLSwcCarouselItemElement;
+    };
+    interface HTMLSwcCheckboxElementEventMap {
+        "changed": boolean;
+    }
+    interface HTMLSwcCheckboxElement extends Components.SwcCheckbox, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcCheckboxElementEventMap>(type: K, listener: (this: HTMLSwcCheckboxElement, ev: SwcCheckboxCustomEvent<HTMLSwcCheckboxElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcCheckboxElementEventMap>(type: K, listener: (this: HTMLSwcCheckboxElement, ev: SwcCheckboxCustomEvent<HTMLSwcCheckboxElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcCheckboxElement: {
+        prototype: HTMLSwcCheckboxElement;
+        new (): HTMLSwcCheckboxElement;
+    };
+    interface HTMLSwcCheckboxGroupElementEventMap {
+        "swcChange": Array<string>;
+    }
+    interface HTMLSwcCheckboxGroupElement extends Components.SwcCheckboxGroup, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcCheckboxGroupElementEventMap>(type: K, listener: (this: HTMLSwcCheckboxGroupElement, ev: SwcCheckboxGroupCustomEvent<HTMLSwcCheckboxGroupElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcCheckboxGroupElementEventMap>(type: K, listener: (this: HTMLSwcCheckboxGroupElement, ev: SwcCheckboxGroupCustomEvent<HTMLSwcCheckboxGroupElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcCheckboxGroupElement: {
+        prototype: HTMLSwcCheckboxGroupElement;
+        new (): HTMLSwcCheckboxGroupElement;
+    };
+    interface HTMLSwcColElement extends Components.SwcCol, HTMLStencilElement {
+    }
+    var HTMLSwcColElement: {
+        prototype: HTMLSwcColElement;
+        new (): HTMLSwcColElement;
+    };
+    interface HTMLSwcCollapseElement extends Components.SwcCollapse, HTMLStencilElement {
+    }
+    var HTMLSwcCollapseElement: {
+        prototype: HTMLSwcCollapseElement;
+        new (): HTMLSwcCollapseElement;
+    };
+    interface HTMLSwcCollapseItemElement extends Components.SwcCollapseItem, HTMLStencilElement {
+    }
+    var HTMLSwcCollapseItemElement: {
+        prototype: HTMLSwcCollapseItemElement;
+        new (): HTMLSwcCollapseItemElement;
+    };
+    interface HTMLSwcContextmenuElementEventMap {
+        "swcCommand": string;
+    }
+    interface HTMLSwcContextmenuElement extends Components.SwcContextmenu, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcContextmenuElementEventMap>(type: K, listener: (this: HTMLSwcContextmenuElement, ev: SwcContextmenuCustomEvent<HTMLSwcContextmenuElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcContextmenuElementEventMap>(type: K, listener: (this: HTMLSwcContextmenuElement, ev: SwcContextmenuCustomEvent<HTMLSwcContextmenuElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcContextmenuElement: {
+        prototype: HTMLSwcContextmenuElement;
+        new (): HTMLSwcContextmenuElement;
+    };
+    interface HTMLSwcContextmenuItemElement extends Components.SwcContextmenuItem, HTMLStencilElement {
+    }
+    var HTMLSwcContextmenuItemElement: {
+        prototype: HTMLSwcContextmenuItemElement;
+        new (): HTMLSwcContextmenuItemElement;
+    };
+    interface HTMLSwcDescriptionElement extends Components.SwcDescription, HTMLStencilElement {
+    }
+    var HTMLSwcDescriptionElement: {
+        prototype: HTMLSwcDescriptionElement;
+        new (): HTMLSwcDescriptionElement;
+    };
+    interface HTMLSwcDescriptionItemElement extends Components.SwcDescriptionItem, HTMLStencilElement {
+    }
+    var HTMLSwcDescriptionItemElement: {
+        prototype: HTMLSwcDescriptionItemElement;
+        new (): HTMLSwcDescriptionItemElement;
+    };
+    interface HTMLSwcDetailsElement extends Components.SwcDetails, HTMLStencilElement {
+    }
+    var HTMLSwcDetailsElement: {
+        prototype: HTMLSwcDetailsElement;
+        new (): HTMLSwcDetailsElement;
+    };
+    interface HTMLSwcDialogElementEventMap {
+        "closed": string;
+        "sure": string;
+    }
+    interface HTMLSwcDialogElement extends Components.SwcDialog, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcDialogElementEventMap>(type: K, listener: (this: HTMLSwcDialogElement, ev: SwcDialogCustomEvent<HTMLSwcDialogElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcDialogElementEventMap>(type: K, listener: (this: HTMLSwcDialogElement, ev: SwcDialogCustomEvent<HTMLSwcDialogElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcDialogElement: {
+        prototype: HTMLSwcDialogElement;
+        new (): HTMLSwcDialogElement;
+    };
+    interface HTMLSwcDividerElement extends Components.SwcDivider, HTMLStencilElement {
+    }
+    var HTMLSwcDividerElement: {
+        prototype: HTMLSwcDividerElement;
+        new (): HTMLSwcDividerElement;
+    };
+    interface HTMLSwcDrawerElementEventMap {
+        "closed": any;
+    }
+    interface HTMLSwcDrawerElement extends Components.SwcDrawer, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcDrawerElementEventMap>(type: K, listener: (this: HTMLSwcDrawerElement, ev: SwcDrawerCustomEvent<HTMLSwcDrawerElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcDrawerElementEventMap>(type: K, listener: (this: HTMLSwcDrawerElement, ev: SwcDrawerCustomEvent<HTMLSwcDrawerElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcDrawerElement: {
+        prototype: HTMLSwcDrawerElement;
+        new (): HTMLSwcDrawerElement;
+    };
+    interface HTMLSwcDropdownElementEventMap {
+        "swcChange": string;
+    }
+    interface HTMLSwcDropdownElement extends Components.SwcDropdown, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcDropdownElementEventMap>(type: K, listener: (this: HTMLSwcDropdownElement, ev: SwcDropdownCustomEvent<HTMLSwcDropdownElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcDropdownElementEventMap>(type: K, listener: (this: HTMLSwcDropdownElement, ev: SwcDropdownCustomEvent<HTMLSwcDropdownElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcDropdownElement: {
+        prototype: HTMLSwcDropdownElement;
+        new (): HTMLSwcDropdownElement;
+    };
+    interface HTMLSwcDropdownItemElement extends Components.SwcDropdownItem, HTMLStencilElement {
+    }
+    var HTMLSwcDropdownItemElement: {
+        prototype: HTMLSwcDropdownItemElement;
+        new (): HTMLSwcDropdownItemElement;
+    };
+    interface HTMLSwcEmptyElement extends Components.SwcEmpty, HTMLStencilElement {
+    }
+    var HTMLSwcEmptyElement: {
+        prototype: HTMLSwcEmptyElement;
+        new (): HTMLSwcEmptyElement;
+    };
+    interface HTMLSwcGridElement extends Components.SwcGrid, HTMLStencilElement {
+    }
+    var HTMLSwcGridElement: {
+        prototype: HTMLSwcGridElement;
+        new (): HTMLSwcGridElement;
+    };
+    interface HTMLSwcGridItemElement extends Components.SwcGridItem, HTMLStencilElement {
+    }
+    var HTMLSwcGridItemElement: {
+        prototype: HTMLSwcGridItemElement;
+        new (): HTMLSwcGridItemElement;
+    };
+    interface HTMLSwcIconElement extends Components.SwcIcon, HTMLStencilElement {
+    }
+    var HTMLSwcIconElement: {
+        prototype: HTMLSwcIconElement;
+        new (): HTMLSwcIconElement;
+    };
+    interface HTMLSwcLinkElement extends Components.SwcLink, HTMLStencilElement {
+    }
+    var HTMLSwcLinkElement: {
+        prototype: HTMLSwcLinkElement;
+        new (): HTMLSwcLinkElement;
+    };
+    interface HTMLSwcLoadingElement extends Components.SwcLoading, HTMLStencilElement {
+    }
+    var HTMLSwcLoadingElement: {
+        prototype: HTMLSwcLoadingElement;
+        new (): HTMLSwcLoadingElement;
+    };
+    interface HTMLSwcMessageElement extends Components.SwcMessage, HTMLStencilElement {
+    }
+    var HTMLSwcMessageElement: {
+        prototype: HTMLSwcMessageElement;
+        new (): HTMLSwcMessageElement;
+    };
+    interface HTMLSwcModalElement extends Components.SwcModal, HTMLStencilElement {
+    }
+    var HTMLSwcModalElement: {
+        prototype: HTMLSwcModalElement;
+        new (): HTMLSwcModalElement;
+    };
+    interface HTMLSwcNotificationElement extends Components.SwcNotification, HTMLStencilElement {
+    }
+    var HTMLSwcNotificationElement: {
+        prototype: HTMLSwcNotificationElement;
+        new (): HTMLSwcNotificationElement;
+    };
+    interface HTMLSwcOptionElement extends Components.SwcOption, HTMLStencilElement {
+    }
+    var HTMLSwcOptionElement: {
+        prototype: HTMLSwcOptionElement;
+        new (): HTMLSwcOptionElement;
+    };
+    interface HTMLSwcPagerElementEventMap {
+        "current-change": number;
+    }
+    interface HTMLSwcPagerElement extends Components.SwcPager, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcPagerElementEventMap>(type: K, listener: (this: HTMLSwcPagerElement, ev: SwcPagerCustomEvent<HTMLSwcPagerElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcPagerElementEventMap>(type: K, listener: (this: HTMLSwcPagerElement, ev: SwcPagerCustomEvent<HTMLSwcPagerElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcPagerElement: {
+        prototype: HTMLSwcPagerElement;
+        new (): HTMLSwcPagerElement;
+    };
+    interface HTMLSwcProgressElement extends Components.SwcProgress, HTMLStencilElement {
+    }
+    var HTMLSwcProgressElement: {
+        prototype: HTMLSwcProgressElement;
+        new (): HTMLSwcProgressElement;
+    };
+    interface HTMLSwcRadioElementEventMap {
+        "changed": boolean;
+    }
+    interface HTMLSwcRadioElement extends Components.SwcRadio, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcRadioElementEventMap>(type: K, listener: (this: HTMLSwcRadioElement, ev: SwcRadioCustomEvent<HTMLSwcRadioElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcRadioElementEventMap>(type: K, listener: (this: HTMLSwcRadioElement, ev: SwcRadioCustomEvent<HTMLSwcRadioElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcRadioElement: {
+        prototype: HTMLSwcRadioElement;
+        new (): HTMLSwcRadioElement;
+    };
+    interface HTMLSwcRadioGroupElementEventMap {
+        "changed": string;
+    }
+    interface HTMLSwcRadioGroupElement extends Components.SwcRadioGroup, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcRadioGroupElementEventMap>(type: K, listener: (this: HTMLSwcRadioGroupElement, ev: SwcRadioGroupCustomEvent<HTMLSwcRadioGroupElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcRadioGroupElementEventMap>(type: K, listener: (this: HTMLSwcRadioGroupElement, ev: SwcRadioGroupCustomEvent<HTMLSwcRadioGroupElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcRadioGroupElement: {
+        prototype: HTMLSwcRadioGroupElement;
+        new (): HTMLSwcRadioGroupElement;
+    };
+    interface HTMLSwcResultElement extends Components.SwcResult, HTMLStencilElement {
+    }
+    var HTMLSwcResultElement: {
+        prototype: HTMLSwcResultElement;
+        new (): HTMLSwcResultElement;
+    };
+    interface HTMLSwcRowElement extends Components.SwcRow, HTMLStencilElement {
+    }
+    var HTMLSwcRowElement: {
+        prototype: HTMLSwcRowElement;
+        new (): HTMLSwcRowElement;
+    };
+    interface HTMLSwcScrollbarElement extends Components.SwcScrollbar, HTMLStencilElement {
+    }
+    var HTMLSwcScrollbarElement: {
+        prototype: HTMLSwcScrollbarElement;
+        new (): HTMLSwcScrollbarElement;
+    };
+    interface HTMLSwcSelectElementEventMap {
+        "changed": string;
+    }
+    interface HTMLSwcSelectElement extends Components.SwcSelect, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcSelectElementEventMap>(type: K, listener: (this: HTMLSwcSelectElement, ev: SwcSelectCustomEvent<HTMLSwcSelectElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcSelectElementEventMap>(type: K, listener: (this: HTMLSwcSelectElement, ev: SwcSelectCustomEvent<HTMLSwcSelectElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcSelectElement: {
+        prototype: HTMLSwcSelectElement;
+        new (): HTMLSwcSelectElement;
+    };
+    interface HTMLSwcSpaceElement extends Components.SwcSpace, HTMLStencilElement {
+    }
+    var HTMLSwcSpaceElement: {
+        prototype: HTMLSwcSpaceElement;
+        new (): HTMLSwcSpaceElement;
+    };
+    interface HTMLSwcStepElement extends Components.SwcStep, HTMLStencilElement {
+    }
+    var HTMLSwcStepElement: {
+        prototype: HTMLSwcStepElement;
+        new (): HTMLSwcStepElement;
+    };
+    interface HTMLSwcStepsElement extends Components.SwcSteps, HTMLStencilElement {
+    }
+    var HTMLSwcStepsElement: {
+        prototype: HTMLSwcStepsElement;
+        new (): HTMLSwcStepsElement;
+    };
+    interface HTMLSwcSwitchElementEventMap {
+        "changed": boolean;
+    }
+    interface HTMLSwcSwitchElement extends Components.SwcSwitch, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcSwitchElementEventMap>(type: K, listener: (this: HTMLSwcSwitchElement, ev: SwcSwitchCustomEvent<HTMLSwcSwitchElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcSwitchElementEventMap>(type: K, listener: (this: HTMLSwcSwitchElement, ev: SwcSwitchCustomEvent<HTMLSwcSwitchElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcSwitchElement: {
+        prototype: HTMLSwcSwitchElement;
+        new (): HTMLSwcSwitchElement;
+    };
+    interface HTMLSwcTabPaneElement extends Components.SwcTabPane, HTMLStencilElement {
+    }
+    var HTMLSwcTabPaneElement: {
+        prototype: HTMLSwcTabPaneElement;
+        new (): HTMLSwcTabPaneElement;
+    };
+    interface HTMLSwcTableElement extends Components.SwcTable, HTMLStencilElement {
+    }
+    var HTMLSwcTableElement: {
+        prototype: HTMLSwcTableElement;
+        new (): HTMLSwcTableElement;
+    };
+    interface HTMLSwcTabsElementEventMap {
+        "tab-click": string;
+    }
+    interface HTMLSwcTabsElement extends Components.SwcTabs, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLSwcTabsElementEventMap>(type: K, listener: (this: HTMLSwcTabsElement, ev: SwcTabsCustomEvent<HTMLSwcTabsElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLSwcTabsElementEventMap>(type: K, listener: (this: HTMLSwcTabsElement, ev: SwcTabsCustomEvent<HTMLSwcTabsElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLSwcTabsElement: {
+        prototype: HTMLSwcTabsElement;
+        new (): HTMLSwcTabsElement;
+    };
+    interface HTMLSwcTagElement extends Components.SwcTag, HTMLStencilElement {
+    }
+    var HTMLSwcTagElement: {
+        prototype: HTMLSwcTagElement;
+        new (): HTMLSwcTagElement;
+    };
+    interface HTMLSwcTextElement extends Components.SwcText, HTMLStencilElement {
+    }
+    var HTMLSwcTextElement: {
+        prototype: HTMLSwcTextElement;
+        new (): HTMLSwcTextElement;
+    };
+    interface HTMLSwcTimelineElement extends Components.SwcTimeline, HTMLStencilElement {
+    }
+    var HTMLSwcTimelineElement: {
+        prototype: HTMLSwcTimelineElement;
+        new (): HTMLSwcTimelineElement;
+    };
+    interface HTMLSwcTimelineItemElement extends Components.SwcTimelineItem, HTMLStencilElement {
+    }
+    var HTMLSwcTimelineItemElement: {
+        prototype: HTMLSwcTimelineItemElement;
+        new (): HTMLSwcTimelineItemElement;
+    };
+    interface HTMLSwcTipElement extends Components.SwcTip, HTMLStencilElement {
+    }
+    var HTMLSwcTipElement: {
+        prototype: HTMLSwcTipElement;
+        new (): HTMLSwcTipElement;
+    };
+    interface HTMLSwcTooltipElement extends Components.SwcTooltip, HTMLStencilElement {
+    }
+    var HTMLSwcTooltipElement: {
+        prototype: HTMLSwcTooltipElement;
+        new (): HTMLSwcTooltipElement;
+    };
     interface HTMLElementTagNameMap {
+        "swc-aspect-ratio": HTMLSwcAspectRatioElement;
+        "swc-badge": HTMLSwcBadgeElement;
+        "swc-breadcrumb": HTMLSwcBreadcrumbElement;
+        "swc-breadcrumb-item": HTMLSwcBreadcrumbItemElement;
+        "swc-button": HTMLSwcButtonElement;
+        "swc-card": HTMLSwcCardElement;
+        "swc-carousel": HTMLSwcCarouselElement;
+        "swc-carousel-item": HTMLSwcCarouselItemElement;
+        "swc-checkbox": HTMLSwcCheckboxElement;
+        "swc-checkbox-group": HTMLSwcCheckboxGroupElement;
+        "swc-col": HTMLSwcColElement;
+        "swc-collapse": HTMLSwcCollapseElement;
+        "swc-collapse-item": HTMLSwcCollapseItemElement;
+        "swc-contextmenu": HTMLSwcContextmenuElement;
+        "swc-contextmenu-item": HTMLSwcContextmenuItemElement;
+        "swc-description": HTMLSwcDescriptionElement;
+        "swc-description-item": HTMLSwcDescriptionItemElement;
+        "swc-details": HTMLSwcDetailsElement;
+        "swc-dialog": HTMLSwcDialogElement;
+        "swc-divider": HTMLSwcDividerElement;
+        "swc-drawer": HTMLSwcDrawerElement;
+        "swc-dropdown": HTMLSwcDropdownElement;
+        "swc-dropdown-item": HTMLSwcDropdownItemElement;
+        "swc-empty": HTMLSwcEmptyElement;
+        "swc-grid": HTMLSwcGridElement;
+        "swc-grid-item": HTMLSwcGridItemElement;
+        "swc-icon": HTMLSwcIconElement;
+        "swc-link": HTMLSwcLinkElement;
+        "swc-loading": HTMLSwcLoadingElement;
+        "swc-message": HTMLSwcMessageElement;
+        "swc-modal": HTMLSwcModalElement;
+        "swc-notification": HTMLSwcNotificationElement;
+        "swc-option": HTMLSwcOptionElement;
+        "swc-pager": HTMLSwcPagerElement;
+        "swc-progress": HTMLSwcProgressElement;
+        "swc-radio": HTMLSwcRadioElement;
+        "swc-radio-group": HTMLSwcRadioGroupElement;
+        "swc-result": HTMLSwcResultElement;
+        "swc-row": HTMLSwcRowElement;
+        "swc-scrollbar": HTMLSwcScrollbarElement;
+        "swc-select": HTMLSwcSelectElement;
+        "swc-space": HTMLSwcSpaceElement;
+        "swc-step": HTMLSwcStepElement;
+        "swc-steps": HTMLSwcStepsElement;
+        "swc-switch": HTMLSwcSwitchElement;
+        "swc-tab-pane": HTMLSwcTabPaneElement;
+        "swc-table": HTMLSwcTableElement;
+        "swc-tabs": HTMLSwcTabsElement;
+        "swc-tag": HTMLSwcTagElement;
+        "swc-text": HTMLSwcTextElement;
+        "swc-timeline": HTMLSwcTimelineElement;
+        "swc-timeline-item": HTMLSwcTimelineItemElement;
+        "swc-tip": HTMLSwcTipElement;
+        "swc-tooltip": HTMLSwcTooltipElement;
     }
 }
 declare namespace LocalJSX {
+    interface SwcAspectRatio {
+        "aspectRatio"?: string;
+        "width"?: string;
+    }
+    interface SwcBadge {
+        "isDot"?: boolean;
+        "max"?: string;
+        "type"?: string;
+        "value"?: string;
+    }
+    interface SwcBreadcrumb {
+        "separator"?: string;
+    }
+    interface SwcBreadcrumbItem {
+        "blank"?: boolean;
+        "href"?: string;
+        "separator"?: string;
+    }
+    interface SwcButton {
+        "bg"?: boolean;
+        "circle"?: boolean;
+        "disabled"?: boolean;
+        "link"?: boolean;
+        "loading"?: boolean;
+        "plain"?: boolean;
+        "round"?: boolean;
+        "size"?: string;
+        "text"?: boolean;
+        "type"?: string;
+    }
+    interface SwcCard {
+        "header"?: string;
+    }
+    interface SwcCarousel {
+        "defaultActive"?: string;
+    }
+    interface SwcCarouselItem {
+    }
+    interface SwcCheckbox {
+        "checked"?: boolean;
+        "disabled"?: boolean;
+        "falseValue"?: string;
+        "onChanged"?: (event: SwcCheckboxCustomEvent<boolean>) => void;
+        "trueValue"?: string;
+        "value"?: string;
+    }
+    interface SwcCheckboxGroup {
+        "disabled"?: boolean;
+        "onSwcChange"?: (event: SwcCheckboxGroupCustomEvent<Array<string>>) => void;
+        "value"?: Array<string>;
+    }
+    interface SwcCol {
+        "span"?: string;
+    }
+    interface SwcCollapse {
+        "active"?: string;
+    }
+    interface SwcCollapseItem {
+        "active"?: boolean;
+        "header"?: string;
+        "index"?: string;
+    }
+    interface SwcContextmenu {
+        "onSwcCommand"?: (event: SwcContextmenuCustomEvent<string>) => void;
+        "visible"?: boolean;
+    }
+    interface SwcContextmenuItem {
+    }
+    interface SwcDescription {
+        "border"?: boolean;
+        "columns"?: number;
+        "gutter"?: string;
+        "header"?: string;
+        "labelWidth"?: string;
+    }
+    interface SwcDescriptionItem {
+        "gutter"?: string;
+        "label"?: string;
+        "labelWidth"?: string;
+        "span"?: string;
+    }
+    interface SwcDetails {
+        "header"?: string;
+        "open"?: boolean;
+    }
+    interface SwcDialog {
+        "header"?: string;
+        "onClosed"?: (event: SwcDialogCustomEvent<string>) => void;
+        "onSure"?: (event: SwcDialogCustomEvent<string>) => void;
+        "visible"?: Boolean;
+    }
+    interface SwcDivider {
+    }
+    interface SwcDrawer {
+        "header"?: string;
+        "maskClosable"?: boolean;
+        "onClosed"?: (event: SwcDrawerCustomEvent<any>) => void;
+        "placement"?: string;
+        "showHeader"?: boolean;
+        "visible"?: Boolean;
+        "width"?: string;
+    }
+    interface SwcDropdown {
+        "disabled"?: boolean;
+        "onSwcChange"?: (event: SwcDropdownCustomEvent<string>) => void;
+    }
+    interface SwcDropdownItem {
+    }
+    interface SwcEmpty {
+    }
+    interface SwcGrid {
+        "border"?: boolean;
+        "col"?: string;
+        "square"?: boolean;
+    }
+    interface SwcGridItem {
+        "col"?: string;
+    }
+    interface SwcIcon {
+        /**
+          * 传入的class名称
+         */
+        "classNames"?: string;
+        /**
+          * color 颜色
+         */
+        "color"?: string;
+        /**
+          * 字体图标名称
+         */
+        "name"?: string;
+        /**
+          * 旋转的角度
+         */
+        "rotate"?: number;
+        /**
+          * icon 尺寸 默认 20
+         */
+        "size"?: string;
+        /**
+          * 是否自动旋转
+         */
+        "spin"?: boolean;
+        /**
+          * styles 传入的css样式
+         */
+        "styles"?: object;
+    }
+    interface SwcLink {
+        "disabled"?: boolean;
+        "href"?: string;
+        "type"?: string;
+        "underline"?: boolean;
+    }
+    interface SwcLoading {
+        "loading"?: boolean;
+        "text"?: string;
+    }
+    interface SwcMessage {
+        "content"?: string;
+        "show"?: boolean;
+        "type"?: string;
+    }
+    interface SwcModal {
+    }
+    interface SwcNotification {
+        "content"?: string;
+        "header"?: string;
+        "show"?: boolean;
+        "type"?: string;
+    }
+    interface SwcOption {
+        "disabled"?: boolean;
+        "label"?: string;
+        "value"?: string;
+    }
+    interface SwcPager {
+        "defaultPage"?: string;
+        "layout"?: string;
+        "onCurrent-change"?: (event: SwcPagerCustomEvent<number>) => void;
+        "size"?: string;
+        "sizes"?: string;
+        "total"?: string;
+    }
+    interface SwcProgress {
+        "color"?: string;
+        "formatter"?: string;
+        "showText"?: boolean;
+        "value"?: string | number;
+    }
+    interface SwcRadio {
+        "checked"?: boolean;
+        "disabled"?: boolean;
+        "onChanged"?: (event: SwcRadioCustomEvent<boolean>) => void;
+        "value"?: string;
+    }
+    interface SwcRadioGroup {
+        "disabled"?: boolean;
+        "onChanged"?: (event: SwcRadioGroupCustomEvent<string>) => void;
+        "value"?: string;
+    }
+    interface SwcResult {
+        "description"?: string;
+        "header"?: string;
+        "type"?: SwcResultType;
+    }
+    interface SwcRow {
+    }
+    interface SwcScrollbar {
+        "height"?: string;
+        "maxHeight"?: string;
+        "minSize"?: number;
+    }
+    interface SwcSelect {
+        "disabled"?: boolean;
+        "onChanged"?: (event: SwcSelectCustomEvent<string>) => void;
+        "placeholder"?: string;
+        "value"?: string;
+    }
+    interface SwcSpace {
+        "direction"?: string;
+    }
+    interface SwcStep {
+        "content"?: string;
+        "status"?: string;
+    }
+    interface SwcSteps {
+        "current"?: string;
+        "status"?: string;
+    }
+    interface SwcSwitch {
+        "checked"?: boolean;
+        "disabled"?: boolean;
+        "onChanged"?: (event: SwcSwitchCustomEvent<boolean>) => void;
+    }
+    interface SwcTabPane {
+        "index"?: string;
+        "label"?: string;
+        "show"?: boolean;
+    }
+    interface SwcTable {
+        "border"?: boolean;
+    }
+    interface SwcTabs {
+        "active"?: string;
+        "onTab-click"?: (event: SwcTabsCustomEvent<string>) => void;
+    }
+    interface SwcTag {
+        "size"?: string;
+        "theme"?: string;
+        "type"?: string;
+    }
+    interface SwcText {
+        "lineClamp"?: string;
+        "truncated"?: boolean;
+        "type"?: string;
+    }
+    interface SwcTimeline {
+        "reverse"?: boolean;
+    }
+    interface SwcTimelineItem {
+        "reverse"?: boolean;
+        "timestamp"?: string;
+    }
+    interface SwcTip {
+        "name"?: string;
+        "type"?: string;
+    }
+    interface SwcTooltip {
+        "content"?: string;
+        "delay"?: string;
+        "placement"?: string;
+        "show"?: boolean;
+        "theme"?: string;
+    }
     interface IntrinsicElements {
+        "swc-aspect-ratio": SwcAspectRatio;
+        "swc-badge": SwcBadge;
+        "swc-breadcrumb": SwcBreadcrumb;
+        "swc-breadcrumb-item": SwcBreadcrumbItem;
+        "swc-button": SwcButton;
+        "swc-card": SwcCard;
+        "swc-carousel": SwcCarousel;
+        "swc-carousel-item": SwcCarouselItem;
+        "swc-checkbox": SwcCheckbox;
+        "swc-checkbox-group": SwcCheckboxGroup;
+        "swc-col": SwcCol;
+        "swc-collapse": SwcCollapse;
+        "swc-collapse-item": SwcCollapseItem;
+        "swc-contextmenu": SwcContextmenu;
+        "swc-contextmenu-item": SwcContextmenuItem;
+        "swc-description": SwcDescription;
+        "swc-description-item": SwcDescriptionItem;
+        "swc-details": SwcDetails;
+        "swc-dialog": SwcDialog;
+        "swc-divider": SwcDivider;
+        "swc-drawer": SwcDrawer;
+        "swc-dropdown": SwcDropdown;
+        "swc-dropdown-item": SwcDropdownItem;
+        "swc-empty": SwcEmpty;
+        "swc-grid": SwcGrid;
+        "swc-grid-item": SwcGridItem;
+        "swc-icon": SwcIcon;
+        "swc-link": SwcLink;
+        "swc-loading": SwcLoading;
+        "swc-message": SwcMessage;
+        "swc-modal": SwcModal;
+        "swc-notification": SwcNotification;
+        "swc-option": SwcOption;
+        "swc-pager": SwcPager;
+        "swc-progress": SwcProgress;
+        "swc-radio": SwcRadio;
+        "swc-radio-group": SwcRadioGroup;
+        "swc-result": SwcResult;
+        "swc-row": SwcRow;
+        "swc-scrollbar": SwcScrollbar;
+        "swc-select": SwcSelect;
+        "swc-space": SwcSpace;
+        "swc-step": SwcStep;
+        "swc-steps": SwcSteps;
+        "swc-switch": SwcSwitch;
+        "swc-tab-pane": SwcTabPane;
+        "swc-table": SwcTable;
+        "swc-tabs": SwcTabs;
+        "swc-tag": SwcTag;
+        "swc-text": SwcText;
+        "swc-timeline": SwcTimeline;
+        "swc-timeline-item": SwcTimelineItem;
+        "swc-tip": SwcTip;
+        "swc-tooltip": SwcTooltip;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "swc-aspect-ratio": LocalJSX.SwcAspectRatio & JSXBase.HTMLAttributes<HTMLSwcAspectRatioElement>;
+            "swc-badge": LocalJSX.SwcBadge & JSXBase.HTMLAttributes<HTMLSwcBadgeElement>;
+            "swc-breadcrumb": LocalJSX.SwcBreadcrumb & JSXBase.HTMLAttributes<HTMLSwcBreadcrumbElement>;
+            "swc-breadcrumb-item": LocalJSX.SwcBreadcrumbItem & JSXBase.HTMLAttributes<HTMLSwcBreadcrumbItemElement>;
+            "swc-button": LocalJSX.SwcButton & JSXBase.HTMLAttributes<HTMLSwcButtonElement>;
+            "swc-card": LocalJSX.SwcCard & JSXBase.HTMLAttributes<HTMLSwcCardElement>;
+            "swc-carousel": LocalJSX.SwcCarousel & JSXBase.HTMLAttributes<HTMLSwcCarouselElement>;
+            "swc-carousel-item": LocalJSX.SwcCarouselItem & JSXBase.HTMLAttributes<HTMLSwcCarouselItemElement>;
+            "swc-checkbox": LocalJSX.SwcCheckbox & JSXBase.HTMLAttributes<HTMLSwcCheckboxElement>;
+            "swc-checkbox-group": LocalJSX.SwcCheckboxGroup & JSXBase.HTMLAttributes<HTMLSwcCheckboxGroupElement>;
+            "swc-col": LocalJSX.SwcCol & JSXBase.HTMLAttributes<HTMLSwcColElement>;
+            "swc-collapse": LocalJSX.SwcCollapse & JSXBase.HTMLAttributes<HTMLSwcCollapseElement>;
+            "swc-collapse-item": LocalJSX.SwcCollapseItem & JSXBase.HTMLAttributes<HTMLSwcCollapseItemElement>;
+            "swc-contextmenu": LocalJSX.SwcContextmenu & JSXBase.HTMLAttributes<HTMLSwcContextmenuElement>;
+            "swc-contextmenu-item": LocalJSX.SwcContextmenuItem & JSXBase.HTMLAttributes<HTMLSwcContextmenuItemElement>;
+            "swc-description": LocalJSX.SwcDescription & JSXBase.HTMLAttributes<HTMLSwcDescriptionElement>;
+            "swc-description-item": LocalJSX.SwcDescriptionItem & JSXBase.HTMLAttributes<HTMLSwcDescriptionItemElement>;
+            "swc-details": LocalJSX.SwcDetails & JSXBase.HTMLAttributes<HTMLSwcDetailsElement>;
+            "swc-dialog": LocalJSX.SwcDialog & JSXBase.HTMLAttributes<HTMLSwcDialogElement>;
+            "swc-divider": LocalJSX.SwcDivider & JSXBase.HTMLAttributes<HTMLSwcDividerElement>;
+            "swc-drawer": LocalJSX.SwcDrawer & JSXBase.HTMLAttributes<HTMLSwcDrawerElement>;
+            "swc-dropdown": LocalJSX.SwcDropdown & JSXBase.HTMLAttributes<HTMLSwcDropdownElement>;
+            "swc-dropdown-item": LocalJSX.SwcDropdownItem & JSXBase.HTMLAttributes<HTMLSwcDropdownItemElement>;
+            "swc-empty": LocalJSX.SwcEmpty & JSXBase.HTMLAttributes<HTMLSwcEmptyElement>;
+            "swc-grid": LocalJSX.SwcGrid & JSXBase.HTMLAttributes<HTMLSwcGridElement>;
+            "swc-grid-item": LocalJSX.SwcGridItem & JSXBase.HTMLAttributes<HTMLSwcGridItemElement>;
+            "swc-icon": LocalJSX.SwcIcon & JSXBase.HTMLAttributes<HTMLSwcIconElement>;
+            "swc-link": LocalJSX.SwcLink & JSXBase.HTMLAttributes<HTMLSwcLinkElement>;
+            "swc-loading": LocalJSX.SwcLoading & JSXBase.HTMLAttributes<HTMLSwcLoadingElement>;
+            "swc-message": LocalJSX.SwcMessage & JSXBase.HTMLAttributes<HTMLSwcMessageElement>;
+            "swc-modal": LocalJSX.SwcModal & JSXBase.HTMLAttributes<HTMLSwcModalElement>;
+            "swc-notification": LocalJSX.SwcNotification & JSXBase.HTMLAttributes<HTMLSwcNotificationElement>;
+            "swc-option": LocalJSX.SwcOption & JSXBase.HTMLAttributes<HTMLSwcOptionElement>;
+            "swc-pager": LocalJSX.SwcPager & JSXBase.HTMLAttributes<HTMLSwcPagerElement>;
+            "swc-progress": LocalJSX.SwcProgress & JSXBase.HTMLAttributes<HTMLSwcProgressElement>;
+            "swc-radio": LocalJSX.SwcRadio & JSXBase.HTMLAttributes<HTMLSwcRadioElement>;
+            "swc-radio-group": LocalJSX.SwcRadioGroup & JSXBase.HTMLAttributes<HTMLSwcRadioGroupElement>;
+            "swc-result": LocalJSX.SwcResult & JSXBase.HTMLAttributes<HTMLSwcResultElement>;
+            "swc-row": LocalJSX.SwcRow & JSXBase.HTMLAttributes<HTMLSwcRowElement>;
+            "swc-scrollbar": LocalJSX.SwcScrollbar & JSXBase.HTMLAttributes<HTMLSwcScrollbarElement>;
+            "swc-select": LocalJSX.SwcSelect & JSXBase.HTMLAttributes<HTMLSwcSelectElement>;
+            "swc-space": LocalJSX.SwcSpace & JSXBase.HTMLAttributes<HTMLSwcSpaceElement>;
+            "swc-step": LocalJSX.SwcStep & JSXBase.HTMLAttributes<HTMLSwcStepElement>;
+            "swc-steps": LocalJSX.SwcSteps & JSXBase.HTMLAttributes<HTMLSwcStepsElement>;
+            "swc-switch": LocalJSX.SwcSwitch & JSXBase.HTMLAttributes<HTMLSwcSwitchElement>;
+            "swc-tab-pane": LocalJSX.SwcTabPane & JSXBase.HTMLAttributes<HTMLSwcTabPaneElement>;
+            "swc-table": LocalJSX.SwcTable & JSXBase.HTMLAttributes<HTMLSwcTableElement>;
+            "swc-tabs": LocalJSX.SwcTabs & JSXBase.HTMLAttributes<HTMLSwcTabsElement>;
+            "swc-tag": LocalJSX.SwcTag & JSXBase.HTMLAttributes<HTMLSwcTagElement>;
+            "swc-text": LocalJSX.SwcText & JSXBase.HTMLAttributes<HTMLSwcTextElement>;
+            "swc-timeline": LocalJSX.SwcTimeline & JSXBase.HTMLAttributes<HTMLSwcTimelineElement>;
+            "swc-timeline-item": LocalJSX.SwcTimelineItem & JSXBase.HTMLAttributes<HTMLSwcTimelineItemElement>;
+            "swc-tip": LocalJSX.SwcTip & JSXBase.HTMLAttributes<HTMLSwcTipElement>;
+            "swc-tooltip": LocalJSX.SwcTooltip & JSXBase.HTMLAttributes<HTMLSwcTooltipElement>;
         }
     }
 }
