@@ -1,5 +1,5 @@
 {
-  "extends": "@swc-ui/typescript-config/stencil.json",
+  "extends": "@swc-ui/typescript-config/stencil",
   "compilerOptions": {
     "outDir": "dist"
   },

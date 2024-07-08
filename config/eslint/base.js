@@ -15,7 +15,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     // 如果有console，会抛出错误
-    'no-console': 2,
+    // 'no-console': 2,
     // 在对象中使用getter/setter
     'accessor-pairs': 2,
     // =>的前/后括号
@@ -76,13 +76,13 @@ module.exports = {
     // nodejs 处理错误
     'handle-callback-err': [2, '^(err|error)$'],
     // 缩进风格 off->2
-    indent: [
-      'error',
-      2,
-      {
-        SwitchCase: 1,
-      },
-    ],
+    // indent: [
+    //   'error',
+    //   2,
+    //   {
+    //     SwitchCase: 1,
+    //   },
+    // ],
     // JSX 属性中一致使用双引号或单引号
     'jsx-quotes': [2, 'prefer-double'],
     // 对象字面量中冒号的前后空格

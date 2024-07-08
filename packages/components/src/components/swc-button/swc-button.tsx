@@ -1,12 +1,12 @@
 import { Component, Host, h, Prop } from '@stencil/core';
-import classNamse from 'classnames'
+import classNamse from 'classnames';
 import { useNamespace } from '../../hooks/useNamespace';
 
-const swcNs = useNamespace('button')
+const swcNs = useNamespace('button');
 
 @Component({
   tag: 'swc-button',
-  styleUrl: 'swc-button.scss'
+  styleUrl: 'swc-button.scss',
 })
 export class SwcButton {
   @Prop({
@@ -44,7 +44,7 @@ export class SwcButton {
     reflect: true,
   })
   disabled: boolean = false;
-  
+
   @Prop({
     attribute: 'circle',
     reflect: true,
@@ -76,7 +76,8 @@ export class SwcButton {
         loading={this.loading}
         round={this.round}
         plain={this.plain}
-        class={classNamse(swcNs.b(),
+        class={classNamse(
+          swcNs.b(),
           swcNs.m(this.type),
           swcNs.m(this.size),
           swcNs.is('disabled', this.disabled),
@@ -86,7 +87,8 @@ export class SwcButton {
           swcNs.is('circle', this.circle),
           swcNs.is('link', this.link),
           swcNs.is('text', this.text),
-          swcNs.is('has-bg', this.bg))}
+          swcNs.is('has-bg', this.bg),
+        )}
       >
         <slot name="icon">
           {/* <svg viewBox="0 0 1024 1024" class="ivy-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" aria-hidden="true" id="ivy-loading">
