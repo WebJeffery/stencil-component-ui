@@ -1,5 +1,5 @@
 import { Component, Host, h, Element, Prop, State, Event, EventEmitter, writeTask } from '@stencil/core';
-import { findElementsDownward } from 'src/utils/utils';
+import { findElementsDownward } from '../../utils/utils';
 
 @Component({
   tag: 'swc-tabs',
@@ -31,7 +31,7 @@ export class SwcTabs {
   headerItemClick(ev: any) {
     const target = ev.target;
     const index = target.getAttribute('data-index');
-    this.headerList.forEach(el => {
+    this.headerList.forEach((el) => {
       if (el.getAttribute('index') === index) {
         (el as any).show = true;
         const rect = target.getBoundingClientRect();
@@ -73,9 +73,13 @@ export class SwcTabs {
     return (
       <Host active={this.active}>
         <div class="ivy-tab-header">
-          <div class="ivy-tab-header-arrow ivy-tab-header-arrow-left" ref={el => (this.btnLeft = el)} onClick={this.scrollLeft.bind(this)}></div>
-          <div class="ivy-tab-wrap" ref={el => (this.tabHeaderWrap = el)}>
-            <div class="ivy-tab-wrap-inner" ref={el => (this.tableInnerEl = el)}>
+          <div
+            class="ivy-tab-header-arrow ivy-tab-header-arrow-left"
+            ref={(el) => (this.btnLeft = el)}
+            onClick={this.scrollLeft.bind(this)}
+          ></div>
+          <div class="ivy-tab-wrap" ref={(el) => (this.tabHeaderWrap = el)}>
+            <div class="ivy-tab-wrap-inner" ref={(el) => (this.tableInnerEl = el)}>
               {this.headerList.map((el, index) => {
                 let classList = ['ivy-tab-wrap-item'];
                 if (index === 0) {
@@ -93,7 +97,11 @@ export class SwcTabs {
               <div class="ivy-tab-wrap-line" style={{ width: `${this.w}px`, left: `${this.x}px` }}></div>
             </div>
           </div>
-          <div class="ivy-tab-header-arrow ivy-tab-header-arrow-right" ref={el => (this.btnRight = el)} onClick={this.scrollRight.bind(this)}></div>
+          <div
+            class="ivy-tab-header-arrow ivy-tab-header-arrow-right"
+            ref={(el) => (this.btnRight = el)}
+            onClick={this.scrollRight.bind(this)}
+          ></div>
         </div>
         <div>
           <slot></slot>
@@ -102,24 +110,21 @@ export class SwcTabs {
     );
   }
 
-
   componentDidLoad() {
     const list = findElementsDownward(this.el, 'ivy-tab-pane');
     this.headerList = list.map((el, index) => {
-      const elIndex = (el as any).index
+      const elIndex = (el as any).index;
       if ([undefined, null, ''].includes(elIndex)) {
-
         el.setAttribute('index', index.toString());
       }
       if (this.active === (el as any).index) {
-        (el as any).show = true
+        (el as any).show = true;
       } else {
-        (el as any).show = false
+        (el as any).show = false;
       }
       return el;
     });
     writeTask(() => {
-
       const children = this.tableInnerEl.children;
       for (let index = 0; index < children.length; index++) {
         const el = children[index];

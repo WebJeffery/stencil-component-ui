@@ -33,7 +33,5 @@ export const config: Config = {
       '/node_modules/(?!(@amzn/katal-components/|@katal/react/|@babel/runtime/helpers/esm/|lit-element|lit-html/)/)',
     ],
   },
-  plugins: [
-    sass(),
-  ]
+  plugins: [sass()],
 };

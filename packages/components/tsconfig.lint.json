@@ -1,8 +1,0 @@
-{
-  "extends": "@swc-ui/typescript-config/stencil.json",
-  "compilerOptions": {
-    "outDir": "dist"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "loader", ".stencil", ".turbo"]
-}

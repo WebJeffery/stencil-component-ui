@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop, Element, Event, EventEmitter } from '@stencil/core';
-import { findBrothersElements, findElementUpward } from 'src/utils/utils';
+import { findBrothersElements, findElementUpward } from '../../utils/utils';
 
 @Component({
   tag: 'swc-radio',
@@ -48,7 +48,7 @@ export class SwcRadio {
     } else {
       const brother = findBrothersElements(this.el, 'ivy-radio', false);
       if (!checked) {
-        brother.map(el => {
+        brother.map((el) => {
           const isChecked = el.checked;
           if (isChecked !== null) {
             el.removeAttribute('checked');

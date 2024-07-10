@@ -1,5 +1,6 @@
 import DefaultTheme from "vitepress/theme";
-import { defineCustomElements } from "@swc-ui/components/loader";
+import { defineCustomElements } from "../../../../packages/components/loader";
+// import { defineCustomElements } from "@swc-ui/components/loader";
 import { defineCustomElements as defineIconCustomElements } from "@swc-ui/icons/loader";
 // import { registerComponent } from '@swc-ui/icons'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
