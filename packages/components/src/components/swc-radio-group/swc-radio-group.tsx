@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop, Element, Event, EventEmitter, Method } from '@stencil/core';
-import { findElementsDownward } from 'src/utils/utils';
+import { findElementsDownward } from '../../utils/utils';
 
 @Component({
   tag: 'swc-radio-group',
@@ -35,7 +35,7 @@ export class SwcRadioGroup {
 
   componentDidLoad() {
     const checkboxList = findElementsDownward(this.el, 'ivy-radio');
-    checkboxList.forEach(cur => {
+    checkboxList.forEach((cur) => {
       const checked = cur.getAttribute('checked');
       if (checked) {
         this.value = cur.getAttribute('value');

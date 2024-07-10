@@ -1,19 +1,16 @@
 # swc-ui icons
 
-## 现有图标
-
-和 element-plus-icons 相同
 
 ## 使用
 
 1、安装
 
-```
+```bash
 npm i @swc-ui/icons
 #or
 yarn add @swc-ui/icons
 #or
-pnpm i @swc-ui/icons
+pnpm add @swc-ui/icons
 ```
 
 2、按需引入注册

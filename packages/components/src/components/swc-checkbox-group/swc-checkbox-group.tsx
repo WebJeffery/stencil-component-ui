@@ -1,5 +1,5 @@
 import { Component, Host, h, Element, Prop, Method, Event, EventEmitter } from '@stencil/core';
-import { findElementsDownward } from 'src/utils/utils';
+import { findElementsDownward } from '../../utils/utils';
 
 @Component({
   tag: 'swc-checkbox-group',
@@ -41,7 +41,7 @@ export class SwcCheckboxGroup {
 
   componentWillLoad() {
     const checkboxList = findElementsDownward(this.el, 'ivy-checkbox');
-    checkboxList.forEach(cur => {
+    checkboxList.forEach((cur) => {
       const checked = (cur as any).checked;
       if (checked) {
         this.value.push(cur.getAttribute('value'));

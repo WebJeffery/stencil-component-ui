@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop, Element } from '@stencil/core';
-import { findChildrenElements } from 'src/utils/utils';
+import { findChildrenElements } from '../../utils/utils';
 
 @Component({
   tag: 'swc-timeline',
@@ -27,7 +27,7 @@ export class SwcTimeline {
     const reverse = this.reverse;
     const childList = findChildrenElements(this.el, 'ivy-timeline-item');
     const children = [...(childList as Array<HTMLElement>)];
-    children.map(cur => {
+    children.map((cur) => {
       if (reverse !== undefined) cur.setAttribute('reverse', 'reverse');
     });
   }

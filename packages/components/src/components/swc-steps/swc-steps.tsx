@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop, writeTask, Element, Watch } from '@stencil/core';
-import { findChildrenElements } from 'src/utils/utils';
+import { findChildrenElements } from '../../utils/utils';
 
 @Component({
   tag: 'swc-steps',
