@@ -6,20 +6,20 @@
     "web-component"
   ],
   "description": "Stencil Component Starter",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
+  "main": "dist/cjs/loader.cjs.js",
+  "module": "dist/esm/loader.js",
+  "unpkg": "dist/esm/loader.js",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/icons/icons.esm.js",
   "files": [
     "dist/",
     "loader/",
     "svg"
   ],
   "scripts": {
-    "dev": "stencil build --docs --watch --serve --no-open",
-    "build": "stencil build",
+    "start": "stencil build --prod --es5 --watch",
+    "build": "stencil build --docs",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
