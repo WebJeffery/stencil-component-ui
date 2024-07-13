@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev src",
+    "start": "vitepress dev src",
     "build": "vitepress build src",
     "preview": "vitepress preview src"
   },

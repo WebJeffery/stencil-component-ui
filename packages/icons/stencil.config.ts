@@ -13,9 +13,15 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
+      generateTypeDeclarations: false,
       customElementsExportBehavior: 'auto-define-custom-elements',
-      externalRuntime: false,
     },
+    // {
+    //   type: 'dist-custom-elements',
+    //   dir: 'dist/bundle',
+    //   includeGlobalScripts: false,
+    //   customElementsExportBehavior: 'bundle'  // 配置为捆绑导出
+    // },
     {
       type: 'docs-readme',
     },

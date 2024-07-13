@@ -2,13 +2,11 @@
   "name": "@swc-ui/components",
   "version": "0.1.4",
   "description": "一个使用stencil.js开发的web component通用组件库",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.js",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
-  "types": "./dist/types/types.d.ts",
-  "collection": "./dist/collection/collection-manifest.json",
-  "unpkg": "./dist/components/index.js",
+  "main": "dist/components/index.js",
+  "module": "dist/components/index.js",
+  "types": "dist/types/index.d.ts",
+  "unpkg": "dist/components/index.js",
+  "collection": "/dist/collection/collection-manifest.json",
   "repository": {
     "type": "git",
     "url": "https://github.com/WebJeffery/stencil-component-ui.git"
@@ -24,7 +22,7 @@
     "ui"
   ],
   "scripts": {
-    "dev": "stencil build --docs --watch --serve --no-open",
+    "start": "stencil build --prod --es5 --watch",
     "build": "stencil build --docs",
     "clean": "rimraf dist loader www docs",
     "watch": "npm run clean && stencil build --watch",

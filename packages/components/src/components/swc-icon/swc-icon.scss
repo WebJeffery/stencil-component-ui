@@ -1,12 +1,8 @@
 @use 'src/global/mixins/mixins' as *;
 @use 'src/global/common/var' as *;
 
-
-
 @include b(icon) {
   --swc-icon-color: inherit;
-  height: 1em;
-  width: 1em;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +12,18 @@
 
   @include when(spin) {
     animation: rotating 2s linear infinite;
+  }
+
+  svg {
+    height: 1em;
+    width: 1em;
+  }
+}
+
+@include b(svg) {
+  svg {
+    height: 1em;
+    width: 1em;
   }
 }
 
