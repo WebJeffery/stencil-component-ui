@@ -33,13 +33,18 @@ export namespace Components {
         "bg": boolean;
         "circle": boolean;
         "disabled": boolean;
+        "icon": string;
         "link": boolean;
         "loading": boolean;
+        "loadingIcon": string;
         "plain": boolean;
         "round": boolean;
         "size": string;
+        "suffixIcon": string;
         "text": boolean;
         "type": string;
+    }
+    interface SwcButtonGroup {
     }
     interface SwcCard {
         "header": string;
@@ -364,6 +369,12 @@ declare global {
     var HTMLSwcButtonElement: {
         prototype: HTMLSwcButtonElement;
         new (): HTMLSwcButtonElement;
+    };
+    interface HTMLSwcButtonGroupElement extends Components.SwcButtonGroup, HTMLStencilElement {
+    }
+    var HTMLSwcButtonGroupElement: {
+        prototype: HTMLSwcButtonGroupElement;
+        new (): HTMLSwcButtonGroupElement;
     };
     interface HTMLSwcCardElement extends Components.SwcCard, HTMLStencilElement {
     }
@@ -798,6 +809,7 @@ declare global {
         "swc-breadcrumb": HTMLSwcBreadcrumbElement;
         "swc-breadcrumb-item": HTMLSwcBreadcrumbItemElement;
         "swc-button": HTMLSwcButtonElement;
+        "swc-button-group": HTMLSwcButtonGroupElement;
         "swc-card": HTMLSwcCardElement;
         "swc-carousel": HTMLSwcCarouselElement;
         "swc-carousel-item": HTMLSwcCarouselItemElement;
@@ -872,13 +884,18 @@ declare namespace LocalJSX {
         "bg"?: boolean;
         "circle"?: boolean;
         "disabled"?: boolean;
+        "icon"?: string;
         "link"?: boolean;
         "loading"?: boolean;
+        "loadingIcon"?: string;
         "plain"?: boolean;
         "round"?: boolean;
         "size"?: string;
+        "suffixIcon"?: string;
         "text"?: boolean;
         "type"?: string;
+    }
+    interface SwcButtonGroup {
     }
     interface SwcCard {
         "header"?: string;
@@ -1131,6 +1148,7 @@ declare namespace LocalJSX {
         "swc-breadcrumb": SwcBreadcrumb;
         "swc-breadcrumb-item": SwcBreadcrumbItem;
         "swc-button": SwcButton;
+        "swc-button-group": SwcButtonGroup;
         "swc-card": SwcCard;
         "swc-carousel": SwcCarousel;
         "swc-carousel-item": SwcCarouselItem;
@@ -1191,6 +1209,7 @@ declare module "@stencil/core" {
             "swc-breadcrumb": LocalJSX.SwcBreadcrumb & JSXBase.HTMLAttributes<HTMLSwcBreadcrumbElement>;
             "swc-breadcrumb-item": LocalJSX.SwcBreadcrumbItem & JSXBase.HTMLAttributes<HTMLSwcBreadcrumbItemElement>;
             "swc-button": LocalJSX.SwcButton & JSXBase.HTMLAttributes<HTMLSwcButtonElement>;
+            "swc-button-group": LocalJSX.SwcButtonGroup & JSXBase.HTMLAttributes<HTMLSwcButtonGroupElement>;
             "swc-card": LocalJSX.SwcCard & JSXBase.HTMLAttributes<HTMLSwcCardElement>;
             "swc-carousel": LocalJSX.SwcCarousel & JSXBase.HTMLAttributes<HTMLSwcCarouselElement>;
             "swc-carousel-item": LocalJSX.SwcCarouselItem & JSXBase.HTMLAttributes<HTMLSwcCarouselItemElement>;

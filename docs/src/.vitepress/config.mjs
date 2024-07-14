@@ -24,6 +24,7 @@ export default defineConfig({
         //         "https://github.com/WebJeffery/stencil-component-ui/edit/master/docs/src/components/:path",
         //     text: "Edit on GitHub",
         // },
+        headingsDepth: 3,
         lastUpdatedText: "更新时间",
         outlineTitle: "章节目录",
         nav,

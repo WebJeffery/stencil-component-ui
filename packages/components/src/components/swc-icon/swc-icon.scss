@@ -9,21 +9,15 @@
   fill: currentColor;
   color: var(--swc-icon-color);
   font-size: inherit;
-
-  @include when(spin) {
-    animation: rotating 2s linear infinite;
-  }
-
-  svg {
-    height: 1em;
-    width: 1em;
-  }
 }
 
 @include b(svg) {
-  svg {
-    height: 1em;
-    width: 1em;
+  display: inline-flex;
+  height: 1em;
+  width: 1em;
+
+  @include when(spin) {
+    animation: rotating 2s linear infinite;
   }
 }
 

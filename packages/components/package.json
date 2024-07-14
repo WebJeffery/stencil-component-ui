@@ -2,10 +2,10 @@
   "name": "@swc-ui/components",
   "version": "0.1.4",
   "description": "一个使用stencil.js开发的web component通用组件库",
-  "main": "dist/components/index.js",
-  "module": "dist/components/index.js",
+  "main": "dist/cjs/loader.cjs.js",
+  "module": "dist/esm/loader.js",
+  "unpkg": "dist/esm/loader.js",
   "types": "dist/types/index.d.ts",
-  "unpkg": "dist/components/index.js",
   "collection": "/dist/collection/collection-manifest.json",
   "repository": {
     "type": "git",

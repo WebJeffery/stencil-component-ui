@@ -57,8 +57,8 @@ export class SwcIcon {
     const IconName = this.name ? `swc-icon-${this.name}` : 'slot';
 
     return (
-      <Host class={classNameFun(swcNs.b(), this.classNames, swcNs.is('spin', this.spin))} style={style}>
-        <IconName></IconName>
+      <Host class={swcNs.b()}>
+        <IconName class={classNameFun(this.classNames, swcNs.is('spin', this.spin))} style={style}></IconName>
       </Host>
     );
   }

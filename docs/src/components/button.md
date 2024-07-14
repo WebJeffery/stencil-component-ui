@@ -48,12 +48,12 @@
   </swc-row>
 
   <swc-row>
-    <swc-button icon="swc-icon-search" circle></swc-button>
-    <swc-button type="primary" icon="swc-icon-edit" circle></swc-button>
-    <swc-button type="success" icon="swc-icon-check" circle></swc-button>
-    <swc-button type="info" icon="swc-icon-message" circle></swc-button>
-    <swc-button type="warning" icon="swc-icon-star-off" circle></swc-button>
-    <swc-button type="danger" icon="swc-icon-delete" circle></swc-button>
+    <swc-button icon="search" circle></swc-button>
+    <swc-button type="primary" icon="edit" circle></swc-button>
+    <swc-button type="success" icon="check" circle></swc-button>
+    <swc-button type="info" icon="message" circle></swc-button>
+    <swc-button type="warning" icon="star" circle></swc-button>
+    <swc-button type="danger" icon="delete" circle></swc-button>
   </swc-row>
 </template>
 
@@ -155,11 +155,11 @@
 
 ```vue
 <template>
-  <swc-button type="primary" icon="swc-icon-edit"></swc-button>
-  <swc-button type="primary" icon="swc-icon-share"></swc-button>
-  <swc-button type="primary" icon="swc-icon-delete"></swc-button>
-  <swc-button type="primary" icon="swc-icon-search">搜索</swc-button>
-  <swc-button type="primary">上传<i class="swc-icon-upload swc-icon--right"></i></swc-button>
+  <swc-button type="primary" icon="edit"></swc-button>
+  <swc-button type="primary" icon="share"></swc-button>
+  <swc-button type="primary" icon="delete"></swc-button>
+  <swc-button type="primary" icon="search">搜索</swc-button>
+  <swc-button type="primary" suffixIcon="upload">上传</swc-button>
 </template>
 ```
 :::
@@ -173,13 +173,13 @@
 ```vue
 <template>
   <swc-button-group>
-    <swc-button type="primary" icon="swc-icon-arrow-left">上一页</swc-button>
-    <swc-button type="primary">下一页<i class="swc-icon-arrow-right swc-icon--right"></i></swc-button>
+    <swc-button type="primary" icon="arrow-left">上一页</swc-button>
+    <swc-button type="primary" suffixIcon="arrow-right">下一页</swc-button>
   </swc-button-group>
   <swc-button-group>
-    <swc-button type="primary" icon="swc-icon-edit"></swc-button>
-    <swc-button type="primary" icon="swc-icon-share"></swc-button>
-    <swc-button type="primary" icon="swc-icon-delete"></swc-button>
+    <swc-button type="primary" icon="edit"></swc-button>
+    <swc-button type="primary" icon="share"></swc-button>
+    <swc-button type="primary" icon="delete"></swc-button>
   </swc-button-group>
 </template>
 ```
@@ -196,6 +196,11 @@
 ```vue
 <template>
   <swc-button type="primary" :loading="true">加载中</swc-button>
+  <swc-button type="primary" :loading="true">
+    <div slot="loading">
+        <swc-icon name="refresh-right" spin></swc-icon>
+    </div>
+    加载中</swc-button>
 </template>
 ```
 :::
@@ -211,32 +216,67 @@
 ```vue
 <template>
   <swc-row>
-  <swc-button size="large">大的按钮</swc-button>
-  <swc-button>默认按钮</swc-button>
-  <swc-button size="small">小按钮</swc-button>
-</swc-row>
-<swc-row>
-  <swc-button size="large" round>大的按钮</swc-button>
-  <swc-button round>默认按钮</swc-button>
-  <swc-button size="small" round>小按钮</swc-button>
-</swc-row>
+    <swc-button size="large">大的按钮</swc-button>
+    <swc-button>默认按钮</swc-button>
+    <swc-button size="small">小按钮</swc-button>
+    <swc-button size="large" icon="search">大的按钮</swc-button>
+    <swc-button icon="search">默认按钮</swc-button>
+    <swc-button size="small" icon="search">小按钮</swc-button>
+  </swc-row>
+  <swc-row>
+    <swc-button size="large" round>大的按钮</swc-button>
+    <swc-button round>默认按钮</swc-button>
+    <swc-button size="small" round>小按钮</swc-button>
+    <swc-button size="large" icon="search" round>大的按钮</swc-button>
+    <swc-button icon="search" round>默认按钮</swc-button>
+    <swc-button size="small" icon="search" round>小按钮</swc-button>
+  </swc-row>
+  <swc-row>
+    <swc-button size="large" icon="search" circle></swc-button>
+    <swc-button circle icon="search"></swc-button>
+    <swc-button size="small" icon="search" circle></swc-button>
+  </swc-row>
 </template>
 ```
 :::
 
+<!-- ## 自定义颜色
 
-## Attributes
+您可以自定义按钮的颜色。
+
+我们将自动计算按钮处于 hover 和 active 状态时的颜色。
+
+:::demo
+```vue
+<template>
+  <swc-row>
+    <swc-button color="#626aef" dark="isDark">默认按钮</swc-button>
+    <swc-button color="#626aef" :dark="isDark" plain>朴素按钮</swc-button>
+    <swc-button color="#626aef" dark="isDark" disabled>禁用</swc-button>
+    <swc-button color="#626aef" :dark="isDark" plain disabled>禁用朴素</swc-button>
+  </swc-row>
+</template>
+```
+::: -->
+
+
+## Button 属性
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
 | size     | 尺寸   | string  |   large / default / small            |    default    |
 | type     | 类型   | string    |   primary / success / warning / danger / info  |     —    |
 | text     | 是否文字按钮   | boolean    | — | false   |
 | plain     | 是否朴素按钮   | boolean    | — | false   |
-| bg     | 是否显示文字按钮背景颜色   | boolean    | — | false   |
-| link     | 是否为链接按钮   | boolean    | — | false   |
 | round     | 是否圆角按钮   | boolean    | — | false   |
 | circle     | 是否圆形按钮   | boolean    | — | false   |
 | loading     | 是否加载中状态   | boolean    | — | false   |
 | disabled  | 是否禁用状态    | boolean   | —   | false   |
 | icon  | 图标类名 | string   |  —  |  —  |
-| autofocus  | 是否默认聚焦 | boolean   |  —  |  false  |
+
+
+## Button 插槽
+| 插槽名      | 说明    |
+|---------- |------------- |
+| default     | 自定义默认内容   | 
+| loading  | 自定义加载中组件    |
+| icon  | 自定义图标组件 |
