@@ -12,26 +12,24 @@ export const config: Config = {
   },
   outputTargets: [
     {
-      type: 'dist-custom-elements',
-      generateTypeDeclarations: true,
-      customElementsExportBehavior: 'bundle',
-      // copy: [
-      //   { src: 'style/index.css', dest: 'dist/index.css', warn: true },
-      // ],
-    },
-    {
       type: 'dist',
       esmLoaderPath: '../loader',
     },
+    {
+      type: 'dist-custom-elements',
+      generateTypeDeclarations: false,
+      customElementsExportBehavior: 'auto-define-custom-elements',
+    },
+    {
+      type: 'docs-readme',
+    },
+    {
+      type: 'www',
+      serviceWorker: null, // disable service workers
+    },
   ],
   testing: {
-    transform: {
-      '^.+\\.jsx?$': 'babel-jest',
-    },
-    transformIgnorePatterns: [
-      // eslint-disable-next-line max-len
-      '/node_modules/(?!(@amzn/katal-components/|@katal/react/|@babel/runtime/helpers/esm/|lit-element|lit-html/)/)',
-    ],
+    browserHeadless: 'new',
   },
   plugins: [sass()],
 };

@@ -8,6 +8,11 @@
   margin-bottom: 1rem
 }
 
-.all-icons .swc-icon {
-  margin: 0 10px 10px 0;
+.all-icons .swc-svg {
+  margin: 0 16px 16px 0;
+}
+
+.VPContent .vp-doc h2 {
+  border-top: 0;
+  padding-top: 0;
 }

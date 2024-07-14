@@ -1,111 +1,144 @@
 # Icon 图标
 
+swc-ui 提供了一套常用的图标 [@swc-ui/icons](https://www.npmjs.com/package/@swc-ui/icons) 
+
 ## 安装
 
-现在 `swc-icon` 被抽离成了一个单独的 npm 包，现在使用时需要单独安装 `@swc-ui/icons`
+选择一个你喜欢的包管理器安装
 
 ```bash
-npm i @swc-ui/icons
+# NPM
+$ npm install @swc-ui/icons
+
+# Yarn
+$ yarn add @swc-ui/icons
+
+# pnpm
+$ pnpm install @swc-ui/icons
 ```
 
 
-## 使用
+## 注册使用
+
+1、批量一次性引入所有图标注册
 
 ```js
 // 全量引入
-import { registerComponent} from '@swc-ui/icons'
-registerComponent()
-
-// 按需引入
-import '@swc-ui/icons/dist/components/swc-icon-add-location.js'
+import { defineCustomElements} from '@swc-ui/icons'
+defineCustomElements()
 
 ```
+
+2、按需引入图标注册【推荐】
+
+```js
+// 按需引入，自动注册
+import '@swc-ui/icons/dist/components/swc-icon-add-location.js'
+```
+
+像普通 html 标签一样使用
+```html
+<swc-icon-add-location></swc-icon-add-location>
+```
+
+<swc-icon-add-location></swc-icon-add-location>
+
 
 ## 基础用法
 
-通过`name`来设置不同的图标
+通过设置 `name` 来使用其他图标
 
-:::demo
-```vue
-<template>
-    <swc-icon name="edit" style="margin-right: 10px"></swc-icon>
-    <swc-icon name="reading" class="margin-left"></swc-icon>
-</template>
+```html
+<!-- 使用 swc-icon 为 SVG 图标提供属性 -->
+<swc-icon name="edit" color="red"></swc-icon>
+
+<!-- 或者独立使用它，不从父级获取属性 -->
+<swc-icon-edit></swc-icon-edit>
 ```
-:::
+
+<swc-icon name="edit" color="red"></swc-icon>
+<swc-icon-edit class="margin-left"></swc-icon-edit>
+
 
 ## 倾斜 rotate
 
-通过`rotate`来旋转角度
+通过`rotate`倾斜 icon 角度
 
-:::demo
-```vue
-<template>
-    <swc-icon name="edit" rotate="30" style="margin-right: 10px"></swc-icon>
-    <swc-icon name="reading" rotate="60" class="margin-left"></swc-icon>
-</template>
+```html
+<swc-icon name="edit" rotate="30"></swc-icon>
+<swc-icon name="reading" rotate="60"></swc-icon>
 ```
-:::
+
+<swc-icon name="edit" rotate="30"></swc-icon>
+<swc-icon name="reading" rotate="60"></swc-icon>
+
 
 ## 旋转
 
 添加`spin`属性来使 icon 旋转
 
-:::demo
-```vue
-<template>
-<swc-icon-loading spin></swc-icon-loading>
-<swc-icon-refresh-right spin class="margin-left"></swc-icon-refresh-right>
-<swc-icon-refresh spin class="margin-left"></swc-icon-refresh>
-</template>
+```html
+<swc-icon name="loading" spin></swc-icon>
+<swc-icon name="refresh-right" spin></swc-icon>
+<swc-icon name="refresh" spin></swc-icon>
 ```
-:::
+
+<swc-icon name="loading" spin></swc-icon>
+<swc-icon name="refresh-right" spin class="margin-left"></swc-icon>
+<swc-icon name="refresh" spin class="margin-left"></swc-icon>
 
 ## 大小
 
 添加`size`属性来设置大小
 
-:::demo
-```vue
-<template>
-<swc-icon-loading size="12"></swc-icon-loading>
-<swc-icon-loading></swc-icon-loading>
-<swc-icon-loading size="20"></swc-icon-loading>
-<swc-icon-loading size="24"></swc-icon-loading>
-<swc-icon-loading size="30"></swc-icon-loading>
-</template>
+```html
+<swc-icon name="loading"></swc-icon>
+<swc-icon name="loading" size="20"></swc-icon>
+<swc-icon name="loading" size="24"></swc-icon>
+<swc-icon name="loading" size="30"></swc-icon>
+<swc-icon name="loading" size="36"></swc-icon>
 ```
-:::
+
+<swc-icon name="loading"></swc-icon>
+<swc-icon name="loading" size="20"></swc-icon>
+<swc-icon name="loading" size="24"></swc-icon>
+<swc-icon name="loading" size="30"></swc-icon>
+<swc-icon name="loading" size="36"></swc-icon>
 
 ## 颜色
 
 添加`color`属性来设置颜色
 
-:::demo
-```vue
-<template>
-<swc-icon-loading></swc-icon-loading>
-<swc-icon-loading color="red"></swc-icon-loading>
-<swc-icon-loading color="blue"></swc-icon-loading>
-<swc-icon-loading color="pink"></swc-icon-loading>
-<swc-icon-loading color="green"></swc-icon-loading>
-</template>
+```html
+<swc-icon name="loading"></swc-icon>
+<swc-icon name="loading" color="red"></swc-icon>
+<swc-icon name="loading" color="blue"></swc-icon>
+<swc-icon name="loading" color="pink"></swc-icon>
+<swc-icon name="loading" color="green"></swc-icon>
 ```
-:::
+
+<swc-icon name="loading"></swc-icon>
+<swc-icon name="loading" color="red"></swc-icon>
+<swc-icon name="loading" color="blue"></swc-icon>
+<swc-icon name="loading" color="pink"></swc-icon>
+<swc-icon name="loading" color="green"></swc-icon>
+
 
 ## Attrs
 
 | 属性名   | 说明   |类型| 可选值       | 默认值    |
 |-------|------|-|-----------|--------|
-| size  | 图标大小 |`string`| 合法的 css 单位 | `1em` |
+| name  | 图标名称 |`string`| @swc-ui/icons 图标 | - |
+| rotate  | 图标旋转角度 |`number`| 0 | - |
+| spin  | 360度旋转 |`boolean`| `true`、`false` | `false` |
+| size  | 图标大小 |`string`| 合法的 css 单位 | `1` |
 | color | 图标颜色 |`string`| 合法的颜色值    | -      |
 
 ## 所有 icon
 
-:::demo
-```vue
-<template>
-<div class="all-icons" @click="copySvgIcon">
+点击图标即可复制
+
+<div class="all-icons">
 <swc-icon-add-location></swc-icon-add-location>
 <swc-icon-aim></swc-icon-aim>
 <swc-icon-alarm-clock></swc-icon-alarm-clock>
@@ -401,16 +434,26 @@ import '@swc-ui/icons/dist/components/swc-icon-add-location.js'
 <swc-icon-zoom-in></swc-icon-zoom-in>
 <swc-icon-zoom-out></swc-icon-zoom-out>
 </div>
-</template>
 
-<script setup>
-import clipboardCopy from 'clipboard-copy'
-const copySvgIcon = async (ev) => {
-    const content = ev.target.closest('.hydrated').tagName.toLocaleLowerCase()
 
-    await clipboardCopy(`<${content}></${content}>`)
-    alert('复制成功')
-}
+
+<script>
+setTimeout(() => {
+  const copyDiv = document.querySelector('.all-icons');
+  if (copyDiv) {
+    copyDiv.addEventListener('click', (ev) => {
+      const content = ev.target.closest('.hydrated').tagName.toLocaleLowerCase()
+
+      navigator.clipboard.writeText(`<${content}></${content}>`)
+        .then(() => {
+          alert('图标复制成功！');
+        })
+        .catch((err) => {
+          console.error('复制失败：', err);
+        });
+    });
+  }
+
+}, 1000)
 </script>
-```
-:::
+

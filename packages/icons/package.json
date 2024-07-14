@@ -1,6 +1,6 @@
 {
   "name": "@swc-ui/icons",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "keywords": [
     "icon",
     "web-component"
@@ -14,8 +14,7 @@
   "collection:main": "dist/collection/index.js",
   "files": [
     "dist/",
-    "loader/",
-    "svg"
+    "loader/"
   ],
   "scripts": {
     "start": "stencil build --prod --es5 --watch",

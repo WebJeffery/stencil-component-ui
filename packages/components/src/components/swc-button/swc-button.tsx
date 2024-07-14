@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Element } from '@stencil/core';
 import classNamse from 'classnames';
 import { useNamespace } from '../../hooks/useNamespace';
 
@@ -69,13 +69,30 @@ export class SwcButton {
   })
   bg: boolean = false;
 
+  @Prop({
+    attribute: 'loadingIcon',
+    reflect: false,
+  })
+  loadingIcon: string = 'loading';
+
+  @Prop({
+    attribute: 'icon',
+    reflect: false,
+  })
+  icon: string = '';
+
+  // Suffix Icon
+  @Prop({
+    attribute: 'suffixIcon',
+    reflect: false,
+  })
+  suffixIcon: string = '';
+
+  @Element() el: HTMLElement;
+
   render() {
     return (
       <Host
-        type={this.type}
-        loading={this.loading}
-        round={this.round}
-        plain={this.plain}
         class={classNamse(
           swcNs.b(),
           swcNs.m(this.type),
@@ -90,14 +107,20 @@ export class SwcButton {
           swcNs.is('has-bg', this.bg),
         )}
       >
-        <slot name="icon">
-          {/* <svg viewBox="0 0 1024 1024" class="ivy-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" aria-hidden="true" id="ivy-loading">
-            <use href="#ivy-icon-loading"></use>
-          </svg> */}
-        </slot>
-        <span class="ivy-button-inner">
-          <slot />
-        </span>
+        <slot name="icon"></slot>
+        {this.loading ? (
+          <slot name="loading">
+            <swc-icon name={this.loadingIcon} spin></swc-icon>
+          </slot>
+        ) : (
+          this.icon && <swc-icon name={this.icon}></swc-icon>
+        )}
+        {this.el.textContent && (
+          <span class="swc-button-inner">
+            <slot />
+          </span>
+        )}
+        {this.suffixIcon && <swc-icon name={this.suffixIcon}></swc-icon>}
       </Host>
     );
   }

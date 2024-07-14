@@ -60,12 +60,18 @@ $button-icon-span-gap: map.merge(
   &:focus-visible {
     outline: 2px solid getCssVar('button', 'outline-color');
     outline-offset: 1px;
-    transition: outline-offset 0s, outline 0s;
+    transition:
+      outline-offset 0s,
+      outline 0s;
   }
 
   > span {
     display: inline-flex;
     align-items: center;
+
+    & + [class*='#{$namespace}-icon'] {
+      margin-left: map.get($button-icon-span-gap, 'default');
+    }
   }
 
   & + & {
@@ -93,18 +99,9 @@ $button-icon-span-gap: map.merge(
   }
 
   @include when(plain) {
-    @include css-var-from-global(
-      ('button', 'hover', 'text-color'),
-      ('color', 'primary')
-    );
-    @include css-var-from-global(
-      ('button', 'hover', 'bg-color'),
-      ('fill-color', 'blank')
-    );
-    @include css-var-from-global(
-      ('button', 'hover', 'border-color'),
-      ('color', 'primary')
-    );
+    @include css-var-from-global(('button', 'hover', 'text-color'), ('color', 'primary'));
+    @include css-var-from-global(('button', 'hover', 'bg-color'), ('fill-color', 'blank'));
+    @include css-var-from-global(('button', 'hover', 'border-color'), ('color', 'primary'));
   }
 
   @include when(active) {
@@ -170,7 +167,9 @@ $button-icon-span-gap: map.merge(
       &:focus-visible {
         outline: 2px solid getCssVar('button', 'outline-color');
         outline-offset: 1px;
-        transition: outline-offset 0s, outline 0s;
+        transition:
+          outline-offset 0s,
+          outline 0s;
       }
 
       &:active {
@@ -271,10 +270,7 @@ $button-icon-span-gap: map.merge(
 
   @each $size in (large, small) {
     @include m($size) {
-      @include set-css-var-value(
-        ('button', 'size'),
-        map.get($input-height, $size)
-      );
+      @include set-css-var-value(('button', 'size'), map.get($input-height, $size));
 
       height: getCssVar('button', 'size');
 
