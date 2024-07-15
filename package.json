@@ -12,7 +12,7 @@
     "gen:com": "pnpm --filter @swc-ui/components run generate",
     "gen:icon": "pnpm --filter @swc-ui/icons run generate",
     "transform:icon": "pnpm --filter @swc-ui/icons run transform",
-    "build": "turbo run build",
+    "build": "run-s build:icon build:com build:docs",
     "changeset": "changeset",
     "update-changelog": "changeset version",
     "release": "changeset publish --registry=https://registry.npmjs.com/ --access=public",
