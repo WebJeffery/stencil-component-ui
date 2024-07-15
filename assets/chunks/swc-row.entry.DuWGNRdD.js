@@ -1,1 +1,0 @@
-import{r as c,h as s,H as t}from"./theme.BlE6xyWi.js";import"./framework.DIU08dKJ.js";const o=":host{display:flex;width:100%}",a=o,r=class{constructor(e){c(this,e)}render(){return s(t,{key:"c7df17619f0a5e58896cc8f8ff38efcc0a8b332b"},s("slot",{key:"826a5a9a7912ee31e972e45616ecc9a04148aa89"}))}};r.style=a;export{r as swc_row};
