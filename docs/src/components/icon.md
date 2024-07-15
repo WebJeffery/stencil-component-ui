@@ -437,7 +437,7 @@ import '@swc-ui/icons/dist/components/swc-icon-add-location.js'
 
 
 
-<script>
+<!-- <script>
 setTimeout(() => {
   const copyDiv = document.querySelector('.all-icons');
   if (copyDiv) {
@@ -455,5 +455,5 @@ setTimeout(() => {
   }
 
 }, 1000)
-</script>
+</script> -->
 

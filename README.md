@@ -35,7 +35,9 @@ defineCustomElements()
 ```
 
 
-## 开发步骤
+## 开发贡献
+
+### 安装环境
 
 1、克隆源码
 
@@ -52,7 +54,7 @@ pnpm install
 3、启动项目
 
 ```shell
-npm run dev
+npm run start
 ```
 
 ## 提交规范
