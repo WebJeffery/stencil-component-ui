@@ -136,7 +136,7 @@ import '@swc-ui/icons/dist/components/swc-icon-add-location.js'
 
 ## 所有 icon
 
-点击图标即可复制
+<!-- 点击图标即可复制 -->
 
 <div class="all-icons">
 <swc-icon-add-location></swc-icon-add-location>
