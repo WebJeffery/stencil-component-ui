@@ -1,1 +1,0 @@
-import{r as t,h as s,H as c}from"./theme.BOCtV-v7.js";import"./framework.DIU08dKJ.js";const o=":host{display:flex;width:100%}",a=o,r=class{constructor(e){t(this,e)}render(){return s(c,{key:"9e2963bd0d80ca42470ad7eeaeda3702eeadda78"},s("slot",{key:"c8acd70d348591c0ad50d5c06114a54b52fb7385"}))}};r.style=a;export{r as swc_row};
