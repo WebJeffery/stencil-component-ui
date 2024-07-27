@@ -1,0 +1,24 @@
+{
+  "name": "@swc-ui/locale",
+  "version": "0.0.1",
+  "description": "Locale package SWC UI",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "web component",
+    "locale",
+    "i18n"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

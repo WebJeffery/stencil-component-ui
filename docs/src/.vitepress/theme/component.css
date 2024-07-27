@@ -8,9 +8,27 @@
   margin-bottom: 1rem
 }
 
-.all-icons .swc-svg {
-  margin: 0 16px 16px 0;
+.all-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
+
+.all-icons .icon-item {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+}
+
+.all-icons .icon-item span {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* .all-icons .swc-svg {
+  margin: 0 16px 16px 0;
+} */
 
 .VPContent .vp-doc h2 {
   border-top: 0;

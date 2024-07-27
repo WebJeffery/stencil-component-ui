@@ -1,17 +1,29 @@
 {
   "name": "@swc-ui/icons",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "keywords": [
     "icon",
     "web-component"
   ],
   "description": "Stencil Component Starter",
-  "main": "dist/cjs/loader.cjs.js",
-  "module": "dist/esm/loader.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
   "unpkg": "dist/esm/loader.js",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js",
+      "default": "./dist/index.js"
+    },
+    "./loader": {
+      "import": "./loader/index.js",
+      "require": "./loader/index.cjs.js"
+    },
+    "./*": "./*"
+  },
   "files": [
     "dist/",
     "loader/"

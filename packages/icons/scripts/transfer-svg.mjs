@@ -106,13 +106,16 @@ export const swcIconTemplate = (entry, outDir) => {
  * @param {*} outDir 输出目录
  */
 const renderCompFile = (entry, outDir) => {
+  let componentsList = []
   getSvgFiles(entry)
     .then(res => {
       return res.map(async c => {
         const svgFileContent = readFileSync(`${entry}/${c}`, 'utf-8');
         const svg = await transferSvg(svgFileContent);
+        const name = c.replace('.svg', '')
+        componentsList.push(name)
         return {
-          name: c.replace('.svg', ''),
+          name: name,
           content: svg,
         };
       });
@@ -129,6 +132,12 @@ const renderCompFile = (entry, outDir) => {
             });
           }
         })
+        // 入口文件组件
+        writeFile(`${outDir}/index.ts`, `export const icons = [${componentsList.map(c => `\n'${c}'`)}\n];\nexport default icons;`, err => {
+          if (err) {
+            throw err;
+          }
+        });
       })
     })
 }
