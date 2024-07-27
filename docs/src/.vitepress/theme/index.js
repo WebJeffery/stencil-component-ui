@@ -1,6 +1,6 @@
 import DefaultTheme from "vitepress/theme";
-import { defineCustomElements } from "@swc-ui/components";
-import { defineCustomElements as defineIconCustomElements } from '@swc-ui/icons'
+import { applyPolyfills, defineCustomElements } from "@swc-ui/components/loader";
+import { defineCustomElements as defineIconCustomElements } from '@swc-ui/icons/loader'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 import "./index.css";
 
@@ -14,7 +14,9 @@ export default {
     async enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
         useComponents(ctx.app)
-        defineCustomElements();
-        defineIconCustomElements()
+        applyPolyfills().then(() => {
+            defineCustomElements();
+            defineIconCustomElements()
+          });
     },
 };
